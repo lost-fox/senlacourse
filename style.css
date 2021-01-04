@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Montserrat700";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3g3D_u50.woff2)
+    format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+   font-family: 'Montserrat500';
+   font-style: normal;
+   font-weight: 500;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_ZpC3g3D_u50.woff2) format('woff2');
+   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+ }
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("fonts/Gilroy-Regular.eot");
+  src: url("fonts/Gilroy-Regular.eot") format("embedded-opentype"),
+    url("fonts/Gilroy-Regular.ttf") format("truetype"),
+    url("fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+   font-family: "GilroyBold";
+   src: url("fonts/Gilroy-Bold.eot");
+   src: url("fonts/Gilroy-Bold.eot") format("embedded-opentype"),
+     url("fonts/Gilroy-Bold.ttf") format("truetype"),
+     url("fonts/Gilroy-Bold.woff") format("woff");
+   font-weight: bold;
+   font-style: normal;
+}
+
+@font-face{
+   font-family: "GilroySemibold";
+   src: url("fonts/Gilroy-Semibold.eot");
+   src: url("fonts/Gilroy-Semibold.eot") format("embedded-opentype"),
+     url("fonts/Gilroy-Semibold.ttf") format("truetype"),
+     url("fonts/Gilroy-Semibold.woff") format("woff");
+   font-weight: 600;
+   font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1366 px;
+  overflow-x: hidden;
+  font-family: 'Gilroy', Courier, monospace;
+}
+
+.container {
+  width: 1060 px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* Header sli */
+
+header {
+  width: 1366px;
+  height: 834px;
+  background: rgb(248, 221, 218);
+  padding-left: 110px;
+}
+
+.container ul li {
+  display: inline;
+}
+
+.logo_vk {
+  width: 40px;
+  height: 40px;
+  background: #83a7c9;
+  border-radius: 10%;
+  float: right;
+  margin-top: -13px; 
+  margin-right: 19px;
+}
+
+.logo_inst{
+   width: 40px;
+   height: 40px;
+   background: #e01462;
+   border-radius: 10%;
+   float: right;
+   margin-top: -13px; 
+   margin-right: 183px;
+   
+}
+
+a{
+   text-decoration: none;
+   color: #242424;
+   font-family: Gilroy;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+}
+
+.container ul{
+ 
+ padding-top: 54px;
+}
+
+.container ul li:nth-child(2){
+   padding-left: 32px;
+}
+
+.container ul li:nth-child(3){
+   padding-left: 194px;
+}
+
+.container ul li:nth-child(4){
+   padding-left: 32px;
+}
+
+header h1{
+   padding-top: 91px;
+   margin-bottom: -10px;
+   font-family: "GilroyBold";
+   font-size: 72px;
+   line-height: 77px; 
+   text-transform: uppercase;
+   color: #242424;
+   width: 594px;
+   height: 87px;
+}
+
+header h5{
+  
+   font-style: normal;
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 18px;
+   color:  #6B6B6B;
+}
+
+.semibold{
+   font-family: 'GilroySemibold', Courier, monospace;
+   font-size: 16px;
+   margin-top: 12px;
+   color: #474747;
+   line-height: 22px;
+  }
+
+.normal{
+   width: 415px;
+   height: 116px;
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 29px;
+   color:  #5A5757;
+   padding-top: 43px;
+}
+
+.button{
+   background: #18A0FB;
+   border-radius: 6px;
+   width: 192px;
+   height: 52px;
+}
+
+header .button{
+  margin-top: 44px;
+  margin-left: -8px;
+}
+
+header .button p{
+   text-align: center;
+   padding-top: 15.3px;
+   font-family: "Montserrat500";
+   font-style: normal;
+   font-size: 17px;
+   line-height: 21px;
+   color: #FFFFFF;
+}
