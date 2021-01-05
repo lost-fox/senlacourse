@@ -8,13 +8,14 @@
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 @font-face {
-   font-family: 'Montserrat500';
-   font-style: normal;
-   font-weight: 500;
-   font-display: swap;
-   src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_ZpC3g3D_u50.woff2) format('woff2');
-   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
- }
+  font-family: "Montserrat500";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_ZpC3g3D_u50.woff2)
+    format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
 
 @font-face {
   font-family: "Gilroy";
@@ -26,24 +27,33 @@
   font-style: normal;
 }
 
-@font-face{
-   font-family: "GilroyBold";
-   src: url("fonts/Gilroy-Bold.eot");
-   src: url("fonts/Gilroy-Bold.eot") format("embedded-opentype"),
-     url("fonts/Gilroy-Bold.ttf") format("truetype"),
-     url("fonts/Gilroy-Bold.woff") format("woff");
-   font-weight: bold;
-   font-style: normal;
+@font-face {
+  font-family: "GilroyBold";
+  src: url("fonts/Gilroy-Bold.eot");
+  src: url("fonts/Gilroy-Bold.eot") format("embedded-opentype"),
+    url("fonts/Gilroy-Bold.ttf") format("truetype"),
+    url("fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 
-@font-face{
-   font-family: "GilroySemibold";
-   src: url("fonts/Gilroy-Semibold.eot");
-   src: url("fonts/Gilroy-Semibold.eot") format("embedded-opentype"),
-     url("fonts/Gilroy-Semibold.ttf") format("truetype"),
-     url("fonts/Gilroy-Semibold.woff") format("woff");
-   font-weight: 600;
-   font-style: normal;
+@font-face {
+  font-family: "GilroySemibold";
+  src: url("fonts/Gilroy-Semibold.eot");
+  src: url("fonts/Gilroy-Semibold.eot") format("embedded-opentype"),
+    url("fonts/Gilroy-Semibold.ttf") format("truetype"),
+    url("fonts/Gilroy-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GilroyMedium";
+  src: url("fonts/Gilroy-Medium.eot");
+  src: url("fonts/Gilroy-Medium.eot") format("embedded-opentype"),
+    url("fonts/Gilroy-Medium.ttf") format("truetype"),
+    url("fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
 }
 
 * {
@@ -54,20 +64,19 @@
 body {
   max-width: 1366 px;
   overflow-x: hidden;
-  font-family: 'Gilroy', Courier, monospace;
+  font-family: "Gilroy", Courier, monospace;
 }
 
 .container {
   width: 1060 px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 /* Header sli */
 
 header {
-  width: 1366px;
+  width: 1256px;
   height: 834px;
   background: rgb(248, 221, 218);
   padding-left: 110px;
@@ -83,105 +92,274 @@ header {
   background: #83a7c9;
   border-radius: 10%;
   float: right;
-  margin-top: -13px; 
+  margin-top: -13px;
   margin-right: 19px;
 }
 
-.logo_inst{
-   width: 40px;
-   height: 40px;
-   background: #e01462;
-   border-radius: 10%;
-   float: right;
-   margin-top: -13px; 
-   margin-right: 183px;
-   
+.logo_inst {
+  width: 40px;
+  height: 40px;
+  background: #e01462;
+  border-radius: 10%;
+  float: right;
+  margin-top: -13px;
+  margin-right: 183px;
 }
 
-a{
-   text-decoration: none;
-   color: #242424;
-   font-family: Gilroy;
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 19px;
+a {
+  text-decoration: none;
+  color: #242424;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
 }
 
-.container ul{
- 
- padding-top: 54px;
+.container ul {
+  padding-top: 54px;
 }
 
-.container ul li:nth-child(2){
-   padding-left: 32px;
+.container ul li:nth-child(2) {
+  padding-left: 32px;
 }
 
-.container ul li:nth-child(3){
-   padding-left: 194px;
+.container ul li:nth-child(3) {
+  padding-left: 194px;
 }
 
-.container ul li:nth-child(4){
-   padding-left: 32px;
+.container ul li:nth-child(4) {
+  padding-left: 32px;
 }
 
-header h1{
-   padding-top: 91px;
-   margin-bottom: -10px;
-   font-family: "GilroyBold";
-   font-size: 72px;
-   line-height: 77px; 
-   text-transform: uppercase;
-   color: #242424;
-   width: 594px;
-   height: 87px;
+header h1 {
+  padding-top: 91px;
+  margin-bottom: -10px;
+  font-family: "GilroyBold";
+  font-size: 72px;
+  line-height: 77px;
+  text-transform: uppercase;
+  color: #242424;
+  width: 594px;
+  height: 87px;
 }
 
-header h5{
-  
-   font-style: normal;
-   font-weight: 300;
-   font-size: 16px;
-   line-height: 18px;
-   color:  #6B6B6B;
+header h5 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  color: #6b6b6b;
 }
 
-.semibold{
-   font-family: 'GilroySemibold', Courier, monospace;
-   font-size: 16px;
-   margin-top: 12px;
-   color: #474747;
-   line-height: 22px;
-  }
-
-.normal{
-   width: 415px;
-   height: 116px;
-   font-weight: 600;
-   font-size: 24px;
-   line-height: 29px;
-   color:  #5A5757;
-   padding-top: 43px;
+.semibold {
+  font-family: "GilroySemibold", Courier, monospace;
+  font-size: 16px;
+  margin-top: 12px;
+  color: #474747;
+  line-height: 22px;
 }
 
-.button{
-   background: #18A0FB;
-   border-radius: 6px;
-   width: 192px;
-   height: 52px;
+.normal {
+  width: 415px;
+  height: 116px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #5a5757;
+  padding-top: 43px;
 }
 
-header .button{
+.button {
+  background: #18a0fb;
+  border-radius: 6px;
+  width: 192px;
+  height: 52px;
+}
+
+header .button {
   margin-top: 44px;
   margin-left: -8px;
 }
 
-header .button p{
-   text-align: center;
-   padding-top: 15.3px;
-   font-family: "Montserrat500";
-   font-style: normal;
-   font-size: 17px;
-   line-height: 21px;
-   color: #FFFFFF;
+header .button p {
+  text-align: center;
+  padding-top: 15.3px;
+  font-family: "Montserrat500";
+  font-style: normal;
+  font-size: 17px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+/* screen 2*/
+
+.screen_2 {
+  width: 1256px;
+  height: 650px;
+  background: bisque;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-left: 110px;
+}
+
+.screen_2_img {
+  width: 510px;
+  height: 501px;
+  border: 10px solid rgba(34, 199, 42, 0.3);
+  margin-top: 74px;
+}
+
+.text_screen_2 {
+  width: 464px;
+  height: 385px;
+  margin-left: 73px;
+  margin-top: 128px;
+}
+
+.text_screen_2 h2 {
+  height: 94px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 120%;
+  color: #242424;
+}
+
+.p_first {
+  height: 155px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  margin-top: 28px;
+}
+
+.p_second {
+  height: 88px;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+/* screen 3*/
+
+.screen_3 {
+  width: 1366px;
+  height: 939px;
+  background: burlywood;
+}
+
+.screen_3 h5 {
+  text-align: center;
+  color: #242424;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 24px;
+  padding-top: 80px;
+}
+
+.help {
+  margin-top: 47px;
+  margin-left: 23px;
+}
+
+.help img {
+  margin-left: 96px;
+  width: 150px;
+  height: 150px;
+}
+
+.text_help p {
+  font-family: "GilroyMedium", Courier, monospace;
+  margin-top: 24px;
+  width: 166px;
+  height: 66px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 79px;
+  font-size: 16px;
+  line-height: 140%;
+  vertical-align: top;
+}
+
+.text_help p:first-child {
+  margin-left: 119px;
+  margin-top: 18px;
+  height: 72px;
+}
+
+.line_home img {
+  width: 150px;
+  height: 150px;
+  margin: 71px 0px;
+}
+
+.line_home {
+  text-align: center;
+
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.line_home span {
+  position: relative;
+}
+
+.line_home span:before {
+  display: block;
+  width: 534px;
+  content: "";
+  border-bottom: 1px solid #000;
+  float: left;
+  margin-top: 150px;
+}
+
+.line_home span:after {
+  display: block;
+  width: 534px;
+  content: "";
+  border-bottom: 1px solid #000;
+  float: right;
+  margin-top: 150px;
+}
+
+.text_end{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+}
+
+.text_end h3 {
+  font-family: "GilroyMedium", Courier, monospace;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 24px;
+  width: 378px;
+  height: 32px;
+ }
+
+.text_end p{
+   width: 389px;
+   height: 132px;
+   font-size: 16px;
+   line-height: 140%;
+}
+
+.text_end_1{
+   margin-left: 284px;
+}
+
+.text_end_2{
+   margin-left: 97px;
+}
+
+/* Screen 4 */
+
+.screen_4{
+   height: 930px;
+   width: 1366px;
+   background: darkkhaki;
 }
