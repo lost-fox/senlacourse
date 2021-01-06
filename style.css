@@ -56,6 +56,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "GilroyLight";
+  src: url("fonts/Gilroy-Light.eot");
+  src: url("fonts/Gilroy-Light.eot") format("embedded-opentype"),
+    url("fonts/Gilroy-Light.ttf") format("truetype"),
+    url("fonts/Gilroy-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -85,23 +95,24 @@ header {
 .container ul li {
   display: inline;
 }
-
 .logo_vk {
   width: 40px;
   height: 40px;
-  background: #83a7c9;
-  border-radius: 10%;
   float: right;
-  margin-top: -13px;
-  margin-right: 19px;
 }
 
 .logo_inst {
   width: 40px;
   height: 40px;
-  background: #e01462;
-  border-radius: 10%;
   float: right;
+}
+header .logo_vk {
+    margin-top: -13px;
+    margin-right: 19px;
+}
+
+header .logo_inst  {
+  
   margin-top: -13px;
   margin-right: 183px;
 }
@@ -110,25 +121,29 @@ a {
   text-decoration: none;
   color: #242424;
   font-family: Gilroy;
-  font-style: normal;
+
+}
+
+header a{
+    font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
 }
 
-.container ul {
+header ul {
   padding-top: 54px;
 }
 
-.container ul li:nth-child(2) {
+header ul li:nth-child(2) {
   padding-left: 32px;
 }
 
-.container ul li:nth-child(3) {
+header ul li:nth-child(3) {
   padding-left: 194px;
 }
 
-.container ul li:nth-child(4) {
+header ul li:nth-child(4) {
   padding-left: 32px;
 }
 
@@ -170,21 +185,20 @@ header h5 {
   padding-top: 43px;
 }
 
-.button {
+.button_blue {
   background: #18a0fb;
   border-radius: 6px;
   width: 192px;
   height: 52px;
 }
 
-header .button {
+header .button_blue {
   margin-top: 44px;
   margin-left: -8px;
 }
 
-header .button p {
+ .button_blue p {
   text-align: center;
-  padding-top: 15.3px;
   font-family: "Montserrat500";
   font-style: normal;
   font-size: 17px;
@@ -204,10 +218,9 @@ header .button p {
   padding-left: 110px;
 }
 
-.screen_2_img {
+.screen_2 img {
   width: 510px;
   height: 501px;
-  border: 10px solid rgba(34, 199, 42, 0.3);
   margin-top: 74px;
 }
 
@@ -362,4 +375,133 @@ header .button p {
    height: 930px;
    width: 1366px;
    background: darkkhaki;
+}
+
+.screen_4 h3{
+  font-family: 'GilroyLight', Courier, monospace;
+  width: 368px;
+  height: 24px;
+  font-size: 28px;
+  line-height: 24px;
+  text-align: center;
+  color: #000;
+  margin-left: 499px;
+  margin-bottom: 24px;
+}
+
+.screen_4 .all{
+  font-family: 'Montserrat700';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.015em;
+  color: #18A0FB;
+  margin-left: 576px;
+}
+
+.animals figure{
+  width: 368px;
+  height: 485px;
+  margin-left: 20px;
+  margin-top: 29px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.animals{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: 90px;
+}
+
+.animals figure img{
+  width: 368px;
+  height: 372px;
+}
+
+.animals h4{
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+}
+
+.animals p{
+  margin-top: 8px;
+  margin-left: 55px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.navigation  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.navigation a{
+  margin-top: 51px;
+}
+
+.navigation .arrow_left{
+ margin-left: 275px;
+ width: 40px;
+ height: 40px;
+}
+
+.navigation .arrow_right{
+  margin-left: 261px;
+  width: 40px;
+ height: 40px;
+}
+
+.navigation .button_blue{
+  margin-top: 25px;
+  margin-left: 281px;
+}
+
+.button_white{
+  width: 246px;
+  height: 52px;
+  border: 1px solid #18A0FB;
+  border-radius: 6px;
+  background: #FFFFFF;
+}
+
+.button_white p{
+  font-family: 'Montserrat500', Courier, monospace;
+  color: #18A0FB;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: -0.015em;
+}
+
+.screen_4 .button_white{
+  margin-left: 567px;
+}
+
+.text_screen_4{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 60px;
+}
+
+.text_screen_4 p{
+  width: 583px;
+  height: 48px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  margin-left: 304px;
+}
+
+.text_screen_4 .logo_vk{
+  margin-left: 34px;
+  margin-right: 19px;
 }
