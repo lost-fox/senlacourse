@@ -190,14 +190,6 @@ header h5 {
   border-radius: 6px;
   width: 192px;
   height: 52px;
-}
-
-header .button_blue {
-  margin-top: 44px;
-  margin-left: -8px;
-}
-
- .button_blue p {
   text-align: center;
   font-family: "Montserrat500";
   font-style: normal;
@@ -205,6 +197,12 @@ header .button_blue {
   line-height: 21px;
   color: #ffffff;
 }
+
+header .button_blue {
+  margin-top: 44px;
+  margin-left: -8px;
+}
+
 
 /* screen 2*/
 
@@ -389,14 +387,18 @@ header .button_blue {
   margin-bottom: 24px;
 }
 
-.screen_4 .all{
+.all{
   font-family: 'Montserrat700';
-  font-weight: bold;
   font-style: normal;
+  font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: -0.015em;
   color: #18A0FB;
+}
+
+.screen_4 .all{
+
   margin-left: 576px;
 }
 
@@ -437,7 +439,7 @@ header .button_blue {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.navigation  {
+.navigation, .payment  {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -470,9 +472,6 @@ header .button_blue {
   border: 1px solid #18A0FB;
   border-radius: 6px;
   background: #FFFFFF;
-}
-
-.button_white p{
   font-family: 'Montserrat500', Courier, monospace;
   color: #18A0FB;
   font-size: 15px;
@@ -505,3 +504,82 @@ header .button_blue {
   margin-left: 34px;
   margin-right: 19px;
 }
+
+/* screen_5 */
+
+.screen_5{
+  width: 1366px;
+  height: 716px;
+  background: #a1e6d7ce;
+}
+
+.screen_5 .line_home img{
+  margin-top: 21px;
+  margin-bottom: 0px;
+}
+
+.screen_5 .line_home span:before {
+  margin-top: 100px;
+}
+
+.screen_5 .line_home span::after {
+  margin-top: 100px;
+}
+
+h3{
+  font-family: 'GilroyMedium', Courier, monospace;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 24px;
+}
+
+.financial_support h3{
+
+  width: 368px;
+  height: 32px;
+  text-align: center;
+  margin-left: 497px;
+  margin-top: 25px;
+}
+
+.financial_support p{
+  width: 758px;
+  height: 55px;
+  font-family: 'GilroyMedium', Courier, monospace;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6B6B6B;
+  text-align: center;
+  margin-top: 24px;
+  margin-left: 302px;
+}
+
+.payment h3{
+  font-family: 'GilroyLight', Courier, monospace;
+  width: 389px;
+  height: 24px;
+  font-size: 28px;
+  line-height: 24px;
+  color: #242424;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.payment p{
+  font-family: 'GilroyLight', Courier, monospace;
+  width: 389px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #242424;
+  text-align: left;
+  margin-top: 24px;
+  margin-bottom: 15px;
+}
+
+.payment .bank{
+   height: 164px;
+  margin-left: 282px;
+}
+
+/* screen 6 */
