@@ -305,12 +305,15 @@ header .button_blue {
 .line_home img {
   width: 150px;
   height: 150px;
-  margin: 71px 0px;
+ 
+}
+
+.screen_3 .line_home img{
+   margin: 71px 0px;
 }
 
 .line_home {
   text-align: center;
-
   margin: 0 auto;
   overflow: hidden;
 }
@@ -319,13 +322,17 @@ header .button_blue {
   position: relative;
 }
 
+.screen_3 .line_home span:before, .screen_3 .line_home span:after{
+    margin-top: 150px;
+}
+
 .line_home span:before {
   display: block;
   width: 534px;
   content: "";
   border-bottom: 1px solid #000;
   float: left;
-  margin-top: 150px;
+
 }
 
 .line_home span:after {
@@ -334,10 +341,10 @@ header .button_blue {
   content: "";
   border-bottom: 1px solid #000;
   float: right;
-  margin-top: 150px;
+ 
 }
 
-.text_end{
+.text_end, .navigation, .payment {
    display: flex;
    flex-direction: row;
    flex-wrap: nowrap;
@@ -439,12 +446,6 @@ header .button_blue {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.navigation, .payment  {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
 .navigation a{
   margin-top: 51px;
 }
@@ -518,11 +519,7 @@ header .button_blue {
   margin-bottom: 0px;
 }
 
-.screen_5 .line_home span:before {
-  margin-top: 100px;
-}
-
-.screen_5 .line_home span::after {
+.screen_5 .line_home span:before, .screen_5 .line_home span::after {
   margin-top: 100px;
 }
 
@@ -583,3 +580,70 @@ h3{
 }
 
 /* screen 6 */
+.screen_6{
+  width: 1366px ;
+  height: 2066px;
+  background: #e1e78b;
+}
+
+.screen_6 .line_home{
+  padding-top: 24px;
+
+}
+
+.screen_6 .line_home span:after, .screen_6 .line_home span::before {
+  margin-top: 79px;
+} 
+
+.screen_6 h3, .screen_6 p, .screen_6 a{
+  margin-left: 402px;
+}
+
+.screen_6 h3{
+  font-family: 'GilroyMedium', Courier, monospace;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 24px;
+  height: 32px;
+}
+
+.screen_6 p{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  margin-top: 24px;
+}
+
+.feed{
+  margin-top: 25px;
+}
+
+.feed p{
+  width: 660px;
+  height: 152px;
+  margin-bottom: 40px;
+}
+
+.medicine p{
+  width: 660px;
+  height: 66px;
+  margin-bottom: 40px;
+ }
+
+.other_things p{
+  width: 678px;
+  height: 140px;
+  margin-bottom: 26px;
+}
+
+.car_help{
+  width: 1082px;
+  height: 114px;
+  margin: 32px 0px;
+}
+
+.screen_6 .button_blue{
+  margin-left: 399px;
+  margin-bottom: 38px;
+}
+
