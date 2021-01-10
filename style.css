@@ -674,6 +674,8 @@ h3{
   margin-left: 73px;
 }
 
+/* screen 7 */
+
 .screen_7{
   width: 1366px;
   height: 563px;
@@ -715,4 +717,61 @@ h3{
 
 .screen_7 a{
    margin-left: 306px;
+}
+
+/* screen 8 */
+
+.screen_8{
+  width: 964px;
+  height: 702px;
+  background: #ebf8e2;
+  margin-left: 402px;
+}
+
+.screen_8 p{
+  margin-bottom: 40px;
+  width: 545px;
+}
+
+.screen_8 h3{
+  font-family: 'GilroyMedium', Courier, monospace;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 24px;
+  height: 32px;
+  padding-top: 56px;
+  margin-left: 237px;
+}
+
+.screen_8 .GilroyMedium{
+  font-family: 'GilroyMedium', Courier, monospace;
+  font-size: 18px;
+  line-height: 24px;
+  color: #242424;
+  margin: 24px 0px;
+  width: 680px;
+  height: 96px;
+}
+
+.screen_8 h6{
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+
+.screen_8 .logo_vk{
+  float: left;
+  margin-left: 0px;
+   margin-right: 19px;
+}
+
+.screen_8 .logo_inst {
+  float: left;
+  margin-left: 0px;
+}
+
+.screen_8 .gray{
+  color: #6B6B6B;
+  margin-bottom: 28px;
 }
