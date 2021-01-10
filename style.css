@@ -775,3 +775,59 @@ h3{
   color: #6B6B6B;
   margin-bottom: 28px;
 }
+
+.screen_9{
+  background-image: url(/img/Rectangle.jpg);
+  background-size: 1366px 741px;
+  background-repeat: no-repeat;
+  width: 1366px;
+  height: 741px;
+}
+
+.screen_9 p{
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 77px;
+  color: #6B6B6B;
+  width: 346px;
+  height: 154px;
+  padding-top: 303px;
+  padding-left: 134px;
+}
+
+footer{
+  width: 1366px;
+  height: 117px;
+  background: rgb(245, 218, 208);
+}
+
+.copyrigh{
+  margin-top: 24px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 140%;
+  color: #B3B3B3;
+}
+
+footer ul{
+  margin-left: 110px;
+  padding-top: 40px;
+}
+
+footer li{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+}
+
+footer a{
+  margin-right: 40px;
+  color: #474747;
+  text-decoration: underline;
+}
+
+footer li:nth-child(6){
+  margin-left: 82px;
+}
