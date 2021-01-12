@@ -35,7 +35,7 @@
            <input type="reset" value="Отмена" id="cansel">
         </div> 
    </form>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores laudantium magni nemo obcaecati, nobis, explicabo ea deserunt culpa molestias, sunt eos eius accusantium necessitatibus laborum excepturi distinctio vitae quasi quam?</p>
+   ---------------------------------------------------------------
    <!--форма 2 забрать на передержку -->
    <form action="#" method="post">
       <h3 class="gray_6">Забрать на передержку</h3>
@@ -65,7 +65,7 @@
            <input type="reset" value="Отмена" id="cansel">
         </div> 
    </form>
-   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores laudantium magni nemo obcaecati, nobis, explicabo ea deserunt culpa molestias, sunt eos eius accusantium necessitatibus laborum excepturi distinctio vitae quasi quam?</p>
+   ---------------------------------------------------------------
    <!--форма 3 автопомощь -->
    <form action="#" method="post">
       <h3 class="gray_6">Автопомощь</h3>
@@ -76,25 +76,36 @@
       <input type="tel" name="tel" placeholder="Номер телефона">
       <p class="necessarily gray_6">Обязательное поле для заполнения</p>
       <p class="medium gray_2">Выберите удобное время, когда вы сможете нам помочь</p>
-      <input type="date" name="datetime">
-      <input type="time" name="datetime">
-      <img src="/img/Group 47.png" alt="check">
-      <p>Добавить дату и время</p>
-      <input type="checkbox"> В любой будний день
-      <input type="checkbox"> В любой выходной день
-      <p>Выберите вид автопомощи</p>
-      <input type="checkbox" name="" id=""> Доставка еды, медикаментов и других небольших вещей
-      <input type="checkbox" name="" id="">Доставка сена или соломы, строительных материлов 
-      для будок и других крупногабаритных вещей
-      <input type="checkbox" name="" id="">Транспортировка небольших собак и котов
-      <input type="checkbox" name="" id="">Транспортировка больших собак
-      <textarea placeholder="Замечания"></textarea>
+      <div class="datatime">   
+      <input type="date" name="datetime" placeholder="Дата / период">
+      <input type="time" name="datetime" placeholder="Время">
+      <div class="navigation">
+      <button> </button>
+       <p class="gray_4 medium">Добавить дату и время</p>  
+      </div>
+      
+      <input type="checkbox" name="day"> В любой будний день<br>
+      <input type="checkbox" name="day"> В любой выходной день
+      </div>
+      <div class="avtohelp ">
+       <p class="medium gray_2">Выберите вид автопомощи</p>
+      
+          
+          <input type="checkbox" name="view" id="checkbox"><label for="checkbox">
+             Доставка еды, медикаментов и других небольших вещей
+          </label><br>
+          <input type="checkbox" name="view" id="checkbox1">
+          <label for="checkbox1">Доставка сена или соломы, строительных материлов для будок и других крупногабаритных вещей</label><br>
+          <input type="checkbox" name="view" id="checkbox2"> <label for="checkbox2">Транспортировка небольших собак и котов</label><br>
+          <input type="checkbox" name="view"id="checkbox3"><label for="checkbox3">Транспортировка больших собак</label>
+      </div>
+             <textarea placeholder="Замечания"></textarea>
       <div class="button">
          <input type="button" value="Оставить заявку" id="sent">
          <input type="reset" value="Отмена" id="cansel">
       </div> 
    </form>
-   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores laudantium magni nemo obcaecati, nobis, explicabo ea deserunt culpa molestias, sunt eos eius accusantium necessitatibus laborum excepturi distinctio vitae quasi quam?</p>
+   -----------------------------------------------------
    <!--форма 4 волонтерство -->
    <form action="#" method="post">
       <h3 class="gray_6">Волонтерство</h3>
@@ -104,8 +115,8 @@
       <input type="text" name="name" placeholder="Фамилия и имя"> <br>
       <input type="tel" name="tel" placeholder="Номер телефона">
       <p class="necessarily gray_6">Обязательное поле для заполнения</p>
-      <input type="radio" name="radio" id="value" checked> Хочу помогать на постоянной основе (расписание можно подобрать так, как будет вам удобно)<br>
-      <input type="radio" name="radio" id="value"> Готов помогать иногда. Хочу выбрать удобное для меня время
+      <input type="radio" name="radio" id="value1" checked> <label for="value1">Хочу помогать на постоянной основе (расписание можно подобрать так, как будет вам удобно)</label><br>
+      <input type="radio" name="radio" id="value2"> <label for="value2">Готов помогать иногда. Хочу выбрать удобное для меня время</label>
       <textarea placeholder="Замечания"></textarea>
       <div class="button">
          <input type="button" value="Оставить заявку" id="sent">
