@@ -193,13 +193,13 @@
 /* оформление ссылки */
 
   .all{
-   font-family: 'Montserrat700';
+   font-family: Gilroy;
    font-style: normal;
-   font-weight: bold;
-   font-size: 18px;
-   line-height: 30px;
-   letter-spacing: -0.015em;
-   
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 40px;
+   align-items: center;
+   text-decoration-line: underline;
  }
 
  a{
@@ -232,11 +232,39 @@
   border-image-slice: 1;
  }
 
- .button{
+ .button_white {
+   width: 288px;
+   height: 32px;
+  text-align: center;
+  font-family: Gilroy;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 40px;
+   color: #242424;
+   background: linear-gradient(180deg, #FBFBFB 0%, #F6F6F6 100%);
+  text-decoration: none;
+  border:none;
+  border-radius: 58px;
+  box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+  border: 4px solid #F6F6F6;;
+  
+  border-image-slice: 1;
+ }
+
+ .button_yellow_2{
    width: 183px;
    height: 42px;
    border-radius: 58px;
   box-shadow:7px 7px 16px #E3E3E3, -3px -4px 8px rgba(255, 255, 255, 0.9), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+  overflow: hidden;
+ }
+
+ .button_white_2{
+   width: 290px;
+   height: 32px;
+   border-radius: 58px;
+   box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25);
   overflow: hidden;
  }
  /* img */
@@ -285,10 +313,10 @@ header .logo{
    margin-left: 260px;
 }
 
-  nav a:nth-child(2n)
+ header nav a:nth-child(2n)
   {margin-left: 32px;}
 
-  nav a:nth-child(3){
+header   nav a:nth-child(3){
    margin-left: 194px;
   }
 
@@ -347,10 +375,345 @@ h1{
 }
 /* screen 3*/
 .screen_3{
-   height: 939px;
+   height: 858px;
+   margin-left: 13px;
 }
 
 .screen_3 h3{
    text-align: center;
    margin-top: 80px;
 }
+
+.help img{
+   width: 150px;
+   height: 150px;
+}
+
+.help p{
+   width: 166px;
+}
+
+.help{
+   margin-left: 95px;
+   margin-top: 47px;
+   margin-bottom: 85px;
+}
+
+.screen_3 .line_home span:before, .screen_3 .line_home span::after{
+   margin-top: 65px;
+}
+
+.screen_3 .text{
+   width: 389px;
+   margin-left: 97px;
+   margin-bottom: 72px;
+
+}
+
+.screen_3 .text:first-child{
+   margin-left: 284px;
+}
+
+.screen_3 .text p{
+   margin-top: 20px;
+}
+
+.screen_3 .text h3, .screen_3 .text p{
+      text-align: left;
+}
+
+/* screen 4*/
+
+.screen_4{
+   height: 954px;
+}
+
+.screen_4 h3{
+   text-align: center;
+   margin-bottom: 24px;
+}
+
+.screen_4 .step{
+ margin-left: 561px;
+ margin-right: 16px;
+}
+
+figure{
+   width: 368px;
+   height: 555px;
+   margin-left: 20px;
+   margin-top: 29px;
+   border: 1px solid #ffffff;
+   background: #F6F6F6;
+   box-shadow: 6px 6px 16px rgba(163, 163, 163, 0.6), -8px -8px 16px #FFFFFF, inset 4px 4px 16px rgba(203, 203, 203, 0.25);
+   border-radius: 5px;
+   opacity: 0.5;
+}
+
+figure:hover{
+   opacity: 1;
+}
+
+figure:nth-child(1){
+   margin-left: 110px;
+}
+
+figure img{
+  padding: 17px 16px 8px 17px;
+}
+
+ figure hr{
+   opacity: 0.5;
+   border: 1px solid #D6D6D6;
+   margin: 7px 0px;
+   width: 335px;
+ }
+ 
+ figcaption{
+    width: 335px;
+    padding-left: 17px;
+ }
+
+ figure h4{
+    text-align: center;
+ }
+
+ figcaption p:nth-child(2n){
+   height: 66px;
+   padding-top: 6px;
+ }
+
+ .screen_4 .arrow{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 77px;
+    height: 77px;
+    box-shadow: 6px 6px 16px rgba(224, 224, 224, 0.6), -6px -6px 16px rgba(255, 255, 255, 0.77);
+    margin-top: 33px;
+  }
+
+ .left{
+      background: url(/img/left_2.png) no-repeat center; 
+      margin-left: 256px;
+ }
+
+ .right{
+   background: url(/img/right_2.png) no-repeat center; 
+ }
+
+ .screen_4 .button_yellow_2{
+    margin: 25px 264px;
+}
+
+.screen_4 .button_white_2{
+   margin-left: 202px;
+}
+
+.screen_4 .text {
+   width: 583px;
+   margin:72px 6px 0px 304px; 
+}
+
+.screen_4 .logo{
+    margin-top: 64px;  
+}
+
+.screen_4 .logo a{
+   margin-left: 32px;
+}
+
+/* screen 5*/
+
+.screen_5{
+   height: 716px;
+   text-align: center;
+}
+
+.screen_5 p{
+   margin-top: 24px;
+}
+
+.screen_5 h3{
+   margin-top: 40px;
+}
+
+.screen_5 .text{
+   width: 758px;
+   margin-left: 304px;
+}
+
+.screen_5 img{
+   margin-top: 46px;
+   margin-bottom: 18px;
+}
+
+.screen_5 .line_home span:before, .screen_5 .line_home span::after{
+   margin-top: 93px;
+}
+
+.screen_5 .navigation{
+   text-align: left;
+   margin-left: 187px;
+}
+
+.screen_5 .navigation h3, .screen_5 .navigation p, .screen_5 .all{
+   margin-left: 97px;
+   width: 389px;
+}
+
+.screen_5 .button_yellow_2{
+   margin-left: 97px;
+}
+
+.screen_5 .navigation p{
+   margin-bottom: 24px;
+}
+
+/* screen 6*/
+
+.screen_6{
+   height: 1980px;
+}
+
+.screen_6 .line_home span:before, .screen_6 .line_home span::after{
+   margin-top: 96px;
+}
+
+.screen_6 span img{
+   margin-top: 46px;
+}
+
+
+.screen_6 span img:nth-child(1){
+   margin-bottom: 13px;
+}
+
+.need{
+   width: 680px;
+   margin-left: 402px;
+}
+
+.need h3, .screen_6 .text h3{
+   margin-top: 40px;
+}
+
+.need p, .screen_6 .text p{
+   margin-top: 24px;
+}
+
+.need a{
+   margin-top: 16px;
+   margin-bottom: 32px;
+}
+.need .button_yellow_2, .screen_6 .text .button_yellow_2{
+   margin-top: 24px;
+   margin-bottom: 36px;
+}
+
+.screen_6 .text{
+   margin-top: 112px;
+   width: 466px;
+   margin-left: 77px;
+}
+
+.screen_6 .navigation{
+   margin-bottom: 50px;
+}
+
+/* screen 7*/
+ .screen_7{
+    height: 563px;
+ }
+
+ .screen_7 h3{
+    padding-top: 54px;
+    text-align: center;
+ }
+
+ .screen_7 .navigation{
+    margin-top: 40px;
+    margin-left: 304px;
+ }
+
+ .screen_7 p{
+    width: 603px;
+    margin-left: 35px;
+ }
+
+.screen_7 article{
+   margin-bottom: 24px;
+}
+
+ .screen_7 .all{
+  margin-left: 304px;
+ }
+
+ /* screen 8*/
+
+ .screen_8{
+    height: 557px;
+    margin-left: 402px;
+ }
+
+ .screen_8 h3{
+    padding-top: 56px;
+    padding-left: 194px;
+ }
+
+ .screen_8 p{
+    margin-top: 24px;
+    width: 680px;
+ }
+
+ .screen_8 h4{
+    margin-top: 24px;
+    font-weight: normal;
+   font-size: 22px;
+   line-height: 26px;
+ }
+
+ .screen_8 .text{
+    margin-top: 40px;
+ }
+
+ .screen_8 .logo{
+    margin-top: 16px;
+    margin-bottom: 40px;
+ }
+
+ .screen_8 .logo a:nth-child(2){
+      margin-left: 20px;
+ }
+
+ /* screen 9*/
+
+ .screen_9{
+    height: 741px;
+    background: url(/img/спасибо\ за\ помощь.png) no-repeat;
+ }
+
+  /* footer*/
+
+  footer nav{
+     margin: 40px 0px 24px 70px;
+  }
+
+  footer a{
+     padding-left: 40px;
+     font-weight: 600;
+   font-size: 14px;
+   line-height: 17px;
+   text-decoration-line: underline;
+   color: #474747;
+  } 
+
+  footer a:nth-child(6){
+   padding-left: 122px;
+  }
+
+  footer p{
+   font-size: 12px;
+   line-height: 140%;
+   text-align: center;
+   padding-bottom: 16px;
+  }
