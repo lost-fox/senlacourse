@@ -355,7 +355,7 @@ h1{
 }
 
 .screen_2 img{
-   margin-top: 54px;
+   margin-top: 30px;
 }
 
 .text_screen_2{
@@ -384,13 +384,18 @@ h1{
    margin-top: 80px;
 }
 
-.help img{
+.screen_3 button{
    width: 150px;
    height: 150px;
+   border-radius: 50%;
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   box-shadow: 6px 6px 16px rgba(224, 224, 224, 0.6), -6px -6px 16px rgba(255, 255, 255, 0.77);
 }
 
 .help p{
    width: 166px;
+   margin-top: 24px;
+   text-align: center;
 }
 
 .help{
@@ -685,12 +690,54 @@ figure img{
       margin-left: 20px;
  }
 
- /* screen 9*/
+ /* screen 9
+   background-color: #322D1E;
+    mix-blend-mode: soft-light ;
+ */
 
  .screen_9{
     height: 741px;
-    background: url(/img/спасибо\ за\ помощь.png) no-repeat;
+    background: url(/img/спасибо\ за\ помощь\ только\ фото.png) no-repeat;
+    background-size: 1366px 741px;
  }
+.screen_9 .rectangle{
+   position: absolute;
+   width: 357px;
+   height: 521px;
+   margin-top: 119px;
+   background-color: #322D1E;
+   mix-blend-mode: soft-light ;
+}
+ .screen_9 .circle{
+   position: absolute;
+    width: 521px;
+    height: 521px;
+    border-radius: 50%;
+    background-color: #322D1E;
+    mix-blend-mode: soft-light ;
+   margin-left: 94px;
+ }
+
+ .screen_9 p{
+    opacity: 1;
+   position: absolute;
+   font-weight: bold;
+   font-size: 64px;
+   line-height: 77px;
+   width: 346px;
+   height: 154px;
+   margin-top: 303px;
+   margin-left: 134px;
+   color: #FFFFFF;
+ }
+
+.screen_9 img{
+   position: absolute;
+   width: 70.73px;
+   height: 70.73px;
+   margin-top: 373px;
+   margin-left: 467px;
+}
 
   /* footer*/
 
