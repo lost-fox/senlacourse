@@ -1,0 +1,53 @@
+body {
+   overflow-x: hidden;
+   font-family: "Gilroy", Courier, monospace;
+ }
+
+ .container{
+    margin-left: 110px;
+    background: #E5E5E5;
+ }
+ 
+ /* header */
+ header{
+    padding-top: 40px;
+ }
+
+ .button-yellow{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: linear-gradient(155.32deg, #FFD868 13.8%, #F3B401 90.56%);
+    box-shadow: 2px 2px 4px rgba(206, 206, 206, 0.25);
+    margin-right: 8px;
+ }
+
+ .button-yellow img{
+    margin: 6px 3.6px 4.8px 4.8px;
+ }
+
+ header a{
+    margin-top: 3px;
+    margin-right: 196px;
+ }
+
+ header .text{
+    height: 40px;
+   padding-top: 8px;
+ }
+
+ header h3{
+    width: 368px;
+    margin-right: 143px;
+    text-align: center;
+ }
+
+ header select{
+    width: 168px;
+    height: 40px;
+    margin-left: 8px;
+    background: #FFFFFF;
+    border: 1px solid #D6D6D6;
+box-sizing: border-box;
+border-radius: 4px;
+ }
