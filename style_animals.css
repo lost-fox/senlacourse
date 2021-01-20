@@ -1,16 +1,88 @@
+* {
+   margin: 0;
+   padding: 0;
+ }
+
 body {
    overflow-x: hidden;
    font-family: "Gilroy", Courier, monospace;
  }
 
  .container{
-    margin-left: 110px;
+   width: 1366px;
+   margin: 0 auto;
     background: #E5E5E5;
  }
+/* Общие блоки */
+
+.navigation{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+}
+
+ 
+/* оформление ссылки */
+
+.all{
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 40px;
+   align-items: center;
+   text-decoration-line: underline;
+ }
+
+ a{
+   text-decoration: none; 
+ }
+
+/* шрифты*/
+
+
+.semibold{
+   font-family: 'GilroySemibold', Courier, monospace;
+   font-size: 28px;
+   line-height: 120%;
+ }
+
+ .medium{
+   font-family: 'GilroyMedium', Courier, monospace;
+   font-size: 22px;
+   line-height: 20px;
+ }
+
+ 
+ .text_sm_medium{
+   font-family: 'GilroyMedium', Courier, monospace;
+   font-size: 14px;
+   line-height: 20px;
+ }
+
+/*цвета*/
+
+ .gray_2{
+   color: #242424;
+}
+
+.gray_4{
+   color: #6b6b6b;
+}
+
+.gray_6{
+   color: #b3b3b3;
+}
+
+
+.dirty_yellow{
+   color: #AD7F00;
+}
  
  /* header */
  header{
     padding-top: 40px;
+    margin-left: 110px;
  }
 
  .button-yellow{
@@ -51,3 +123,84 @@ body {
 box-sizing: border-box;
 border-radius: 4px;
  }
+
+/* main*/
+
+main{
+   margin-top: 41px;
+}
+
+ .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 110px;
+    gap: 42px 21px;
+ }
+
+ figure{
+   width: 368px;
+   height: 555px;
+   border: 1px solid #ffffff;
+   background: #F6F6F6;
+   box-shadow: 6px 6px 16px rgba(163, 163, 163, 0.6), -8px -8px 16px #FFFFFF, inset 4px 4px 16px rgba(203, 203, 203, 0.25);
+   border-radius: 5px;
+}
+
+figure:hover{
+   height: 700px;
+   box-shadow: 6px 6px 16px rgba(163, 163, 163, 0.6), -8px -8px 16px #FFFFFF, inset 4px 4px 16px rgba(203, 203, 203, 0.25);
+   border-radius: 5px;
+   border: 1px solid #FFC41E;
+   cursor: url(/img/курсор.cur), pointer;
+}
+figure img{
+   padding: 17px 16px 8px 17px;
+ }
+ 
+  figure hr{
+    opacity: 0.5;
+    border: 1px solid #D6D6D6;
+    margin: 7px 0px;
+    width: 335px;
+  }
+  
+  figcaption{
+     width: 335px;
+     padding-left: 17px;
+  }
+ 
+  figure h4{
+     text-align: center;
+  }
+
+  figure .text{
+     width: 335px;
+     height: 64px;
+  }
+
+  
+  /* footer*/
+
+  footer nav{
+   margin: 55px 0px 24px 70px;
+}
+
+footer a{
+   padding-left: 40px;
+   font-weight: 600;
+ font-size: 14px;
+ line-height: 17px;
+ text-decoration-line: underline;
+ color: #474747;
+} 
+
+footer a:nth-child(6){
+ padding-left: 122px;
+}
+
+footer p{
+ font-size: 12px;
+ line-height: 140%;
+ text-align: center;
+ padding-bottom: 16px;
+}
