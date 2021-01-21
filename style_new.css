@@ -275,7 +275,8 @@
 box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
  border-radius: 58px;
  padding: 5px;
- box-sizing: border-box; 
+ box-sizing: border-box;
+ text-align: center; 
 }
 
 .rectangle-2-white{
@@ -295,6 +296,7 @@ box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 
  border-radius: 58px;
  padding: 5px;
  box-sizing: border-box; 
+ text-align: center;
 }
 
 .rectangle-2{
@@ -309,7 +311,6 @@ box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 
 .rectangle-2 a, .rectangle-2-white a{
    width: 183px;
    height: 42px;
-  text-align: center;
   font-family: Gilroy;
    font-style: normal;
    font-weight: 500;
@@ -580,10 +581,6 @@ figure img{
    margin-left: 202px;
 }
 
-.screen_4 .rectangle-2-white a{
-   margin-left: 29px;
-}
-
 .screen_4 .text {
    width: 583px;
    margin:72px 6px 0px 304px; 
@@ -693,7 +690,7 @@ figure img{
 
 /* screen 7*/
  .screen_7{
-    height: 563px;
+    height: px;
  }
 
  .screen_7 h3{
@@ -704,20 +701,85 @@ figure img{
  .screen_7 .navigation{
     margin-top: 40px;
     margin-left: 304px;
+    position: relative;
+ }
+
+  .screen_7 button{
+   border: none; 
+   outline: none;
+   background: rgba(255, 255, 255, 0);
  }
 
  .screen_7 p{
     width: 603px;
-    margin-left: 35px;
+    margin-left: 175px;
+    position: absolute;               /* 2 */
+   top: 50%;                         /* 3 */
+   transform: translate(0, -50%)
  }
 
-.screen_7 article{
-   margin-bottom: 24px;
+ .screen_7 img{
+      width: 140px;
+      height: 140px;
+ }
+
+ /* Скрыть/ показать новости*/
+ .news {
+   position: relative;
+ }
+ details,
+ summary {
+   display: inline;
+   margin-top: 12px;
+   margin-left: 150px;
+   outline: none;
+   height: 40px;
+ }
+ details[open] {
+   display: contents;
+  
+   
+ }
+ details[open]::after {  /* пространство для записи "Скрыть записи" */
+   display: block;  
+   content: "\00a0";
+   margin-top: 24px;
+   height: 40px;
+   
+ }
+ summary {
+   font-family: Gilroy;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 40px;
+   cursor: pointer;
+   color: #AD7F00;
+   text-decoration-line: underline;
+ }
+
+ details[open] summary {
+   position: absolute;  /* переместить запись "Скрыть записи" вниз <div> */
+   bottom: 0;
+   left: 0;
+   margin-top: 24px;
+   margin-left: 304px;
+ }
+
+ summary::before {
+   content: "Показать все новости";
+ }
+ details[open] summary::before {
+   content: "Скрыть все новости   \21E7";
+ }
+
+ summary::-webkit-details-marker {
+   display: none;
+ }
+
+.space{
+   height: 53px;
 }
-
- .screen_7 .all{
-  margin-left: 304px;
- }
 
  /* screen 8*/
 
