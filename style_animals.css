@@ -11,7 +11,7 @@ body {
  .container{
    width: 1366px;
    margin: 0 auto;
-    background: #E5E5E5;
+    background: #f6f6f6;
  }
 /* Общие блоки */
 
@@ -125,6 +125,36 @@ box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 
    box-sizing: border-box; 
 }
 
+.rectangle-2:hover{
+   background: linear-gradient(180deg, #FFEEBC 0%, #FFE69F 36.46%, #FFCF48 68.23%, #FFC317 100%);
+   box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+}
+
+.rectangle-2 a:hover{
+   color: #000000;
+}
+
+.rectangle-1:hover{
+   background: linear-gradient(180deg, #FFDC81 0%, #E6AA00 100%);
+   box-shadow: 7px 7px 16px #E0E0E0, -3px -4px 8px #FFFFFF, inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+}
+
+.rectangle-2:active{
+   background: linear-gradient(180deg, #FFE69F 0.01%, #E3B940 0.02%, #FFD24E 100%);
+   box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+}
+
+.rectangle-2-white:hover{
+   background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 53.12%, #EFECEC 100%);
+   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), 3px 3px 13px rgba(128, 128, 128, 0.25);
+}
+
+.rectangle-2-white:active{
+   background: linear-gradient(180deg, #F1F1F1 1.56%, #FCFAFA 100%);
+   box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25), inset 0px 4px 13px rgba(0, 0, 0, 0.06);
+}
+
+
 .rectangle-2 a, .rectangle-2-white a{
    width: 183px;
    height: 42px;
@@ -167,11 +197,20 @@ box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 
  header a{
     margin-top: 3px;
     margin-right: 196px;
+    font-family: Gilroy;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 20px;
  }
 
  header .text{
     height: 40px;
    padding-top: 8px;
+ }
+
+ .navigation a:hover{
+    color:#242424;
  }
 
  header h3{
@@ -218,7 +257,7 @@ main{
 
  figure{
    position:absolute;
-   transition: 0.2s;
+   transition: 0.5s;
    width: 368px;
    height: 555px;
     /*height: 700px;*/

@@ -11,7 +11,7 @@
  .container {
    width: 1366px;
    margin: 0 auto;
-   background: #e5e5e5;
+   background: #f6f6f6;
    color: #000000;
  }
  
@@ -232,9 +232,20 @@
    padding: 4px;
 }
 
+.circle-2:hover{
+   background: linear-gradient(150.26deg, #FFEAAD 6.75%, #FCE6A7 45.73%, #FFC726 91.17%);
+   box-shadow: 3px 3px 13px #C18F00;
+}
+
+.circle-2:active{
+   background: linear-gradient(150.26deg, #FFDA71 6.75%, #FFCD40 43.24%, #FBC11B 91.17%);
+   box-shadow: 2px 2px 6px #C18F00, inset 3px 3px 10px rgba(199, 129, 0, 0.59);
+}
+
 .circle-2 .logo-vk{
    margin-top: 8px;
 }
+
 
 .circle-1-white{
    width: 63px;
@@ -255,6 +266,27 @@
    border-radius: 50%;
    box-sizing: border-box;  
    padding: 4px;
+}
+
+.circle-2-white:hover{
+   background: linear-gradient(145.67deg, #FFFFFF 15.39%, #FAFAFA 54.13%, #DADADA 88.3%);
+   box-shadow: 3px 3px 13px #A3A3A3;
+}
+
+.circle-2-white:active{
+   background: linear-gradient(145.67deg, #E4E4E4 16.92%, #F6F6F6 88.3%);
+   box-shadow: 3px 3px 13px #B2B2B2, inset 4px 4px 7px rgba(192, 192, 192, 0.25);
+}
+
+.circle-2 svg:hover *{
+   
+   fill: #FFffff;
+}
+
+
+.circle-2-white svg:hover *{
+   
+   fill: #FFB800;
 }
 
 .circle-2-white .logo-vk{
@@ -308,6 +340,35 @@ box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 
  box-sizing: border-box; 
 }
 
+.rectangle-2:hover{
+   background: linear-gradient(180deg, #FFEEBC 0%, #FFE69F 36.46%, #FFCF48 68.23%, #FFC317 100%);
+   box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+}
+
+.rectangle-2 a:hover{
+   color: #000000;
+}
+
+.rectangle-1:hover{
+   background: linear-gradient(180deg, #FFDC81 0%, #E6AA00 100%);
+   box-shadow: 7px 7px 16px #E0E0E0, -3px -4px 8px #FFFFFF, inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+}
+
+.rectangle-2:active{
+   background: linear-gradient(180deg, #FFE69F 0.01%, #E3B940 0.02%, #FFD24E 100%);
+   box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+}
+
+.rectangle-2-white:hover{
+   background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 53.12%, #EFECEC 100%);
+   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), 3px 3px 13px rgba(128, 128, 128, 0.25);
+}
+
+.rectangle-2-white:active{
+   background: linear-gradient(180deg, #F1F1F1 1.56%, #FCFAFA 100%);
+   box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25), inset 0px 4px 13px rgba(0, 0, 0, 0.06);
+}
+
 .rectangle-2 a, .rectangle-2-white a{
    width: 183px;
    height: 42px;
@@ -350,7 +411,7 @@ box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 
 .best{
    left: -2px;
    top: 566px;
-   opacity: 0.6;
+   opacity: 0.5;
 }
 
 .friend{
@@ -383,6 +444,7 @@ header a{
    font-weight: 600;
    font-size: 16px;
    line-height: 19px;
+   margin: 0;
 }
 
  /* screen 1*/
@@ -457,6 +519,20 @@ h1{
    border-radius: 50%;
    border: 1px solid rgba(255, 255, 255, 0.5);
    box-shadow: 6px 6px 16px rgba(224, 224, 224, 0.6), -6px -6px 16px rgba(255, 255, 255, 0.77);
+   outline: none;
+
+}
+
+.screen_3 button:hover{
+   background: #FAFAFA;
+   /* Button neumorphism */
+   box-shadow: 6px 6px 16px rgba(224, 224, 224, 0.6), -6px -6px 16px rgba(255, 255, 255, 0.77);
+}
+
+.screen_3 button:active{
+   background: linear-gradient(147.91deg, #F1F0F0 17.56%, #EEEEEE 52.29%, #F1F1F1 84.92%);
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   box-shadow: -6px -6px 16px rgba(224, 224, 224, 0.6), 6px 6px 16px rgba(255, 255, 255, 0.77);
 }
 
 .help p{
@@ -734,12 +810,12 @@ figure img{
    margin-left: 150px;
    outline: none;
    height: 40px;
- }
+  }
+
  details[open] {
    display: contents;
-  
-   
  }
+
  details[open]::after {  /* пространство для записи "Скрыть записи" */
    display: block;  
    content: "\00a0";
