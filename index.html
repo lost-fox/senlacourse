@@ -5,7 +5,9 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="fonts.css">
+   
    <link rel="stylesheet" href="style_new.css">
+   
    <title>Save life</title>
 </head>
 
@@ -204,13 +206,43 @@
                   </figcaption>
                </figure>
             </article>
+            <div id="form-1" class="form-1">
+               <form action="#" method="post">
+                  <h3 class="gray_6">Забрать домой</h3>
+                  <hr>
+                  <div class="navigation">
+                     <div class="navigation-img"> 
+                        <img src="/img/animals/Моник.png" alt="foto">
+                     </div>
+                    <div class="navigation_text">
+                       <h4>Моник</h4>
+                     <p class="medium gray_4">Мальчик, 7 месяцев</p>
+                   </div>
+                   <a href="#close" title="Закрыть" class="close">X</a>
+                   </div>
+                  <p class="gray_4">Оставьте информацию о себе. Мы позвоним вам и договоримся, когда вы сможете забрать себе питомца.</p>
+                  <input type="text" name="name" placeholder="Фамилия и имя"> <br>
+                  <input type="tel" name="tel" placeholder="Номер телефона">
+                  <p class="necessarily gray_6">Обязательное поле для заполнения</p>
+                  <textarea placeholder="Замечания"></textarea>
+                  <p class="gray_3">Если у вас есть вопросы, можете позвонить нам:<br>
+                     +375 (33) 6237879  Лена<br>
+                     +375 (29) 7877791  Ольга<br>
+                     +375 (29) 5837015  Рита</p>
+                    <div class="button">
+                       <input type="button" value="Отправить" id="sent">
+                       <input type="reset" value="Отмена" id="cansel">
+                    </div> 
+               </form>
+            </div>
+               
             <div class="navigation">
                <button class="arrow left"></button>
                <div>
                   <div class="rectangle-1">
                      <div class="rectangle-2">
                         <button class="button">
-                           <a href=""><b>Забрать домой</b></a>
+                           <a href="#form-1"><b>Забрать домой</b></a>
                         </button>
                      </div>
                   </div>
@@ -283,7 +315,7 @@
                      5. Гипермаркет «Евроопт», ул. Тимирязева, 8;<br>
                      6. Гипермаркет «Евроопт», ул. Янки Купалы, 82А;<br>
                      7. Фитнес-центр «АДРЕНАЛИН», ул. Подольная, д.37.</p>
-                  <a class="all dirty_yellow" href="#">Посмотреть на карте</a>
+                  <a class="all dirty_yellow" href="https://yandex.ru/maps/?um=constructor%3A5c4116ca184663cbff3edfa43fd08f2e16a63ea937ecb5fd0e7241b549274512&source=constructorLink" target="_blink">Посмотреть на карте</a>
                </div>
             </div>
          </section>
@@ -325,7 +357,12 @@
                   • Теплые вещи, лежаки для утепления и уюта животных;<br>
                   • Будки.
                </p>
-               <a class="all dirty_yellow" href="#">Кому и куда передать</a>
+               <a href="#" id="forms-4">
+                  <div id="okno">
+                    Всплывающее окошко!
+                  </div>
+                </a>
+               <a class="all dirty_yellow" href="#forms-4">Кому и куда передать</a>
             </div>
             <div class="line_home" id="car_help">
                <span><img src="/img/автопомощь.png" alt="автопомощь"></span>
