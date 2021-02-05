@@ -1633,6 +1633,7 @@ h1{
       width: 368px;
       height: 24px;
       margin-top: 72px;
+      margin-left: 777px;
       text-align: center;
   }
   @media (max-width:1440px){
@@ -1651,6 +1652,25 @@ h1{
       margin-left: 385px;
    }
 }
+@media (max-width:768px){
+   .animals-title{
+      margin-left: 257px;
+   }
+}
+@media (max-width:640px){
+   .animals-title{
+      width: 382px;
+      margin-left: 129px;
+      margin-top: 67px;
+   }
+}
+@media (max-width:360px){
+   .animals-title{
+      width: 194px;
+      margin-left: 83px;
+   }
+}
+
 
   .animals-title h3{
    font-family: "GilroyLight";
@@ -1658,6 +1678,17 @@ h1{
    font-size: 28px;
    line-height: 24px;
 }  
+@media (max-width:1024px){
+   .animals-title h3{
+      font-size: 24px;
+   }
+}
+@media (max-width:640px){
+   .animals-title h3{
+      font-size: 20px;
+   }
+}
+
 
   .animals-link{
      width: 244px;
@@ -1679,6 +1710,22 @@ h1{
 @media (max-width:1024px){
    .animals-link{
       margin-left: 390px;
+   }
+}
+@media (max-width:768px){
+   .animals-link{
+      margin-left: 262px;
+   }
+}
+@media (max-width:640px){
+   .animals-link{
+      margin-top: 16px;
+      margin-left: 198px;
+   }
+}
+@media (max-width:360px){
+   .animals-link{
+      margin-left: 58px;
    }
 }
 
@@ -1712,14 +1759,27 @@ h1{
    }
    @media (max-width:1024px){
       .animals-cards{
-         margin-left:-58px;
+         
+         margin-left: 0px;
          margin-right: 0px;
          overflow: hidden;
+      }
+   }
+   @media (max-width:768px){
+      .animals-cards{
+        align-content: center;
       }
    }
 
    article{
       justify-content: space-between;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-coordinate: 0 0;
+      scroll-snap-points-x: repeat(100%);
+      scroll-snap-type: x mandatory;
+      flex: 1;
+      -webkit-overflow-scrolling: touch;
    }
   
    .animals-cards__image{
@@ -1734,6 +1794,7 @@ h1{
    @media (max-width:1024px){
       .animals-cards__image{
          margin-right: 20px;
+         scroll-snap-align: start;
       }
    }
 
@@ -1811,6 +1872,19 @@ h1{
       margin-right: 110px;
    }
 }
+@media (max-width:640px){
+   .animals-buttons{
+      margin-left: 199px;
+      margin-right: 199px;
+   }
+}
+@media (max-width:360px){
+   .animals-buttons{
+      margin-left: 58px;
+      margin-right: 58px;
+      margin-bottom: 40px;
+   }
+}
 
 
   .animals-buttons__arrow{
@@ -1822,14 +1896,37 @@ h1{
    box-sizing: border-box;box-shadow: 6px 6px 16px rgba(224, 224, 224, 0.6), -6px -6px 16px rgba(255, 255, 255, 0.77);
    padding-top: 14px;
   }
+  @media (max-width:768px){
+   .animals-buttons__arrow{
+      padding: 13px;
+   }
+}
+@media (max-width:640px){
+   .animals-buttons__arrow{
+      display: none;
+   }
+}
+
 
   .animals-buttons__arrow-left{
      background: url(/image/стрелочка-лево.png) no-repeat center center;
   }
+  @media (max-width:768px){
+   .animals-buttons__arrow-left{
+      transform:  scale(0.6)
+   }
+}
+
  
   .animals-buttons__arrow-right{
    background: url(/image/стрелочка-право.png) no-repeat center center;
 } 
+@media (max-width:768px){
+   .animals-buttons__arrow-right{
+      transform:  scale(0.6)
+   }
+}
+
 
    /*----------------------Белая кнопка--------------------------------*/
 
@@ -1843,6 +1940,14 @@ h1{
    box-sizing: border-box;
    text-align: center; 
    }
+   @media (max-width:640px){
+      .outerbutton-white{
+         width: 242px;
+         height: 30px;
+         padding: 4px 5px;
+      }
+   }
+
 
    .innerbutton-white{
       width: 286px;
@@ -1852,12 +1957,39 @@ h1{
        border-radius: 58px;
       box-sizing: border-box; 
    }
+   @media (max-width:640px){
+      .innerbutton-white{
+         width: 232px;
+         height: 22px;
+      }
+      .innerbutton-white a{
+         font-size: 16px;
+         vertical-align: middle; 
+         text-align: center;
+      }
+   }
 
 /*----------------------Продолжение 4 экрана--------------------------------*/
 
 .animals-buttons__long .outerbutton-yellow{
    margin-left: 33px;
    margin-bottom: 17px;
+}
+@media (max-width:640px){
+   .animals-buttons__long .outerbutton-yellow{
+      width: 174px;
+      height: 30px;
+      padding: 4px 5px;
+   }
+   .animals-buttons__long .innerbutton-yellow{
+      width: 164px;
+      height: 22px;
+   }
+   .animals-buttons__long .innerbutton-yellow a{
+      font-size: 16px;
+      vertical-align: middle;
+      text-align: center;
+   }
 }
 
 .button-logo-animals{
@@ -1880,6 +2012,19 @@ h1{
       margin: 48px 157px 74px 110px;
    }
 }
+@media (max-width:640px){
+   .button-logo-animals{
+      margin: 0px 129px 28px 129px;
+      flex-wrap: wrap;
+   }
+}
+@media (max-width:360px){
+   .button-logo-animals{
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-bottom: 8px;
+   }
+}
 
 .button-logo-animals__text{
    width: 583px;
@@ -1891,6 +2036,33 @@ h1{
 
    padding: 7px 28px 7px 0px;
 }
+@media (max-width:1024px){
+   .button-logo-animals__text{
+      font-size: 16px;
+     padding-right: 7px;
+   }
+}
+@media (max-width:768px){
+   .button-logo-animals__text{
+      font-size: 14px;
+      width: 379px;
+      height: 60px;
+     padding: 0px 10px 0px 0px;
+   }
+}
+@media (max-width:640px){
+   .button-logo-animals__text{
+      width: 382px;
+      padding-bottom: 6px;
+   }
+}
+@media (max-width:360px){
+   .button-logo-animals__text{
+      width: 300px;
+      height: 80px;
+   }
+}
+
 
 /*----------------------белые кнопки соцсетей--------------------------------*/
 
@@ -1904,6 +2076,27 @@ h1{
    padding: 7px; 
    margin-right: 32px;
 }
+@media (max-width:768px){
+   .button-logo-outercircle-white{
+      width: 40px;
+      height: 40px;
+      padding: 4px;
+      margin-top: 10px;
+   }
+}
+@media (max-width:640px){
+  .button-logo-vk .button-logo-outercircle-white{
+      margin-left: 136px;
+   }
+}
+@media (max-width:360px){
+   .button-logo-vk .button-logo-outercircle-white{
+       margin-left: 95px;
+       margin-right: 48px;
+    }
+ }
+ 
+
 
 .button-logo-innercircle-white{
    width: 49px;
@@ -1914,6 +2107,34 @@ h1{
    box-sizing: border-box;  
    padding: 4px;
 }
+@media (max-width:768px){
+   .button-logo-innercircle-white{
+      width: 32px;
+      height: 32px;
+      padding: 0px;
+   }
+   .button-logo-innercircle-white .button-logo-vk__link{
+     padding-top: 10px;
+     padding-left: 4px;
+   }
+    .button-logo-innercircle-white svg{
+      transform: scale(0.9);
+      padding: 6px;
+   }
+}
+@media (max-width:640px){
+   .button-logo-innercircle-white .button-logo-vk__link{
+      padding-top: 11px;
+      padding-left: 6px;
+    }
+     .button-logo-innercircle-white .button-logo-inst__link{
+       padding: 8px;
+    }
+    .logo-flex{
+       flex-direction: row-reverse;
+    }
+}
+
 
 /*----------------------Продолжение 4 экрана--------------------------------*/
 
