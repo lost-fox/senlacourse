@@ -1626,3 +1626,294 @@ h1{
       height: 140px;
    }
   }
+
+  /*----------------------4 экран--------------------------------*/
+
+  .animals-title{
+      width: 368px;
+      height: 24px;
+      margin-top: 72px;
+      text-align: center;
+  }
+  @media (max-width:1440px){
+     .animals-title{
+        margin-left: 537px;
+     }
+  }
+  @media (max-width:1366px){
+   .animals-title{
+      margin-left: 499px;
+   }
+}
+@media (max-width:1024px){
+   .animals-title{
+      width: 254px;
+      margin-left: 385px;
+   }
+}
+
+  .animals-title h3{
+   font-family: "GilroyLight";
+   font-weight: 300;
+   font-size: 28px;
+   line-height: 24px;
+}  
+
+  .animals-link{
+     width: 244px;
+     height: 40px;
+     text-align: center;
+     vertical-align: middle;
+     margin: 24px 0px 20px 838px;
+  }
+  @media (max-width:1440px){
+     .animals-link{
+        margin-left: 599px;
+     }
+  }
+  @media (max-width:1366px){
+   .animals-link{
+      margin-left: 562px;
+   }
+}
+@media (max-width:1024px){
+   .animals-link{
+      margin-left: 390px;
+   }
+}
+
+  .animals-link a{
+     padding-right: 16px;
+  }
+
+   /*----------------------ссылка--------------------------------*/
+
+   .link{
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 40px;
+   text-decoration-line: underline;
+   color: #AD7F00;
+   }
+   /*----------------------продолжение 4 экран------------------------------*/ 
+
+   .animals-cards{
+      margin: 0px 387px;
+   }
+   @media (max-width:1440px){
+      .animals-cards{
+         margin: 0px 147px;
+      }
+   }
+   @media (max-width:1366px){
+      .animals-cards{
+         margin: 0px 111px;
+      }
+   }
+   @media (max-width:1024px){
+      .animals-cards{
+         margin-left:-58px;
+         margin-right: 0px;
+         overflow: hidden;
+      }
+   }
+
+   article{
+      justify-content: space-between;
+   }
+  
+   .animals-cards__image{
+      padding: 16px 16px 7px 17px;
+      background: #F6F6F6;
+      box-shadow: 6px 6px 16px rgba(163, 163, 163, 0.6), -8px -8px 16px #FFFFFF, inset 4px 4px 16px rgba(203, 203, 203, 0.25);
+      border-radius: 5px;
+      width: 335px;
+      opacity: 0.5;
+      margin-bottom: 9px;
+   }
+   @media (max-width:1024px){
+      .animals-cards__image{
+         margin-right: 20px;
+      }
+   }
+
+   .animals-cards__image:hover{
+      opacity: 1;
+   }
+
+   .animals-cards__image img{
+      width: 335px;
+      height: 356px;
+   }
+
+   .animals-card-text{
+      width: 335px;
+   }
+
+   .animals-card-text__title{
+      height: 20px;
+      padding-top: 8px;
+   }
+   .animals-card-text__title h4{
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 20px;
+      text-align: center;
+   }
+
+   hr{
+      opacity: 0.5;
+      border: 1px solid #D6D6D6;
+      margin: 9px 0px;
+   }
+
+  .animals-card-text__age{
+     height: 20px;
+     padding-bottom: 6px;
+  } 
+
+  .animals-card-text__age p{
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 20px;
+   color: #6B6B6B;
+  }
+
+  .animals-card-text__description{
+     height: 64px;
+  }
+
+  .animals-card-text__description p{
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 20px;
+  }
+
+  .animals-buttons{
+     margin: 10px 532px 64px 534px;
+     justify-content: space-between;
+  }
+  @media (max-width:1440px){
+     .animals-buttons{
+        margin-left: 294px;
+        margin-right: 292px;
+     }
+  }
+  @media (max-width:1366px){
+   .animals-buttons{
+      margin-left: 257px;
+      margin-right: 255px;
+   }
+}
+@media (max-width:1024px){
+   .animals-buttons{
+      margin-left: 110px;
+      margin-right: 110px;
+   }
+}
+
+
+  .animals-buttons__arrow{
+     width: 77px;
+     height: 77px;
+     border-radius: 50%;
+   background: #F6F6F6;
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   box-sizing: border-box;box-shadow: 6px 6px 16px rgba(224, 224, 224, 0.6), -6px -6px 16px rgba(255, 255, 255, 0.77);
+   padding-top: 14px;
+  }
+
+  .animals-buttons__arrow-left{
+     background: url(/image/стрелочка-лево.png) no-repeat center center;
+  }
+ 
+  .animals-buttons__arrow-right{
+   background: url(/image/стрелочка-право.png) no-repeat center center;
+} 
+
+   /*----------------------Белая кнопка--------------------------------*/
+
+   .outerbutton-white{
+      width: 296px;
+   height: 42px;
+   background: #F6F6F6;
+   box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+   border-radius: 58px;
+   padding: 5px;
+   box-sizing: border-box;
+   text-align: center; 
+   }
+
+   .innerbutton-white{
+      width: 286px;
+      height: 32px;
+      background: linear-gradient(180deg, #FBFBFB 0%, #F6F6F6 100%);
+      box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25);
+       border-radius: 58px;
+      box-sizing: border-box; 
+   }
+
+/*----------------------Продолжение 4 экрана--------------------------------*/
+
+.animals-buttons__long .outerbutton-yellow{
+   margin-left: 33px;
+   margin-bottom: 17px;
+}
+
+.button-logo-animals{
+   margin: 0px 559px 62px 583px ;
+}
+@media (max-width:1440px){
+   .button-logo-animals{
+      margin-left: 342px;
+      margin-right: 319px;
+   }
+}
+@media (max-width:1366px){
+   .button-logo-animals{
+      margin-left: 305px;
+      margin-right: 289px;
+   }
+}
+@media (max-width:1024px){
+   .button-logo-animals{
+      margin: 48px 157px 74px 110px;
+   }
+}
+
+.button-logo-animals__text{
+   width: 583px;
+   height: 48px;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 24px;
+   color: #000000;
+
+   padding: 7px 28px 7px 0px;
+}
+
+/*----------------------белые кнопки соцсетей--------------------------------*/
+
+.button-logo-outercircle-white{
+   width: 63px;
+   height: 63px;
+   background: linear-gradient(144.1deg, #FFFFFF 12.45%, #FBFBFB 89.31%);
+   box-shadow: 7px 7px 16px rgba(213, 213, 213, 0.6), -6px -6px 8px #FFFFFF, inset 13px 22px 8px #F3F3F3;
+   border-radius: 50%;
+   box-sizing: border-box; 
+   padding: 7px; 
+   margin-right: 32px;
+}
+
+.button-logo-innercircle-white{
+   width: 49px;
+   height: 49px;
+   background: linear-gradient(145.67deg, #FFFFFF 15.39%, #E4E4E4 88.3%);
+   box-shadow: 3px 3px 13px #B1B1B1;
+   border-radius: 50%;
+   box-sizing: border-box;  
+   padding: 4px;
+}
+
+/*----------------------Продолжение 4 экрана--------------------------------*/
+
