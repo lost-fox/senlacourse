@@ -2135,6 +2135,356 @@ h1{
     }
 }
 
+/*------------------------ 5 экрана--------------------------------*/
 
-/*----------------------Продолжение 4 экрана--------------------------------*/
+.financial-support{
+   background: #FFFFFF;
+   padding-top: 30px;
+}
+@media (max-width:1024px){
+   .financial-support{
+      padding-top: 14px;
+   }
+}
+@media (max-width:768px){
+   .financial-support{
+      padding-top: 0px;
+   }
+}
 
+
+.financial-support-line span::after, .financial-support-line span::before {
+   margin-top: 63px;
+}
+@media (max-width:768px){
+   .financial-support-line span::after, .financial-support-line span::before {
+      margin-top: 43px;
+   }
+}
+@media (max-width:640px){
+   .financial-support-line span::after, .financial-support-line span::before {
+      margin-top: 39px;
+   }
+}
+
+.financial-support-line img{
+   width: 128px;
+   height: 93px;
+}
+@media (max-width:640px){
+   .financial-support-line img {
+      margin-top: -10px;
+   }
+}
+
+.financial-support__title{
+   width: 758px;
+   height: 32px;
+   margin-left: 604px;
+   margin-top: 57px;
+}
+@media (max-width:1440px){
+   .financial-support__title{
+      margin-left: 344px;
+   }
+}
+@media (max-width:1366px){
+   .financial-support__title{
+      margin-left: 304px;
+   }
+}
+@media (max-width:1024px){
+   .financial-support__title{
+      width: 530px;
+      margin-left: 247px;
+   }
+}
+@media (max-width:768px){
+   .financial-support__title{
+      width: 358px;
+      margin-left: 205px;
+      margin-top: 0px;
+   }
+}
+@media (max-width:640px){
+   .financial-support__title{
+      width: 382px;
+      margin-left: 129px;
+      margin-top: -10px;
+   }
+}
+@media (max-width:360px){
+   .financial-support__title{
+      width: 300px;
+      margin-left: 30px;
+   }
+}
+
+.financial-support__title h3{
+   font-weight: 600;
+   font-size: 28px;
+   line-height: 24px;
+   text-align: center;
+}
+@media (max-width:1024px){
+   .financial-support__title h3{
+      font-size: 24px;
+   }
+}
+@media (max-width:768px){
+   .financial-support__title h3{
+      font-size: 20px;
+   }
+}
+@media (max-width:640px){
+   .financial-support__title h3{
+      font-size: 16px;
+   }
+}
+
+.financial-support__subtitle{
+   width: 758px;
+   height: 55px;
+   margin-left: 604px;
+   margin-top: 24px;
+}
+@media (max-width:1440px){
+   .financial-support__subtitle{
+      margin-left: 344px;
+   }
+}
+@media (max-width:1366px){
+   .financial-support__subtitle{
+      margin-left: 304px;
+   }
+}
+@media (max-width:1024px){
+   .financial-support__subtitle{
+      width: 530px;
+      margin-left: 247px;
+      margin-top: 16px;
+   }
+}
+@media (max-width:768px){
+   .financial-support__subtitle{
+      width: 358px;
+      height: 89px;
+      margin-left: 205px;
+   }
+}
+@media (max-width:640px){
+   .financial-support__subtitle{
+      width: 382px;
+      margin-left: 129px;
+   }
+}
+@media (max-width:360px){
+   .financial-support__subtitle{
+      width: 300px;
+      margin-left: 30px;
+   }
+}
+
+.financial-support__subtitle p{
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 24px;
+   text-align: center;
+   color: #6B6B6B;
+}
+@media (max-width:1024px){
+   .financial-support__subtitle p{
+      font-size: 16px;
+   }
+}
+
+.financial-support__column{
+   margin: 40px 463px 0px 487px;
+}
+@media (max-width:1440px){
+   .financial-support__column{
+      margin-left: 247px;
+   }
+}
+@media (max-width:1366px){
+   .financial-support__column{
+      margin-left: 187px;
+   }
+}
+@media (max-width:1024px){
+   .financial-support__column{
+      margin-left: 158px;
+   }
+}
+@media (max-width:768px){
+   .financial-support__column{
+      margin-left: 130px;
+   }
+}
+@media (max-width:640px){
+   .financial-support__column{
+      margin: 8px 129px 0px  129px;
+      flex-wrap: wrap;
+
+   }
+}
+@media (max-width:360px){
+   .financial-support__column{
+      margin: 8px 30px 0px  30px;
+
+   }
+}
+
+.financial-support-text{
+   padding-left: 97px;
+}
+@media(max-width:1024px){
+   .financial-support-text{
+      padding-left: 69px;
+   } 
+}
+@media(max-width:768px){
+   .financial-support-text{
+      padding-left: 27px;
+   } 
+}
+@media(max-width:640px){
+   .financial-support-text{
+      padding-left: 0px;
+   } 
+}
+
+.financial-support-text__title{
+   width: 389px;
+   height: 24px;
+   padding-top: 40px;
+}
+@media (max-width:1024px){
+   .financial-support-text__title{
+      width: 275px;
+   }
+}
+@media (max-width:768px){
+   .financial-support-text__title{
+      width: 237px;
+   }
+}
+@media (max-width:640px){
+   .financial-support-text__title{
+      width: 382px;
+      padding-top: 32px;
+   }
+}
+@media (max-width:360px){
+   .financial-support-text__title{
+      width: 300px;
+   }
+}
+
+.financial-support-text__title h3{
+   font-weight: 300;
+   font-size: 28px;
+   line-height: 24px; 
+}
+@media (max-width:1024px){
+   .financial-support-text__title h3{
+     font-size: 24px;
+   }
+}
+@media (max-width:768px){
+   .financial-support-text__title h3{
+     font-size: 20px;
+   }
+}
+
+.financial-support-text__description{
+   width: 389px;
+   padding-top: 24px;
+}
+@media (max-width:1024px){
+   .financial-support-text__description{
+      width: 275px;
+   }
+}
+@media (max-width:768px){
+   .financial-support-text__description{
+      width: 237px;
+   }
+}
+@media (max-width:640px){
+   .financial-support-text__description{
+      width: 382px;
+      padding-top: 16px;
+   }
+}
+@media (max-width:360px){
+   .financial-support-text__description{
+      width: 300px;
+   }
+}
+
+.financial-support-text__description p{
+   font-size: 16px;
+   line-height: 140%;
+}
+@media (max-width:1024px){
+   .financial-support-text__description p{
+      font-size: 14px;
+   }
+}
+
+.financial-support-text__button{
+   margin-top: 24px;
+}
+@media (max-width:1024px){
+   .financial-support-text__button{
+      margin-top: 29px;
+   }
+}
+@media (max-width:640px){
+   .financial-support-text__button{
+      margin-top: 16px;
+   }
+   .financial-support-text .outerbutton-yellow{
+      width: 194px;
+      height: 30px;
+      padding: 4px;
+   } 
+   .financial-support-text__button .innerbutton-yellow{
+      width: 184px;
+      height: 22px;
+   }
+   .financial-support-text__button button {
+      height: 22px;
+      text-align: center;
+      vertical-align: middle;
+   }
+   .financial-support-text__button a{
+      font-size: 16px;
+      line-height: 40px;
+      
+   }
+
+}
+
+.financial-support-text__link{
+   padding-top: 24px;
+   padding-bottom: 39px;
+}
+@media (max-width:1024px){
+   .financial-support-text__link{
+      padding-top: 20px;
+      padding-bottom: 43px;
+   }
+}
+@media (max-width:768px){
+   .financial-support-text__link{
+      padding-top: 12px;
+      padding-bottom: 20px;
+   }
+}
+@media (max-width:640px){
+   .financial-support-text__link{
+      padding-top: 8px;
+   }
+}
