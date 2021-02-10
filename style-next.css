@@ -555,6 +555,15 @@ li:nth-child(3){
       height: 32px;
    }
 }
+.button-logo-innercircle-yellow:hover{
+   background: linear-gradient(150.26deg, #FFEAAD 6.75%, #FCE6A7 45.73%, #FFC726 91.17%);
+   box-shadow: 3px 3px 13px #C18F00;  
+}
+
+.button-logo-innercircle-yellow:active{
+   background: linear-gradient(150.26deg, #FFDA71 6.75%, #FFCD40 43.24%, #FBC11B 91.17%);
+   box-shadow: 2px 2px 6px #C18F00, inset 3px 3px 10px rgba(199, 129, 0, 0.59);
+}
 
 .button-logo-vk__link{
    padding-top: 12px;
@@ -809,6 +818,15 @@ h1{
    box-sizing: border-box; 
    text-align: center;
 }
+.outerbutton-yellow:hover{
+   background: linear-gradient(180deg, #FFDC81 0%, #E6AA00 100%);
+   box-shadow: 7px 7px 16px #E0E0E0, -3px -4px 8px #FFFFFF, inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+}
+
+.outerbutton-yellow:focus{
+   border: 3px solid #6B6B6B;
+   box-shadow: 7px 7px 16px #E3E3E3, -3px -4px 8px rgba(255, 255, 255, 0.9), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+}
 
 .innerbutton-yellow{
    width: 211px;
@@ -817,6 +835,21 @@ h1{
    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
    border-radius: 58px;
    box-sizing: border-box; 
+}
+
+.innerbutton-yellow:hover{
+   background: linear-gradient(180deg, #FFEEBC 0%, #FFE69F 36.46%, #FFCF48 68.23%, #FFC317 100%);
+   box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+}
+
+.innerbutton-yellow a:hover{
+   color: #000000;
+}
+
+.innerbutton-yellow:active{
+   background: linear-gradient(180deg, #FFE69F 0.01%, #E3B940 0.02%, #FFD24E 100%);
+   box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+
 }
 
 .button{
@@ -1356,28 +1389,24 @@ h1{
       transform:  scale(0.5);
    }
  }
+
+ .help-button__icon:hover{
+   background: #FAFAFA;
+   box-shadow: 6px 6px 16px rgba(224, 224, 224, 0.6), -6px -6px 16px rgba(255, 255, 255, 0.77);
+ }
+
+ .help-button__icon:active{
+   background: linear-gradient(136.02deg, #FDFDFD 0%, #EAEAEA 72.75%);
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   box-sizing: border-box;
+   box-shadow: -6px -6px 16px rgba(224, 224, 224, 0.6), 6px 6px 16px rgba(255, 255, 255, 0.77);
+ }
  
  .help-button__text{
    width: 166px;
    height: 66px;
    text-align: center;
    padding-top: 24px;
- }
- @media (max-width:1024px){
-   .help-button__text{
-      width: 140px;
-      height: 60px;
-      padding-top: 20px;
-   }
- }
- @media (max-width:640px){
-   .help-button__text{
-      width: 142px;
-      padding-top: 8px;
-   }
- }
-
- .help-button__text p{
    font-family: "GilroyMedium";
    font-style: normal;
    font-weight: 500;
@@ -1386,12 +1415,20 @@ h1{
    color: #474747;
  }
  @media (max-width:1024px){
-   .help-button__text p{
+   .help-button__text{
+      width: 140px;
+      height: 60px;
+      padding-top: 20px;
       font-size: 14px;
       line-height: 20px;
    }
  }
-
+ @media (max-width:640px){
+   .help-button__text{
+      width: 142px;
+      padding-top: 8px;
+   }
+ }
 
  /*----------------------- линии и картинка------------------------ */
 
@@ -1991,7 +2028,6 @@ h1{
    }
 }
 
-
   .animals-buttons__arrow-left{
      background: url(/image/стрелочка-лево.png) no-repeat center center;
   }
@@ -2047,10 +2083,21 @@ h1{
          height: 22px;
       }
       .innerbutton-white a{
+         line-height: 20px;
          font-size: 16px;
          vertical-align: middle; 
          text-align: center;
       }
+   }
+
+   .innerbutton-white:hover{
+      background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 53.12%, #EFECEC 100%);
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), 3px 3px 13px rgba(128, 128, 128, 0.25);
+   }
+
+   .innerbutton-white:active{
+      background: linear-gradient(180deg, #F1F1F1 1.56%, #FCFAFA 100%);
+      box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25), inset 0px 4px 13px rgba(0, 0, 0, 0.06);
    }
 
 /*----------------------Продолжение 4 экрана--------------------------------*/
@@ -2073,6 +2120,7 @@ h1{
       font-size: 16px;
       vertical-align: middle;
       text-align: center;
+      line-height: 20px;
    }
 }
 
@@ -2179,8 +2227,6 @@ h1{
        margin-right: 48px;
     }
  }
- 
-
 
 .button-logo-innercircle-white{
    width: 49px;
@@ -2217,6 +2263,20 @@ h1{
     .logo-flex{
        flex-direction: row-reverse;
     }
+}
+
+.button-logo-innercircle-white:hover{
+   background: linear-gradient(145.67deg, #FFFFFF 15.39%, #FAFAFA 54.13%, #DADADA 88.3%);
+   box-shadow: 3px 3px 13px #A3A3A3;
+}
+
+.button-logo-innercircle-white:active{
+   background: linear-gradient(145.67deg, #E4E4E4 16.92%, #F6F6F6 88.3%);
+   box-shadow: 3px 3px 13px #B2B2B2, inset 4px 4px 7px rgba(192, 192, 192, 0.25);
+}
+
+.button-logo-innercircle-white svg:hover *{
+   fill: #FFB800;
 }
 
 /*------------------------ 5 экрана--------------------------------*/
@@ -2517,16 +2577,17 @@ h1{
    .financial-support-text__button .innerbutton-yellow{
       width: 184px;
       height: 22px;
+      
    }
    .financial-support-text__button button {
       height: 22px;
-      text-align: center;
-      vertical-align: middle;
+      width: 157px;
+      
+      
    }
    .financial-support-text__button a{
       font-size: 16px;
-      line-height: 40px;
-      
+      line-height: 20px;   
    }
 
 }
@@ -2728,9 +2789,20 @@ h1{
  }
  @media (max-width:640px) {
    .help-screen-block .outerbutton-yellow{
+      width: 194px;
+      height: 30px;
+      padding: 4px;
       margin-top: 16px;
       margin-bottom: 8px;
       margin-left: 94px;
+   }
+   .help-screen-block .innerbutton-yellow{
+      width: 184px;
+      height: 22px;
+   }
+   .help-screen-block .innerbutton-yellow a{
+      font-size: 16px;
+      line-height: 20px; 
    }
  }
  @media (max-width:360px) {
@@ -2833,6 +2905,17 @@ h1{
   @media (max-width:640px) {
    .help-screen-block__volunteering .outerbutton-yellow{
       margin-left: 94px;
+      width: 194px;
+      height: 30px;
+      padding: 4px;
+   }
+   .help-screen-block__volunteering .innerbutton-yellow{
+      width: 184px;
+      height: 22px;
+   }
+   .help-screen-block__volunteering .innerbutton-yellow a{
+      font-size: 16px;
+      line-height: 20px;
    }
  }
  @media (max-width:360px) {
@@ -3477,25 +3560,6 @@ h1{
 
 /*------------------------ footer--------------------------------*/
 
-footer{
-   height: 117px;
-}
-@media (max-width:1024px){
-   footer{
-      height: 101px;
-   }
-}
-@media (max-width:768px){
-   footer{
-      height: 171px;
-   }
-}
-@media (max-width:640px){
-   footer{
-      height: 249px;
-   }
-}
-
 .link-footer{
    padding:40px 345px 24px 347px;
    justify-content: space-between;
@@ -3620,6 +3684,7 @@ footer{
    line-height: 140%;
    color: #B3B3B3;
    text-align: center;
+   margin-bottom: 16px;
 }
 @media (max-width:1024px){
    .footer-text p{
