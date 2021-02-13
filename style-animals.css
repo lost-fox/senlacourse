@@ -149,7 +149,7 @@
    font-size: 14px;
    line-height: 20px;
    appearance: none;
-   background: url(/image/Chevron\ Down.png) no-repeat right;
+   background: url(image/Chevron\ Down.png) no-repeat right;
  }
 
 
@@ -366,6 +366,7 @@ line-height: 20px;
 
    .animals-cards__image:hover .buttons-animal{
       display: block;
+      transition-delay: 1s;
    } 
 
    /*----------------------Белая кнопка--------------------------------*/

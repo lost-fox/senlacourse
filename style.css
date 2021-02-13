@@ -14,7 +14,7 @@ body {
 
 /*---------------------------------подложка------------------------------- */
 
-.substrate__image_absolute {
+.substrate__image--absolute {
   position: absolute;
 }
 
@@ -1028,7 +1028,7 @@ h1{
  
  
  .custom-image-wrapper__main-image::after {
-   background: url(/image/собака-круг.png) no-repeat center center;
+   background: url(image/собака-круг.png) no-repeat center center;
    width: 100%;
  }
  @media (max-width:1024px){
@@ -1085,7 +1085,7 @@ h1{
  
  
  .custom-image-wrapper__secondary-image::after {
-   background: url(/image/кот-круг.png) no-repeat center center;
+   background: url(image/кот-круг.png) no-repeat center center;
    width: 100%
  }
  @media (max-width:1024px){
@@ -1245,7 +1245,7 @@ h1{
  }
 
 
- .screen-2-text__title_yellow{
+ .screen-2-text__title--yellow{
     color: #C78100;
  }
 
@@ -2042,7 +2042,7 @@ h1{
 }
 
   .animals-buttons__arrow-left{
-     background: url(/image/стрелочка-лево.png) no-repeat center center;
+     background: url(image/стрелочка-лево.png) no-repeat center center;
   }
   @media (max-width:768px){
    .animals-buttons__arrow-left{
@@ -2052,7 +2052,7 @@ h1{
 
  
   .animals-buttons__arrow-right{
-   background: url(/image/стрелочка-право.png) no-repeat center center;
+   background: url(image/стрелочка-право.png) no-repeat center center;
 } 
 @media (max-width:768px){
    .animals-buttons__arrow-right{
@@ -2826,7 +2826,7 @@ h1{
    
 
 .volunteer .custom-image-wrapper__main-image::after {
-   background: url(/image/щенок-кость.png) no-repeat center center;
+   background: url(image/щенок-кость.png) no-repeat center center;
    width: 100%;
  }
 
@@ -3404,7 +3404,7 @@ h1{
 /*------------------------ 9 экрана--------------------------------*/
 
 .thanks{
-   background: url(/image/собака-человек.png) no-repeat center center;
+   background: url(image/собака-человек.png) no-repeat center center;
    background-size: cover;
    height: 741px;
    width: 1920px;
@@ -3537,7 +3537,7 @@ h1{
    height: 89px;
    left: 480px;
    margin-top: 373px;
-   background: url(/image/лапка.png) no-repeat center center;
+   background: url(image/лапка.png) no-repeat center center;
    background-size: cover;
 }
 @media (max-width:1024px){
