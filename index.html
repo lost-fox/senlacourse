@@ -1,333 +1,376 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=1.0">
    <link rel="stylesheet" href="fonts.css">
-   
-   <link rel="stylesheet" href="style_new.css">
-   
-   <title>Save life</title>
+   <link rel="stylesheet" href="style.css">
+   <title>Спаси жизнь</title>
 </head>
-
 <body>
-   <div class="container">
-      <div style="position: relative;">
-         <img class="bg_dog pos" src="/img/dog 1.png" alt="dog">
-         <img class="bg_cat pos" src="/img/cat 1.png" alt="cat">
-         <img class="i pos" src="/img/Я буду.png" alt="я буду">
-         <img class="best pos" src="/img/лучшим.png" alt="лучшим">
-         <img class="friend pos" src="/img/другом.png" alt=" другом">
+   <div class="substrate" style="position: relative;">
+      <div class="substrate__image substrate__image_absolute">
+         <img src="/image/dog 1.png" alt="собака">
       </div>
-      <header>
-         <nav class="navigation">
-            <div class="menu">
-               <a href="#help" class="gray_2">Как помочь</a>
-               <a href="#animal" class="gray_2">Подопечные животные</a>
-               <a href="#about_u" class="gray_2">О нас</a>
-               <a href="#contact" class="gray_2">Контакты</a>
-            </div>
-            <div class="logo navigation">
-               <div class="circle-1">
-                  <div class="circle-2">
-                     <a href="https://vk.com/animalsgrodno#" target="_blank"><svg width="42" height="30" viewBox="0 0 42 30" fill="none" class="logo-vk" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d)">
-                        <path d="M35.3122 7.21896C35.5218 6.51571 35.3122 6 34.3211 6H31.0379C30.2025 6 29.8207 6.44614 29.6111 6.93615C29.6111 6.93615 27.9418 11.0482 25.5764 13.7145C24.8128 14.4903 24.464 14.7353 24.0478 14.7353C23.8397 14.7353 23.5373 14.4903 23.5373 13.7871V7.21896C23.5373 6.37506 23.2963 6 22.6001 6H17.441C16.92 6 16.6056 6.39019 16.6056 6.76223C16.6056 7.56075 17.7883 7.74525 17.9096 9.99563V14.8775C17.9096 15.9467 17.7195 16.1418 17.3003 16.1418C16.1879 16.1418 13.4811 12.0146 11.8747 7.29004C11.5618 6.37204 11.2459 6.00151 10.4075 6.00151H7.12584C6.18714 6.00151 6 6.44766 6 6.93766C6 7.81785 7.11236 12.1734 11.1815 17.934C13.8943 21.8676 17.7135 24 21.1928 24C23.2783 24 23.5358 23.5266 23.5358 22.71V19.7367C23.5358 18.79 23.7349 18.5994 24.3951 18.5994C24.8802 18.5994 25.7156 18.8474 27.6634 20.7424C29.8881 22.9897 30.2564 23.9985 31.5065 23.9985H34.7882C35.7254 23.9985 36.194 23.5251 35.9245 22.5905C35.6295 21.6604 34.5666 20.3068 33.1563 18.7053C32.3898 17.7918 31.2445 16.8088 30.8956 16.3173C30.4091 15.6836 30.5498 15.4038 30.8956 14.8412C30.8971 14.8427 34.896 9.15325 35.3122 7.21896Z" fill="#F6F6F6"/>
-                        </g>
-                        <defs>
-                        <filter id="filter0_d" x="0" y="0" width="42" height="30" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                        <feOffset/>
-                        <feGaussianBlur stdDeviation="3"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0.821128 0 0 0 0 0.606722 0 0 0 0 0 0 0 0 1 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                        </filter>
-                        </defs>
-                        </svg></a>
-                  </div>
-               </div>
-               <div class="circle-1">
-                  <div class="circle-2">
-                     <a href="https://www.instagram.com/animalsgrodno/" target="_blank"><svg width="42" height="42" class="logo-inst" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d)">
-                           <path d="M20.996 15.9979C18.2417 15.9979 15.9939 18.2456 15.9939 21C15.9939 23.7544 18.2417 26.0021 20.996 26.0021C23.7503 26.0021 25.998 23.7544 25.998 21C25.998 18.2456 23.7503 15.9979 20.996 15.9979ZM35.9983 21C35.9983 18.9286 36.0171 16.876 35.9008 14.8083C35.7844 12.4067 35.2366 10.2753 33.4804 8.51907C31.7205 6.75913 29.5929 6.21501 27.1913 6.09868C25.1199 5.98235 23.0673 6.00112 20.9997 6.00112C18.9284 6.00112 16.8758 5.98235 14.8082 6.09868C12.4066 6.21501 10.2752 6.76288 8.51902 8.51907C6.75911 10.279 6.21501 12.4067 6.09868 14.8083C5.98235 16.8797 6.00112 18.9324 6.00112 21C6.00112 23.0676 5.98235 25.124 6.09868 27.1917C6.21501 29.5933 6.76287 31.7247 8.51902 33.4809C10.2789 35.2409 12.4066 35.785 14.8082 35.9013C16.8795 36.0176 18.9321 35.9989 20.9997 35.9989C23.0711 35.9989 25.1237 36.0176 27.1913 35.9013C29.5929 35.785 31.7243 35.2371 33.4804 33.4809C35.2403 31.721 35.7844 29.5933 35.9008 27.1917C36.0208 25.124 35.9983 23.0714 35.9983 21ZM20.996 28.6964C16.7369 28.6964 13.2997 25.2591 13.2997 21C13.2997 16.7409 16.7369 13.3035 20.996 13.3035C25.255 13.3035 28.6923 16.7409 28.6923 21C28.6923 25.2591 25.255 28.6964 20.996 28.6964ZM29.0075 14.7858C28.0131 14.7858 27.2101 13.9828 27.2101 12.9883C27.2101 11.9939 28.0131 11.1909 29.0075 11.1909C30.0019 11.1909 30.8049 11.9939 30.8049 12.9883C30.8052 13.2245 30.7589 13.4583 30.6687 13.6765C30.5785 13.8948 30.4461 14.093 30.2791 14.26C30.1122 14.427 29.9139 14.5594 29.6957 14.6496C29.4775 14.7398 29.2436 14.7861 29.0075 14.7858Z" fill="#F6F6F6"/>
+      <div class="substrate__image substrate__image_absolute">
+         <img src="/image/cat 1.png" alt="кот">
+      </div>
+      <div class="substrate__image substrate__image_absolute">
+         <img src="/image/Я буду.png" alt="я буду">
+      </div>
+      <div class="substrate__image substrate__image_absolute">
+         <img src="/image/лучшим.png" alt="лучшим">
+      </div>
+      <div class="substrate__image substrate__image_absolute">
+         <img src="/image/другом.png" alt="другом">
+      </div>
+   </div>
+   <header>
+      <div class="flex hamburger-menu">
+         <input id="menu__toggle" type="checkbox" />
+         <label class="menu__btn" for="menu__toggle">
+            <span></span>
+         </label>
 
-                        </g>
-                        <defs>
-                        <filter id="filter0_d" x="0" y="0" width="42" height="42" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                        <feOffset/>
-                        <feGaussianBlur stdDeviation="3"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0.821128 0 0 0 0 0.606722 0 0 0 0 0 0 0 0 1 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                        </filter>
-                        </defs>
-                        </svg>
-                        </a>
-                  </div>
+         <ul class="menu__box flex">
+           <li><a href="#help" class="menu__link">Как помочь</a></li> 
+           <li><a href="/animals.html" class="menu__link">Подопечные животные</a></li>
+           <li><a href="#about-u" class="menu__link">О нас</a></li>
+           <li><a href="#contact" class="menu__link">Контакты</a></li> 
+         </ul>
+            
+         <div class="flex button-logo-menu">
+            <div class="button-logo-vk">
+               <div class="button-logo-outercircle-yellow"><div class="button-logo-innercircle-yellow">
+                  <a href="https://vk.com/animalsgrodno#" target="_blank"><svg width="30" height="18" class="button-logo-vk__link" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M29.3124 1.21896C29.522 0.515712 29.3124 0 28.3213 0H25.0381C24.2027 0 23.821 0.446144 23.6114 0.936146C23.6114 0.936146 21.9421 5.04823 19.5766 7.7145C18.8131 8.49034 18.4643 8.73534 18.0481 8.73534C17.84 8.73534 17.5375 8.49034 17.5375 7.78709V1.21896C17.5375 0.375063 17.2965 0 16.6003 0H11.4413C10.9203 0 10.6059 0.390187 10.6059 0.762225C10.6059 1.56075 11.7886 1.74525 11.9099 3.99563V8.8775C11.9099 9.94673 11.7197 10.1418 11.3005 10.1418C10.1882 10.1418 7.48136 6.01462 5.87495 1.29004C5.56205 0.372039 5.24616 0.00151296 4.40777 0.00151296H1.12608C0.187385 0.00151296 0.000244141 0.447656 0.000244141 0.937658C0.000244141 1.81785 1.11261 6.17342 5.18178 11.934C7.89457 15.8676 11.7137 18 15.193 18C17.2785 18 17.536 17.5266 17.536 16.71V13.7367C17.536 12.79 17.7352 12.5994 18.3954 12.5994C18.8805 12.5994 19.7158 12.8474 21.6636 14.7424C23.8883 16.9897 24.2566 17.9985 25.5067 17.9985H28.7884C29.7256 17.9985 30.1942 17.5251 29.9247 16.5905C29.6298 15.6604 28.5668 14.3068 27.1565 12.7053C26.39 11.7918 25.2447 10.8088 24.8959 10.3173C24.4093 9.68358 24.5501 9.4038 24.8959 8.8412C24.8974 8.84272 28.8962 3.15325 29.3124 1.21896Z" fill="white"/>
+                     </svg></a>
+               </div>
+               </div>            
+            </div>
+            <div class="button-logo-inst">
+               <div class="button-logo-outercircle-yellow"><div class="button-logo-innercircle-yellow">
+                  <a href="https://www.instagram.com/animalsgrodno/" target="_blank" ><svg width="30" height="30" class="button-logo-inst__link" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M13.4964 8.99808C11.0175 8.99808 8.99454 11.0211 8.99454 13.5C8.99454 15.9789 11.0175 18.0019 13.4964 18.0019C15.9752 18.0019 17.9982 15.9789 17.9982 13.5C17.9982 11.0211 15.9752 8.99808 13.4964 8.99808ZM26.9985 13.5C26.9985 11.6357 27.0154 9.78837 26.9107 7.92748C26.806 5.76602 26.3129 3.84773 24.7324 2.26716C23.1485 0.683215 21.2336 0.19351 19.0722 0.0888138C17.2079 -0.0158819 15.3606 0.00100455 13.4997 0.00100455C11.6355 0.00100455 9.78819 -0.0158819 7.92734 0.0888138C5.76592 0.19351 3.84766 0.686593 2.26712 2.26716C0.683203 3.85111 0.193506 5.76602 0.0888122 7.92748C-0.0158816 9.79174 0.00100453 11.6391 0.00100453 13.5C0.00100453 15.3609 -0.0158816 17.2116 0.0888122 19.0725C0.193506 21.234 0.68658 23.1523 2.26712 24.7328C3.85103 26.3168 5.76592 26.8065 7.92734 26.9112C9.79156 27.0159 11.6389 26.999 13.4997 26.999C15.364 26.999 17.2113 27.0159 19.0722 26.9112C21.2336 26.8065 23.1518 26.3134 24.7324 24.7328C26.3163 23.1489 26.806 21.234 26.9107 19.0725C27.0188 17.2116 26.9985 15.3643 26.9985 13.5ZM13.4964 20.4268C9.66323 20.4268 6.56969 17.3332 6.56969 13.5C6.56969 9.66679 9.66323 6.57319 13.4964 6.57319C17.3295 6.57319 20.423 9.66679 20.423 13.5C20.423 17.3332 17.3295 20.4268 13.4964 20.4268ZM20.7067 7.90722C19.8118 7.90722 19.089 7.18448 19.089 6.2895C19.089 5.39452 19.8118 4.67179 20.7067 4.67179C21.6017 4.67179 22.3244 5.39452 22.3244 6.2895C22.3247 6.50202 22.283 6.7125 22.2018 6.90889C22.1206 7.10528 22.0015 7.28373 21.8512 7.434C21.7009 7.58427 21.5225 7.70342 21.3261 7.78462C21.1297 7.86583 20.9192 7.90749 20.7067 7.90722Z" fill="white"/>
+                     </svg>
+                     
+                  </a>
                </div>
             </div>
-
-         </nav>
-      </header>
-      <main>
-         <section class="screen_1">
-            <h1 class="bold_72 gray_2 ">СПАСИ ЖИЗНЬ</h1>
-            <p class="gray_4">Благотворительное общественное объединение защиты животных</p>
-            <p class="text_semibold gray_3">Наша цель: помощь бездомным животным. Также мы поддерживаем хвостиков,
-               которые оказались в пункте отлова и временного содержания в Гродно. </p>
-            <div class="text_header">
-               <p>У животных, находящихся в пункте отлова и временного содержания бродячих животных, есть всего
-                  несколько дней до усыпления...</p>
-            </div>
-            <div class="rectangle-1">
-               <div class="rectangle-2">
+         </div>
+      </div>
+   </header>
+   <main>
+      <section>
+        <div class="main-header">
+           <div class="title-h1">
+              <h1>СПАСИ ЖИЗНЬ</h1>
+           </div>
+           <div class="title-h1__subtitle">
+              <p>Благотворительное общественное объединение защиты животных</p>
+           </div>
+           <div class="main-header__target">
+              <p>Наша цель: помощь бездомным животным. Также мы поддерживаем хвостиков, которые оказались в пункте отлова и временного содержания в Гродно. </p>
+           </div>
+           <div class="main-header__yellow">
+              <p>У животных, находящихся в пункте отлова и временного содержания бродячих животных, есть всего несколько дней до усыпления...</p>
+           </div>
+         <div class="outerbutton-yellow main-header__button">
+               <div class="innerbutton-yellow">
                   <button class="button">
                      <a href="#help"><b>Хочу помочь</b></a>
                   </button>
                </div>
+         </div>  
+        </div>
+      </section>
+      <section class="screen-2">
+         <div class="flex container">
+            <div class="custom-image-wrapper">
+              <div class="custom-image-wrapper__main-image circle-image"></div>
+              <div class="custom-image-wrapper__secondary-image circle-image circle-image--small"></div>
             </div>
-         </section>
-         <section class="screen_2 white">
-            <div class="navigation">
-               <div>
-                  <img src="/img/screen_2.png" alt="собака">
+            <div class="screen-2-text">
+               <div class="screen-2-text__title title-h3 screen-2-text__title_yellow">
+                  <h3>Тут большие добрые сердца помогают жить маленьким сердечкам</h3>
                </div>
-               <div class="text_screen_2">
-                  <h3 class="semibold ">
-                     Тут большие добрые сердца помогают жить маленьким сердечкам
-                  </h3>
-                  <p class="gray_2">
-                     Ежедневно в пункт временного содержания, путём отлова, попадают безнадзорные собаки и коты. По
-                     закону, у животных находящихся в САХе есть всего лишь несколько дней, чтобы найти прежнего или
-                     обрести нового хозяина. В противном случае невостребованных животных ждёт УСЫПЛЕНИЕ! Здесь вы
-                     сможете найти своего как потерявшегося, так и нового верного друга!
+               <div class="screen-2-text__subtitle">
+                  <p>Ежедневно в пункт временного содержания, путём отлова, попадают безнадзорные собаки и коты. По закону, у животных находящихся в САХе есть всего лишь несколько дней, чтобы найти прежнего или обрести нового хозяина. В противном случае невостребованных животных ждёт УСЫПЛЕНИЕ! Здесь вы сможете найти своего как потерявшегося, так и нового верного друга! 
                   </p>
-                  <p class="gray_2">
-                     Если нет возможности забрать хвостика, вы можете помочь нам финансово или другой материальной
-                     помощью. Еще нам всегда нужны добрые и отзывчивые люди - волонтеры, без вас очень трудно!
-                  </p>
+                  <p>Если нет возможности забрать хвостика, вы можете помочь нам финансово или другой материальной помощью. Еще нам всегда нужны добрые и отзывчивые люди - волонтеры, без вас очень трудно!</p>
                </div>
             </div>
-         </section>
-         <section class="screen_3" id="help">
-            <h3 class="light gray_2">
-               Как помочь?
-            </h3>
-            <div class="navigation">
-               <div class="help">
-                  <button><a href="#home"><img src="/img/screen_3_1.png" alt="Дом"></a></button>
-                  <p class="text_md_medium gray_3">Дать хвостику дом или взять на передержку</p>
-               </div>
-               <div class="help">
-                  <button><a href="#fin_help">
-                        <img src="/img/screen_3_2.png" alt="Деньги"></a>
-                  </button>
-                  <p class="text_md_medium gray_3">Перечислить деньги в фонд помощи</p>
-               </div>
-               <div class="help">
-                  <button><a href="#feed">
-                        <img src="/img/screen_3_3.png" alt="Корм"></a>
-                  </button>
-                  <p class="text_md_medium gray_3">Привезти корм, лекарства или другие вещи</p>
-               </div>
-               <div class="help">
-                  <button><a href="#car_help">
-                        <img src="/img/screen_3_4.png" alt="Больница"></a>
-                  </button>
-                  <p class="text_md_medium gray_3">Доставить животным еду или отвезти в больницу</p>
-               </div>
-               <div class="help">
-                  <button><a href="#volunteering">
-                        <img src="/img/screen_3_5.png" alt="Помощь"></a>
-                  </button>
-                  <p class="text_md_medium gray_3">Выгуливать, кормить, мыть или лечить хвостиков</p>
-               </div>
-            </div>
-            <div class="line_home" id="home">
-               <span><img src="/img/line_home_1.png" alt="сердце"></span>
-            </div>
-            <div class="navigation">
-               <div class="text">
-                  <h3 class="medium_28 gray_2">Дом и любовь для хвостика</h3>
-                  <p>Самая большая помощь - это спасти жизнь животному, забрать домой, или помочь хвостику с поиском
-                     дома. У наших подопечных очень мало времени. Рассказывайте друзья и и знакомым о наших хвостиках,
-                     возможно кому-то нужен будет именно такой друг.</p>
-               </div>
-               <div class="text">
-                  <h3 class="medium_28 gray_2">Передержка</h3>
-                  <p>Когда животных ждет скорое усыпление, очень важно найти ему дом. Но пока дом и новые или старые
-                     хозяева разыскиваются, хвостику нужно где-то жить. Вы можете забрать к себе домой животных на
-                     время. Волонтеры, в свою очередь, обязательно помогут с поиском нового дома.
-                  </p>
-               </div>
-            </div>
-         </section>
-         <section class="screen_4" id="animal">
-            <h3 class="light gray_2">Наши подопечные</h3>
-            <a class="all dirty_yellow step" href="/animals.html">Посмотреть всех (157)</a> <img src="/img/icon.png"
-               alt="стрелочка">
-            <article class="navigation">
-               <figure>
-                  <img src="/img/блэки.png" alt="Блэки">
-                  <figcaption>
-                     <h4 class="medium gray_2">Блэки</h4>
-                     <hr>
-                     <p class="text_sm_medium gray_4">Мальчик, 7 месяцев </p>
-                     <p class="text_sm_medium gray_2">Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него
-                        потрясающая густая шерсть.</p>
-                     <a class="all dirty_yellow" href="#">Подробнее</a>
-                  </figcaption>
-               </figure>
-               <figure>
-                  <img src="/img/моник.png" alt="Моник">
-                  <figcaption>
-                     <h4 class="medium gray_2">Моник</h4>
-                     <hr>
-                     <p class="text_sm_medium gray_4"> Мальчик, 7 месяцев </p>
-                     <p class="text_sm_medium gray_2">К поводку приучен. Не агрессивный. В еде не привередничает. С
-                        другими животными не конфликтует. Привит.</p>
-                     <a class="all dirty_yellow" href="#">Подробнее</a>
-                  </figcaption>
-               </figure>
-               <figure>
-                  <img src="/img/саманта.png" alt="саманта">
-                  <figcaption>
-                     <h4 class="medium gray_2">Саманта</h4>
-                     <hr>
-                     <p class="text_sm_medium gray_4">Девочка, 1 год </p>
-                     <p class="text_sm_medium gray_2">Очень ласковая мяукалка. Хочет домой.</p>
-                     <a class="all dirty_yellow" href="#">Подробнее</a>
-                  </figcaption>
-               </figure>
-            </article>
-            <div id="form-1" class="form-1">
-               <form action="#" method="post">
-                  <h3 class="gray_6">Забрать домой</h3>
-                  <hr>
-                  <div class="navigation">
-                     <div class="navigation-img"> 
-                        <img src="/img/animals/Моник.png" alt="foto">
-                     </div>
-                    <div class="navigation_text">
-                       <h4>Моник</h4>
-                     <p class="medium gray_4">Мальчик, 7 месяцев</p>
-                   </div>
-                   <a href="#close" title="Закрыть" class="close">X</a>
-                   </div>
-                  <p class="gray_4">Оставьте информацию о себе. Мы позвоним вам и договоримся, когда вы сможете забрать себе питомца.</p>
-                  <input type="text" name="name" placeholder="Фамилия и имя"> <br>
-                  <input type="tel" name="tel" placeholder="Номер телефона">
-                  <p class="necessarily gray_6">Обязательное поле для заполнения</p>
-                  <textarea placeholder="Замечания"></textarea>
-                  <p class="gray_3">Если у вас есть вопросы, можете позвонить нам:<br>
-                     +375 (33) 6237879  Лена<br>
-                     +375 (29) 7877791  Ольга<br>
-                     +375 (29) 5837015  Рита</p>
-                    <div class="button">
-                       <input type="button" value="Отправить" id="sent">
-                       <input type="reset" value="Отмена" id="cansel">
-                    </div> 
-               </form>
-            </div>
+          </div>
+      </section>
+      <section class="help" id="help">
+         <div class="help-title">
+            <h3>Как помочь?</h3>
+         </div>
+         <div class="help-buttons-icons flex">
+            <div class="help-button">
+               <a href="#overexposure">  
+               <button class="help-button__icon button">
                
-            <div class="navigation">
-               <button class="arrow left"></button>
-               <div>
-                  <div class="rectangle-1">
-                     <div class="rectangle-2">
-                        <button class="button">
-                           <a href="#form-1"><b>Забрать домой</b></a>
-                        </button>
+                     <img src="/image/собака-дом.png" alt="собака рядом с домом">
+               </button>
+                <p class="help-button__text">
+                  Дать хвостику дом или взять на передержку
+               </p>      
+                  </a> 
+            </div>
+            <div class="help-button">
+               <a href="#financial-support">
+               <button class="help-button__icon button">
+                  
+                     <img src="/image/рука-карта.png" alt="рука с банковской картой">
+                  </button>  
+                  <p class="help-button__text">
+                  Перечислить деньги в фонд помощи
+               </p>
+                </a>
+            </div>
+            <div class="help-button">
+               <a href="#help-screen">
+               <button class="help-button__icon button">
+                     <img src="/image/собака-миска.png" alt="собака с миской">
+               </button>
+               <p class="help-button__text">
+                  Привезти корм, лекарства или другие вещи
+               </p>
+               </a>
+            </div>
+            <div class="help-button">
+               <a href="#carassistance">
+               <button class="help-button__icon button">
+                  
+                     <img src="/image/собака-машина.png" alt="собака с машиной">
+                  
+               </button>
+               <p class="help-button__text">
+                  Доставить животным еду или отвезти в больницу
+               </p>
+               </a>
+            </div>
+            <div class="help-button">
+               <a href="#volunteer">
+               <button class="help-button__icon button">
+                  
+                     <img src="/image/ладонь-лапа.png" alt="ладонь с лапой">
+                 
+               </button>
+               <p class="help-button__text">
+                  Выгуливать, кормить, мыть или лечить хвостиков
+               </p>
+             </a>   
+            </div>
+         </div>
+         <div class="help-line line line-block">
+            <span><img src="/image/собака-дом.png" alt="собака рядом с домом"></span>
+         </div>
+         <div class="help-overexposure flex" id="overexposure">
+            <div class="help-overexposure-block">
+               <h3 class="help-overexposure-block__title">
+                  Дом и любовь для хвостика
+               </h3>
+               <p class="help-overexposure-block__text">
+                  Самая большая помощь - это спасти жизнь животному, забрать домой, или помочь хвостику с поиском дома. У наших подопечных очень мало времени. Рассказывайте друзья и и знакомым о наших хвостиках, возможно кому-то нужен будет именно такой друг.
+               </p>
+            </div>
+            <div class="help-overexposure-block">
+               <h3 class="help-overexposure-block__title">
+                  Передержка
+               </h3>
+               <p class="help-overexposure-block__text">
+                  Когда животных ждет скорое усыпление, очень важно найти ему дом. Но пока дом и новые или старые хозяева разыскиваются, хвостику нужно где-то жить. Вы можете забрать к себе домой животных на время. Волонтеры, в свою очередь, обязательно помогут с поиском нового дома.
+               </p>
+            </div>
+         </div>
+      </section>
+      <section class="animals">
+         <div class="animals-title">
+            <h3>Наши подопечные</h3>
+         </div>
+         <div class="animals-link">
+            <a href="/animals-next.html" class="link">Посмотреть всех (157)</a>
+            <img src="/image/icon.png" alt="стрелочка">
+         </div>
+         <div class="animals-cards">
+            <article class="flex">
+               <figure class="animals-cards__image">
+                  <img src="/image/animals/блеки.png" alt="Блеки">
+                  <figcaption class="animals-card-text">
+                     <div class="animals-card-text__title">
+                        <h4><b>Блэки</b></h4>
                      </div>
-                  </div>
-                  <div class="rectangle-1-white">
-                     <div class="rectangle-2-white">
-                        <button class="button">
-                           <a href=""><b>Забрать на передержку</b></a>
-                        </button>
+                     <hr>
+                     <div class="animals-card-text__age">
+                        <p>Мальчик, 7 месяцев</p>
                      </div>
+                     <div class="animals-card-text__description">
+                        <p>Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть.</p>
+                     </div>
+                     <div class="animals-card-text__link">
+                        <a href="#" class="link">Подробнее</a>
+                     </div>
+                  </figcaption>
+               </figure>
+               <figure class="animals-cards__image">
+                  <img src="/image/animals/моник-собака.png" alt="Моник собака">
+                  <figcaption class="animals-card-text">
+                     <div class="animals-card-text__title">
+                        <h4><b>Моник</b></h4>
+                     </div>
+                     <hr>
+                     <div class="animals-card-text__age">
+                        <p>Мальчик, 7 месяцев</p>
+                     </div>
+                     <div class="animals-card-text__description">
+                        <p>К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не конфликтует. Привит.</p>
+                     </div>
+                     <div class="animals-card-text__link link">
+                        <a href="#" class="link">Подробнее</a>
+                     </div>
+                  </figcaption>
+               </figure>
+               <figure class="animals-cards__image">
+                  <img src="/image/animals/саманта.png" alt="Саманта">
+                  <figcaption class="animals-card-text">
+                     <div class="animals-card-text__title">
+                        <h4><b>Саманта</b></h4>
+                     </div>
+                     <hr>
+                     <div class="animals-card-text__age">
+                        <p>Девочка, 1 год</p>
+                     </div>
+                     <div class="animals-card-text__description">
+                        <p>Очень ласковая мяукалка. Хочет домой.</p>
+                     </div>
+                     <div class="animals-card-text__link link">
+                        <a href="#" class="link">Подробнее</a>
+                     </div>
+                  </figcaption>
+               </figure>
+             </article>
+         </div>
+         <div class="animals-buttons flex">
+            <button class="animals-buttons__arrow animals-buttons__arrow-left"></button>
+            <div class="animals-buttons__long">
+               <div class="outerbutton-yellow ">
+                  <div class="innerbutton-yellow animals-buttons__home">
+                     <button class="button">
+                        <a href="#"><b>Забрать домой</b></a>
+                     </button>
                   </div>
                </div>
-               <button class="arrow right"></button>
-            </div>
-            <div class="navigation">
-               <p class="text">Помочь быстрее пристроить хвостиков можно путем размещения наших постов у себя в соц
-                  сетях.
-                  Переходите на наши странички.</p>
-               <div class="logo navigation">
-                  <div class="circle-1-white">
-                     <div class="circle-2-white">
-                        <a href="https://vk.com/animalsgrodno#" target="_blank"><svg width="30" height="18" viewBox="0 0 30 18" fill="none" class="logo-vk" xmlns="http://www.w3.org/2000/svg">
-                           <path d="M29.3122 1.21896C29.5218 0.515712 29.3122 0 28.3211 0H25.0379C24.2025 0 23.8207 0.446144 23.6111 0.936146C23.6111 0.936146 21.9418 5.04823 19.5764 7.7145C18.8128 8.49034 18.464 8.73534 18.0478 8.73534C17.8397 8.73534 17.5373 8.49034 17.5373 7.78709V1.21896C17.5373 0.375063 17.2963 0 16.6001 0H11.441C10.92 0 10.6056 0.390187 10.6056 0.762225C10.6056 1.56075 11.7883 1.74525 11.9096 3.99563V8.8775C11.9096 9.94673 11.7195 10.1418 11.3003 10.1418C10.1879 10.1418 7.48112 6.01462 5.87471 1.29004C5.56181 0.372039 5.24592 0.00151296 4.40753 0.00151296H1.12584C0.18714 0.00151296 0 0.447656 0 0.937658C0 1.81785 1.11236 6.17342 5.18154 11.934C7.89433 15.8676 11.7135 18 15.1928 18C17.2783 18 17.5358 17.5266 17.5358 16.71V13.7367C17.5358 12.79 17.7349 12.5994 18.3951 12.5994C18.8802 12.5994 19.7156 12.8474 21.6634 14.7424C23.8881 16.9897 24.2564 17.9985 25.5065 17.9985H28.7882C29.7254 17.9985 30.194 17.5251 29.9245 16.5905C29.6295 15.6604 28.5666 14.3068 27.1563 12.7053C26.3898 11.7918 25.2445 10.8088 24.8956 10.3173C24.4091 9.68358 24.5498 9.4038 24.8956 8.8412C24.8971 8.84272 28.896 3.15325 29.3122 1.21896Z" fill="#E8A700"/>
-                           </svg></a>
-                     </div>
-                  </div>
-                  <div class="circle-1-white">
-                     <div class="circle-2-white">
-                        <a href="https://www.instagram.com/animalsgrodno/" target="_blank"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" class="logo-inst" xmlns="http://www.w3.org/2000/svg">
-                           <path d="M14.996 9.99787C12.2417 9.99787 9.99393 12.2456 9.99393 15C9.99393 17.7544 12.2417 20.0021 14.996 20.0021C17.7503 20.0021 19.998 17.7544 19.998 15C19.998 12.2456 17.7503 9.99787 14.996 9.99787ZM29.9983 15C29.9983 12.9286 30.0171 10.876 29.9008 8.80832C29.7844 6.40669 29.2366 4.27525 27.4804 2.51907C25.7205 0.759128 23.5929 0.215011 21.1913 0.098682C19.1199 -0.0176466 17.0673 0.00111617 14.9997 0.00111617C12.9284 0.00111617 10.8758 -0.0176466 8.80815 0.098682C6.40658 0.215011 4.27517 0.762881 2.51902 2.51907C0.759114 4.27901 0.215007 6.40669 0.0986802 8.80832C-0.0176462 10.8797 0.00111615 12.9324 0.00111615 15C0.00111615 17.0676 -0.0176462 19.124 0.0986802 21.1917C0.215007 23.5933 0.762867 25.7247 2.51902 27.4809C4.27893 29.2409 6.40658 29.785 8.80815 29.9013C10.8795 30.0176 12.9321 29.9989 14.9997 29.9989C17.0711 29.9989 19.1237 30.0176 21.1913 29.9013C23.5929 29.785 25.7243 29.2371 27.4804 27.4809C29.2403 25.721 29.7844 23.5933 29.9008 21.1917C30.0208 19.124 29.9983 17.0714 29.9983 15ZM14.996 22.6964C10.7369 22.6964 7.29966 19.2591 7.29966 15C7.29966 10.7409 10.7369 7.30355 14.996 7.30355C19.255 7.30355 22.6923 10.7409 22.6923 15C22.6923 19.2591 19.255 22.6964 14.996 22.6964ZM23.0075 8.7858C22.0131 8.7858 21.2101 7.98276 21.2101 6.98834C21.2101 5.99392 22.0131 5.19087 23.0075 5.19087C24.0019 5.19087 24.8049 5.99392 24.8049 6.98834C24.8052 7.22447 24.7589 7.45834 24.6687 7.67655C24.5785 7.89476 24.4461 8.09303 24.2791 8.26C24.1122 8.42697 23.9139 8.55936 23.6957 8.64958C23.4775 8.73981 23.2436 8.7861 23.0075 8.7858Z" fill="#E8A700"/>
-                           </svg>
-                           </a>
-                     </div>
+               <div class="outerbutton-white animals-buttons__overexposure">
+                  <div class="innerbutton-white">
+                     <button class="button">
+                        <a href="#"><b>Забрать на передержку</b></a>
+                     </button>
                   </div>
                </div>
             </div>
-         </section>
-         <section class="screen_5 white" id="fin_help">
-            <div class="line_home">
-               <span><img src="/img/финансовая поддержка.png" alt="поддержка"></span>
-            </div>
-            <h3 class="medium_28 gray_2">Финансовая поддержка</h3>
-            <p class="text_l_medium gray_4 text"> Такая помощь необходима для оплаты стерилизации, прививок, лечения
-               больных
-               животных, покупка корма и других жизненно необходимых вещей.</p>
-            <div class="navigation">
-               <div>
-                  <h3 class="light gray_2">Расчетный счет в Банке</h3>
-                  <p>БООЗЖ "СПАСИ ЖИЗНЬ"<br>
-                     УНП: 590375680<br>
-                     <b>Текущий (расчетный) счет в BYN: </b><br>
-                     BY13ALFA30152555460010270000 <br>
-                     ЗАО 'Альфа-Банк'<br>
-                     БИК: ALFABY2X
-                  </p>
-                  <div class="rectangle-1 button">
-                     <div class="rectangle-2">
-                        <button class="button">
-                           <a href="https://express-pay.by/"><b>Быстрый платеж</b></a>
-                        </button>
-                     </div>
-                  </div>
+            <button class="animals-buttons__arrow animals-buttons__arrow-right"></button>
+         </div>
+         <div class="flex button-logo-animals">
+            <p class="button-logo-animals__text">
+               Помочь быстрее пристроить хвостиков можно путем размещения наших постов у себя в соц сетях. Переходите на наши странички.
+            </p>
+            <div class="button-logo-vk logo-flex">
+               <div class="button-logo-outercircle-white"><div class="button-logo-innercircle-white">
+                  <a href="https://vk.com/animalsgrodno#" target="_blank"><svg width="30" height="18" class="button-logo-vk__link" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M29.3124 1.21896C29.522 0.515712 29.3124 0 28.3213 0H25.0381C24.2027 0 23.821 0.446144 23.6114 0.936146C23.6114 0.936146 21.9421 5.04823 19.5766 7.7145C18.8131 8.49034 18.4643 8.73534 18.0481 8.73534C17.84 8.73534 17.5375 8.49034 17.5375 7.78709V1.21896C17.5375 0.375063 17.2965 0 16.6003 0H11.4413C10.9203 0 10.6059 0.390187 10.6059 0.762225C10.6059 1.56075 11.7886 1.74525 11.9099 3.99563V8.8775C11.9099 9.94673 11.7197 10.1418 11.3005 10.1418C10.1882 10.1418 7.48136 6.01462 5.87495 1.29004C5.56205 0.372039 5.24616 0.00151296 4.40777 0.00151296H1.12608C0.187385 0.00151296 0.000244141 0.447656 0.000244141 0.937658C0.000244141 1.81785 1.11261 6.17342 5.18178 11.934C7.89457 15.8676 11.7137 18 15.193 18C17.2785 18 17.536 17.5266 17.536 16.71V13.7367C17.536 12.79 17.7352 12.5994 18.3954 12.5994C18.8805 12.5994 19.7158 12.8474 21.6636 14.7424C23.8883 16.9897 24.2566 17.9985 25.5067 17.9985H28.7884C29.7256 17.9985 30.1942 17.5251 29.9247 16.5905C29.6298 15.6604 28.5668 14.3068 27.1565 12.7053C26.39 11.7918 25.2447 10.8088 24.8959 10.3173C24.4093 9.68358 24.5501 9.4038 24.8959 8.8412C24.8974 8.84272 28.8962 3.15325 29.3124 1.21896Z" fill="#E8A700"/>
+                     </svg></a>
                </div>
-               <div>
-                  <h3 class="light gray_2">Коробочки в городе</h3>
-                  <p>Наши коробочки для пожертвований в г. Гродно:<br>
-                     1. Зоомаркет «Зообазар», ул. Комарова, 26а;<br>
-                     2. Учебный корпус ГГАУ, ул. Волковича, 1;<br>
-                     3. Парикмахерская «ПРИМАДОННА», ул. Гоголя, 11;<br>
-                     4. Зоомаркет «Зообазар» ул. Пушкина, 31а;<br>
-                     5. Гипермаркет «Евроопт», ул. Тимирязева, 8;<br>
-                     6. Гипермаркет «Евроопт», ул. Янки Купалы, 82А;<br>
-                     7. Фитнес-центр «АДРЕНАЛИН», ул. Подольная, д.37.</p>
-                  <a class="all dirty_yellow" href="https://yandex.ru/maps/?um=constructor%3A5c4116ca184663cbff3edfa43fd08f2e16a63ea937ecb5fd0e7241b549274512&source=constructorLink" target="_blink">Посмотреть на карте</a>
+               </div>            
+            </div>
+            <div class="button-logo-inst">
+               <div class="button-logo-outercircle-white"><div class="button-logo-innercircle-white">
+                  <a href="https://www.instagram.com/animalsgrodno/" target="_blank" ><svg width="30" height="30" class="button-logo-inst__link" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M13.4964 8.99808C11.0175 8.99808 8.99454 11.0211 8.99454 13.5C8.99454 15.9789 11.0175 18.0019 13.4964 18.0019C15.9752 18.0019 17.9982 15.9789 17.9982 13.5C17.9982 11.0211 15.9752 8.99808 13.4964 8.99808ZM26.9985 13.5C26.9985 11.6357 27.0154 9.78837 26.9107 7.92748C26.806 5.76602 26.3129 3.84773 24.7324 2.26716C23.1485 0.683215 21.2336 0.19351 19.0722 0.0888138C17.2079 -0.0158819 15.3606 0.00100455 13.4997 0.00100455C11.6355 0.00100455 9.78819 -0.0158819 7.92734 0.0888138C5.76592 0.19351 3.84766 0.686593 2.26712 2.26716C0.683203 3.85111 0.193506 5.76602 0.0888122 7.92748C-0.0158816 9.79174 0.00100453 11.6391 0.00100453 13.5C0.00100453 15.3609 -0.0158816 17.2116 0.0888122 19.0725C0.193506 21.234 0.68658 23.1523 2.26712 24.7328C3.85103 26.3168 5.76592 26.8065 7.92734 26.9112C9.79156 27.0159 11.6389 26.999 13.4997 26.999C15.364 26.999 17.2113 27.0159 19.0722 26.9112C21.2336 26.8065 23.1518 26.3134 24.7324 24.7328C26.3163 23.1489 26.806 21.234 26.9107 19.0725C27.0188 17.2116 26.9985 15.3643 26.9985 13.5ZM13.4964 20.4268C9.66323 20.4268 6.56969 17.3332 6.56969 13.5C6.56969 9.66679 9.66323 6.57319 13.4964 6.57319C17.3295 6.57319 20.423 9.66679 20.423 13.5C20.423 17.3332 17.3295 20.4268 13.4964 20.4268ZM20.7067 7.90722C19.8118 7.90722 19.089 7.18448 19.089 6.2895C19.089 5.39452 19.8118 4.67179 20.7067 4.67179C21.6017 4.67179 22.3244 5.39452 22.3244 6.2895C22.3247 6.50202 22.283 6.7125 22.2018 6.90889C22.1206 7.10528 22.0015 7.28373 21.8512 7.434C21.7009 7.58427 21.5225 7.70342 21.3261 7.78462C21.1297 7.86583 20.9192 7.90749 20.7067 7.90722Z" fill="#E8A700"/>
+                     </svg>
+                     
+                  </a>
                </div>
             </div>
-         </section>
-         <section class="screen_6" id="feed">
-            <div class="line_home">
-               <span><img src="/img/корма.png" alt="корма"></span>
+         </div>
+      </div>
+      </section>
+      <section class="financial-support" id="financial-support">
+         <div class="financial-support-line line line-block">
+            <span><img src="/image/рука-карта.png" alt="рука с банковской картой"></span>
+         </div>
+         <div class="financial-support__title">
+            <h3>
+               Финансовая поддержка
+            </h3>
+         </div> 
+         <div class="financial-support__subtitle">
+            <p>
+               Такая помощь необходима для оплаты стерилизации, прививок, лечения больных животных, покупка корма и других жизненно необходимых вещей.
+            </p>
+         </div>
+         <div class="financial-support__column flex">
+            <div class="financial-support-text">
+               <div class="financial-support-text__title">
+                  <h3>
+                     Расчетный счет в Банке
+                  </h3>
+               </div>
+              <div class="financial-support-text__description">
+                 <p>
+                  БООЗЖ "СПАСИ ЖИЗНЬ" <br>
+                  УНП: 590375680 <br>
+                  <b>Текущий (расчетный) счет в BYN: </b> <br>
+                  BY13ALFA30152555460010270000 <br>
+                  ЗАО 'Альфа-Банк'<br>
+                  БИК: ALFABY2X
+                 </p>
+              </div> 
+              <div class="outerbutton-yellow financial-support-text__button">
+               <div class="innerbutton-yellow">
+                  <button class="button">
+                     <a href="https://express-pay.by/" target="_blank"><b>Быстрый платеж</b></a>
+                  </button>
+               </div>
+               </div>
             </div>
-            <div class="need">
-               <h3 class="medium_28 gray_2">
+            <div class="financial-support-text">
+               <div class="financial-support-text__title">
+                  <h3>
+                     Коробочки в городе
+                  </h3>
+               </div>
+              <div class="financial-support-text__description">
+               <p>
+                  Наши коробочки для пожертвований в г. Гродно: <br>
+                  1. Зоомаркет «Зообазар», ул. Комарова, 26а; <br>
+                  2. Учебный корпус ГГАУ, ул. Волковича, 1; <br>
+                  3. Парикмахерская «ПРИМАДОННА», ул. Гоголя, 11; <br>
+                  4. Зоомаркет «Зообазар» ул. Пушкина, 31а; <br>
+                  5. Гипермаркет «Евроопт», ул. Тимирязева, 8; <br>
+                  6. Гипермаркет «Евроопт», ул. Янки Купалы, 82А; <br>
+                  7. Фитнес-центр «АДРЕНАЛИН», ул. Подольная, д.37.
+               </p>
+               <div class="financial-support-text__link">
+                  <a href="#" class="link">Посмотреть на карте</a>
+               </div>
+              </div> 
+            </div>
+         </div>
+      </section>
+      <section class="help-screen" id="help-screen">
+         <div class="help-screen-line line line-block">
+            <span><img src="/image/собака-миска.png" alt="собака с миской"></span>
+         </div> 
+         <div class="help-screen-block">
+            <div class="help-screen-block__title help-screen-block-feed">
+               <h3>
                   Корма
                </h3>
-               <p class="gray_2">
+            </div>
+            <div class="help-screen-block__text">
+               <p>
                   Можно помочь с покупкой и доставкой еды для хвостатых:<br>
                   • Быстроразваривающиеся <b>крупы</b>: дроблёная гречка, овсянка, сечка, овсяные/гречневые хлопья, не
                   требующие варки;<br>
@@ -335,20 +378,28 @@
                   • <b>Фарш для собак</b>, "БОБИКИ" и др.<br>
                   Вы можете помочь в приготовлении каш и их доставке!
                </p>
-               <h3 class="medium_28 gray_2">
+            </div>
+            <div class="help-screen-block__title help-screen-block-medicine">
+               <h3>
                   Лекарства
                </h3>
-               <p class="gray_2">
+            </div>
+            <div class="help-screen-block__text">
+               <p>
                   Нам необходимы препараты: <b>цефтриаксон</b> (флакон по 0,5 г); <b>новокаин</b> (раствор для
                   инъекций);
                   <b>гискан; гамавит; катозал; антитокс фоспренил; энтеросгель</b> (паста); <b>препараты от глистов,
                      блох,
                      клещей, для заживления ран</b>.
                </p>
-               <h3 class="medium_28 gray_2">
+            </div>
+            <div class="help-screen-block__title help-screen-block-otherthings">
+               <h3>
                   Другие нужные вещи
                </h3>
-               <p class="gray_2">
+            </div>
+            <div class="help-screen-block__text">
+               <p>
                   Для содержания животных всегда необходимы:<br>
                   • Ошейники, поводки, намордники;<br>
                   • Опилки и солома в любом количестве;<br>
@@ -357,86 +408,114 @@
                   • Теплые вещи, лежаки для утепления и уюта животных;<br>
                   • Будки.
                </p>
-               <a href="#" id="forms-4">
-                  <div id="okno">
-                    Всплывающее окошко!
-                  </div>
-                </a>
-               <a class="all dirty_yellow" href="#forms-4">Кому и куда передать</a>
             </div>
-            <div class="line_home" id="car_help">
-               <span><img src="/img/автопомощь.png" alt="автопомощь"></span>
+            <div class="help-screen-block__link">
+               <a href="#" class="link">Кому и куда передать?</a>
             </div>
-            <div class="need">
-               <h3 class="medium_28 gray_2">Автопомощь</h3>
-               <p class="gray_2">Важной помощью будет транспортировка. Необходимо отвозить животных в ветеринарную
-                  клинику в
-                  сопровождении нашего волонтера или привозить еду. Если у вас есть автомобиль, немного свободного
-                  времени и
-                  доброе сердце - будем вам рады.</p>
-               <div class="rectangle-1">
-                  <div class="rectangle-2">
-                     <button class="button">
-                        <a href=""><b>Оставить заявку</b></a>
-                     </button>
-                  </div>
+         </div>
+         <div class="help-screen-line line line-block">
+            <span><img src="/image/собака-машина.png" alt="собака с ммашиной"></span>
+         </div>
+         <div class="help-screen-block" id="carassistance">
+            <div class="help-screen-block__title help-screen-block-carassistance">
+               <h3>
+                  Автопомощь
+               </h3>
+            </div>
+            <div class="help-screen-block__text">
+               <p>
+                  Важной помощью будет транспортировка. Необходимо отвозить животных в ветеринарную клинику в сопровождении нашего волонтера или привозить еду. Если у вас есть автомобиль, немного свободного времени и доброе сердце - будем вам рады.
+               </p>
+            </div>
+            <div class="outerbutton-yellow help-screen-block__button">
+               <div class="innerbutton-yellow">
+                  <button class="button">
+                     <a href="#"><b>Оставить заявку</b></a>
+                  </button>
                </div>
+               </div>  
+         </div>  
+         <div class="help-screen-line line line-block">
+            <span><img src="/image/ладонь-лапа.png" alt="ладонь с лапкой"></span>
+         </div> 
+        <div class="volunteer flex" id="volunteer">
+         <div class="custom-image-wrapper">
+            <div class="custom-image-wrapper__main-image circle-image"></div>
+          </div>  
+          <div class="help-screen-block__volunteering">
+            <div class="help-screen-block__title">
+               <h3>
+                  Волонтерство
+               </h3>
             </div>
-            <div class="line_home">
-               <span><img src="/img/волонтерство_линия.png" alt="волонтерство"></span>
-            </div>
-            <div class="navigation" id="volunteering">
-               <img src="/img/волонтерство.png" alt="собака">
-               <div class="text">
-                  <h3 class="medium_28 gray_2">Волонтерство</h3>
-                  <p class="gray_2">Катастрофически не хватает добрых людей, которые готовы поделиться своим временем и
+            <div class="help-screen-block__text">
+               <p>
+                  Катастрофически не хватает добрых людей, которые готовы поделиться своим временем и
                      окружить заботой животных. Много опыта не нужно, все расскажем и поможем! Если Вы располагаете
                      несколькими часами свободного времени, проведите его с пользой! Главное условие - это Ваше
                      совершеннолетие и любовь к животным!<br>
                      Часто животным не хватает обычных прогулок и игры, они сидят в клетках и грустят.</p>
-                  <div class="rectangle-1">
-                     <div class="rectangle-2">
-                        <button class="button">
-                           <a href=""><b>Оставить заявку</b></a>
-                        </button>
-                     </div>
-                  </div>
+               </p>
+            </div>
+            <div class="outerbutton-yellow help-screen-block__button">
+               <div class="innerbutton-yellow">
+                  <button class="button">
+                     <a href="#"><b>Оставить заявку</b></a>
+                  </button>
+               </div>
+               </div>  
+         </div>   
+        </div>   
+      </section>
+      <section class="news"> 
+         <div class="news__title">
+            <h3>
+               Новости
+            </h3>
+         </div>
+         <div class="news-block flex">
+            <div class="news-block__img">
+               <img src="/image/собака-новости.png" alt="собака на зеленом фоне">
+            </div>
+            <div class="news-block__text">
+               <p>
+                  Срочно необходимо забрать собаку (мальчик) на передержку или насовсем. Послезавтра его ждет усыпление. С кормом и доставкой поможем. В данный момент находится в вольера САХа. <br>
+                  Контактный телефон + 37529 58930557<br>
+                  Спасите жизнь хвостику.
+               </p>
+            </div>
+         </div>
+         <div class="news-block flex">
+            <div class="news-block__img">
+               <img src="/image/щенки-новости.png" alt="щенки">
+            </div>
+            <div class="news-block__text">
+               <p>
+                  Найдены бедомные щенки по улице Горького д.56. <br>
+                  Сегодня будут перевезены в вольеры САХа. Если у вас есть возможность взять на передержку или пристроить малышей - будем вам очень благодарны.
+               </p>
+            </div>
+         </div>
+         <details>
+            <summary></summary>
+            <div class="news-block flex">
+               <div class="news-block__img">
+                  <img src="/image/щенки-новости.png" alt="щенки">
+               </div>
+               <div class="news-block__text">
+                  <p>
+                     Найдены бедомные щенки по улице Горького д.56.<br>
+                     Сегодня будут перевезены в вольеры САХа. Если у вас есть возможность взять на передержку или пристроить малышей - будем вам очень благодарны.
+                  </p>
                </div>
             </div>
-         </section>
-         <section class="screen_7 white">
-            <h3 class="medium_28 gray_2" id="news">Новости</h3>
-            <article>
-               <div class="news">
-               
-                  <class class="navigation">
-                  <img src="/img/новость-1.png" alt="черный пес">
-                  <p class="gray_2">Срочно необходимо забрать собаку (мальчик) на передержку или насовсем. Послезавтра
-                     его
-                     ждет усыпление. С кормом и доставкой поможем. В данный момент находится в вольера САХа. <br>
-                     Контактный телефон + 37529 58930557<br>
-                     Спасите жизнь хвостику.</p>
-               </class>
-               <div class="navigation">
-                  <img src="/img/новость-2.png" alt="щенки">
-                  <p class="gray_2" >Найдены бедомные щенки по улице Горького д.56.<br>
-                     Сегодня будут перевезены в вольеры САХа. Если у вас есть возможность взять на передержку или
-                     пристроить
-                     малышей - будем вам очень благодарны.</p>
+            <div class="news-block flex">
+               <div class="news-block__img">
+                  <img src="/image/щенки-новости.png" alt="щенки">
                </div>
-               
-               <details>
-                  <summary></summary>
-               <div class="navigation">
-                  <img src="/img/новость-2.png" alt="щенки">
-                  <p class="gray_2">Найдены бедомные щенки по улице Горького д.56.<br>
-                     Сегодня будут перевезены в вольеры САХа. Если у вас есть возможность взять на передержку или
-                     пристроить
-                     малышей - будем вам очень благодарны.</p>
-               </div>
-               <div class="navigation">
-                  <img src="/img/новость-2.png" alt="щенки">
-                  <p class="gray_2">Найдены бедомные щенки по улице Горького д.56.<br>
+               <div class="news-block__text">
+                  <p>
+                     Найдены бедомные щенки по улице Горького д.56.<br>
                      Сегодня будут перевезены в вольеры САХа. Если у вас есть возможность взять на передержку или
                      пристроить
                      малышей - будем вам очень благодарны.Найдены бедомные щенки по улице Горького д.56.<br>
@@ -445,83 +524,120 @@
                      малышей - будем вам очень благодарны.Найдены бедомные щенки по улице Горького д.56.<br>
                      Сегодня будут перевезены в вольеры САХа. Если у вас есть возможность взять на передержку или
                      пристроить
-                     малышей - будем вам очень благодарны.</p>
+                     малышей - будем вам очень благодарны.
+                  </p>
                </div>
-               <div class="navigation">
-                  <img src="/img/новость-2.png" alt="щенки">
-                  <p class="gray_2">Найдены бедомные щенки по улице Горького д.56.<br>
-                     Сегодня будут перевезены в вольеры САХа. Если у вас есть возможность взять на передержку или
-                     пристроить
-                     малышей - будем вам очень благодарны.</p>
+            </div>
+            <div class="news-block flex">
+               <div class="news-block__img">
+                  <img src="/image/щенки-новости.png" alt="щенки">
                </div>
-               <div class="navigation">
-                  <img src="/img/новость-2.png" alt="щенки">
-                  <p class="gray_2">Найдены бедомные щенки по улице Горького д.56.<br>
-                     Сегодня будут перевезены в вольеры САХа. Если у вас есть возможность взять на передержку или
-                     пристроить
-                     малышей - будем вам очень благодарны.</p>
+               <div class="news-block__text">
+                  <p>
+                     Найдены бедомные щенки по улице Горького д.56. <br>
+                     Сегодня будут перевезены в вольеры САХа. Если у вас есть возможность взять на передержку или пристроить малышей - будем вам очень благодарны.
+                  </p>
                </div>
-               </details>
+            </div>
+            <div class="news-block flex">
+               <div class="news-block__img">
+                  <img src="/image/щенки-новости.png" alt="щенки">
                </div>
-               </article>
-           <div class="space"></div>
-         </section>
-         <section class="screen_8" id="about_u">
-            <h3 class="medium_28 gray_2">О нас</h3>
-            <p class="text_l_medium gray_2">
-               Мы - благотворительное общественное объединение защиты животных «СПАСИ ЖИЗНЬ». Цель нашей деятельности:
-               помощь
-               бездомным животным, оказавшимся в Пункте отлова и временного содержания безнадзорных животных г.Гродно.
-            </p>
-            <h4 class="gray_2" id="contact">Контакты</h4>
-            <p class="gray_2">Если Вы хотите приютить одного из этих четвероногих или оказать какую-либо помощь, звоните
-               волонтёрам:<br>
-               +375 (33) 6237879, Лена <br>
-               +375 (29) 7877791, Ольга<br>
-               +375 (29) 5837015, Рита
-            </p>
-            <p class="text gray_4">
-               Связаться с нами можно написав в соц. сетях.
-            </p>
-            <div class="logo navigation">
-               <div class="circle-1-white">
-                  <div class="circle-2-white">
-                     <a href="https://vk.com/animalsgrodno#" target="_blank"><svg width="30" height="18" viewBox="0 0 30 18" fill="none" class="logo-vk" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29.3122 1.21896C29.5218 0.515712 29.3122 0 28.3211 0H25.0379C24.2025 0 23.8207 0.446144 23.6111 0.936146C23.6111 0.936146 21.9418 5.04823 19.5764 7.7145C18.8128 8.49034 18.464 8.73534 18.0478 8.73534C17.8397 8.73534 17.5373 8.49034 17.5373 7.78709V1.21896C17.5373 0.375063 17.2963 0 16.6001 0H11.441C10.92 0 10.6056 0.390187 10.6056 0.762225C10.6056 1.56075 11.7883 1.74525 11.9096 3.99563V8.8775C11.9096 9.94673 11.7195 10.1418 11.3003 10.1418C10.1879 10.1418 7.48112 6.01462 5.87471 1.29004C5.56181 0.372039 5.24592 0.00151296 4.40753 0.00151296H1.12584C0.18714 0.00151296 0 0.447656 0 0.937658C0 1.81785 1.11236 6.17342 5.18154 11.934C7.89433 15.8676 11.7135 18 15.1928 18C17.2783 18 17.5358 17.5266 17.5358 16.71V13.7367C17.5358 12.79 17.7349 12.5994 18.3951 12.5994C18.8802 12.5994 19.7156 12.8474 21.6634 14.7424C23.8881 16.9897 24.2564 17.9985 25.5065 17.9985H28.7882C29.7254 17.9985 30.194 17.5251 29.9245 16.5905C29.6295 15.6604 28.5666 14.3068 27.1563 12.7053C26.3898 11.7918 25.2445 10.8088 24.8956 10.3173C24.4091 9.68358 24.5498 9.4038 24.8956 8.8412C24.8971 8.84272 28.896 3.15325 29.3122 1.21896Z" fill="#E8A700"/>
+               <div class="news-block__text">
+                  <p>
+                     Найдены бедомные щенки по улице Горького д.56. <br>
+                     Сегодня будут перевезены в вольеры САХа. Если у вас есть возможность взять на передержку или пристроить малышей - будем вам очень благодарны.
+                  </p>
+               </div>
+            </div>
+         </details>
+      </section>
+      <section class="about-u" id="about-u">
+            <div class="about-u__title">
+               <h3>
+                  О нас
+               </h3>
+            </div>
+            <div class="about-u__text">
+               <p>
+                  <b>Мы - благотворительное общественное объединение защиты животных «СПАСИ ЖИЗНЬ». Цель нашей деятельности: помощь бездомным животным, оказавшимся в Пункте отлова и временного содержания безнадзорных животных г.Гродно.</b>
+               </p>
+            </div>
+          <div class="about-u-contacts" id="contact">
+             <div class="about-u-contacts__title">
+                <p>
+                  Контакты
+                </p>
+             </div>
+             <div class="about-u-contacts__text">
+                <p>
+                  Если Вы хотите приютить одного из этих четвероногих или оказать какую-либо помощь, звоните волонтёрам:<br>
+                  +375 (33) 6237879, Лена <br>
+                  +375 (29) 7877791, Ольга <br>
+                  +375 (29) 5837015, Рита  
+                </p>
+             </div>
+          </div> 
+          <div class="about-u-logo flex">
+             <div class="about-u-logo__text">
+                <p>
+                  Связаться с нами можно написав в соц. сетях.
+                </p>
+             </div>
+             
+               <div class="button-logo-vk logo-flex">
+                  <div class="button-logo-outercircle-white"><div class="button-logo-innercircle-white">
+                     <a href="https://vk.com/animalsgrodno#" target="_blank"><svg width="30" height="18" class="button-logo-vk__link" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.3124 1.21896C29.522 0.515712 29.3124 0 28.3213 0H25.0381C24.2027 0 23.821 0.446144 23.6114 0.936146C23.6114 0.936146 21.9421 5.04823 19.5766 7.7145C18.8131 8.49034 18.4643 8.73534 18.0481 8.73534C17.84 8.73534 17.5375 8.49034 17.5375 7.78709V1.21896C17.5375 0.375063 17.2965 0 16.6003 0H11.4413C10.9203 0 10.6059 0.390187 10.6059 0.762225C10.6059 1.56075 11.7886 1.74525 11.9099 3.99563V8.8775C11.9099 9.94673 11.7197 10.1418 11.3005 10.1418C10.1882 10.1418 7.48136 6.01462 5.87495 1.29004C5.56205 0.372039 5.24616 0.00151296 4.40777 0.00151296H1.12608C0.187385 0.00151296 0.000244141 0.447656 0.000244141 0.937658C0.000244141 1.81785 1.11261 6.17342 5.18178 11.934C7.89457 15.8676 11.7137 18 15.193 18C17.2785 18 17.536 17.5266 17.536 16.71V13.7367C17.536 12.79 17.7352 12.5994 18.3954 12.5994C18.8805 12.5994 19.7158 12.8474 21.6636 14.7424C23.8883 16.9897 24.2566 17.9985 25.5067 17.9985H28.7884C29.7256 17.9985 30.1942 17.5251 29.9247 16.5905C29.6298 15.6604 28.5668 14.3068 27.1565 12.7053C26.39 11.7918 25.2447 10.8088 24.8959 10.3173C24.4093 9.68358 24.5501 9.4038 24.8959 8.8412C24.8974 8.84272 28.8962 3.15325 29.3124 1.21896Z" fill="#E8A700"/>
                         </svg></a>
                   </div>
+                  </div>            
                </div>
-               <div class="circle-1-white">
-                  <div class="circle-2-white">
-                     <a href="https://www.instagram.com/animalsgrodno/" target="_blank"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" class="logo-inst" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.996 9.99787C12.2417 9.99787 9.99393 12.2456 9.99393 15C9.99393 17.7544 12.2417 20.0021 14.996 20.0021C17.7503 20.0021 19.998 17.7544 19.998 15C19.998 12.2456 17.7503 9.99787 14.996 9.99787ZM29.9983 15C29.9983 12.9286 30.0171 10.876 29.9008 8.80832C29.7844 6.40669 29.2366 4.27525 27.4804 2.51907C25.7205 0.759128 23.5929 0.215011 21.1913 0.098682C19.1199 -0.0176466 17.0673 0.00111617 14.9997 0.00111617C12.9284 0.00111617 10.8758 -0.0176466 8.80815 0.098682C6.40658 0.215011 4.27517 0.762881 2.51902 2.51907C0.759114 4.27901 0.215007 6.40669 0.0986802 8.80832C-0.0176462 10.8797 0.00111615 12.9324 0.00111615 15C0.00111615 17.0676 -0.0176462 19.124 0.0986802 21.1917C0.215007 23.5933 0.762867 25.7247 2.51902 27.4809C4.27893 29.2409 6.40658 29.785 8.80815 29.9013C10.8795 30.0176 12.9321 29.9989 14.9997 29.9989C17.0711 29.9989 19.1237 30.0176 21.1913 29.9013C23.5929 29.785 25.7243 29.2371 27.4804 27.4809C29.2403 25.721 29.7844 23.5933 29.9008 21.1917C30.0208 19.124 29.9983 17.0714 29.9983 15ZM14.996 22.6964C10.7369 22.6964 7.29966 19.2591 7.29966 15C7.29966 10.7409 10.7369 7.30355 14.996 7.30355C19.255 7.30355 22.6923 10.7409 22.6923 15C22.6923 19.2591 19.255 22.6964 14.996 22.6964ZM23.0075 8.7858C22.0131 8.7858 21.2101 7.98276 21.2101 6.98834C21.2101 5.99392 22.0131 5.19087 23.0075 5.19087C24.0019 5.19087 24.8049 5.99392 24.8049 6.98834C24.8052 7.22447 24.7589 7.45834 24.6687 7.67655C24.5785 7.89476 24.4461 8.09303 24.2791 8.26C24.1122 8.42697 23.9139 8.55936 23.6957 8.64958C23.4775 8.73981 23.2436 8.7861 23.0075 8.7858Z" fill="#E8A700"/>
-                        </svg></a>
+               <div class="button-logo-inst">
+                  <div class="button-logo-outercircle-white"><div class="button-logo-innercircle-white">
+                     <a href="https://www.instagram.com/animalsgrodno/" target="_blank" ><svg width="30" height="30" class="button-logo-inst__link" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.4964 8.99808C11.0175 8.99808 8.99454 11.0211 8.99454 13.5C8.99454 15.9789 11.0175 18.0019 13.4964 18.0019C15.9752 18.0019 17.9982 15.9789 17.9982 13.5C17.9982 11.0211 15.9752 8.99808 13.4964 8.99808ZM26.9985 13.5C26.9985 11.6357 27.0154 9.78837 26.9107 7.92748C26.806 5.76602 26.3129 3.84773 24.7324 2.26716C23.1485 0.683215 21.2336 0.19351 19.0722 0.0888138C17.2079 -0.0158819 15.3606 0.00100455 13.4997 0.00100455C11.6355 0.00100455 9.78819 -0.0158819 7.92734 0.0888138C5.76592 0.19351 3.84766 0.686593 2.26712 2.26716C0.683203 3.85111 0.193506 5.76602 0.0888122 7.92748C-0.0158816 9.79174 0.00100453 11.6391 0.00100453 13.5C0.00100453 15.3609 -0.0158816 17.2116 0.0888122 19.0725C0.193506 21.234 0.68658 23.1523 2.26712 24.7328C3.85103 26.3168 5.76592 26.8065 7.92734 26.9112C9.79156 27.0159 11.6389 26.999 13.4997 26.999C15.364 26.999 17.2113 27.0159 19.0722 26.9112C21.2336 26.8065 23.1518 26.3134 24.7324 24.7328C26.3163 23.1489 26.806 21.234 26.9107 19.0725C27.0188 17.2116 26.9985 15.3643 26.9985 13.5ZM13.4964 20.4268C9.66323 20.4268 6.56969 17.3332 6.56969 13.5C6.56969 9.66679 9.66323 6.57319 13.4964 6.57319C17.3295 6.57319 20.423 9.66679 20.423 13.5C20.423 17.3332 17.3295 20.4268 13.4964 20.4268ZM20.7067 7.90722C19.8118 7.90722 19.089 7.18448 19.089 6.2895C19.089 5.39452 19.8118 4.67179 20.7067 4.67179C21.6017 4.67179 22.3244 5.39452 22.3244 6.2895C22.3247 6.50202 22.283 6.7125 22.2018 6.90889C22.1206 7.10528 22.0015 7.28373 21.8512 7.434C21.7009 7.58427 21.5225 7.70342 21.3261 7.78462C21.1297 7.86583 20.9192 7.90749 20.7067 7.90722Z" fill="#E8A700"/>
+                        </svg>
+                        
+                     </a>
                   </div>
                </div>
             </div>
-         </section>
-         <section class="screen_9">
-            <p class="">Спасибо
-               за помощь</p>
-            <img src="/img/лапка.png" alt="лапка">
-            <div class="rectangle">
-               <div class="circle"></div>
-            </div>
-         </section>
-      </main>
-      <footer>
-         <nav>
-            <a href="#home">Дом или передержка</a>
-            <a href="#Fin_help">Финансовая поддержка</a>
-            <a href="#feed">Корма, лекарства и другие вещи</a>
-            <a href="#car_help">Автопомощь</a>
-            <a href="#volunteering">Волонтерство</a>
-            <a href="#about_u">О нас</a>
-            <a href="#contact">Контакты</a>
-         </nav>
-         <p class="gray_6"> © 2020 БООЗЖ "СПАСИ ЖИЗНЬ"</p>
-      </footer>
-   </div>
+             
+          </div> 
+      </section>
+      <section class="thanks">
+         <div class="thanks__text">
+            <p>
+               Спасибо за помощь
+            </p>
+         </div>
+         <div class="thanks__image">
+            
+         </div>
+         <div class="thanks__rectangle">
+         </div>
+      </section>
+   </main>
+   <footer>
+      <div class="link-footer flex">
+      <div class="link-footer__first flex">
+         <a href="#overexposure">Дом или передержка</a>
+         <a href="#financial-support">Финансовая поддержка</a>
+         <a href="#help-screen">Корма, лекарства и другие вещи</a>
+         <a href="#carassistance">Автопомощь</a>
+         <a href="#volunteer">Волонтерство</a>
+      </div>
+      <div class="link-footer__second flex">
+         <a href="#about-u">О нас</a>
+         <a href="#contact">Контакты</a>
+      </div>
+    </div>  
+    <div class="footer-text">
+       <p>
+         © 2020 БООЗЖ "СПАСИ ЖИЗНЬ"
+       </p>
+    </div>
+   </footer>
 </body>
-
 </html>
