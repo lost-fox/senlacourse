@@ -1,0 +1,354 @@
+.screen-2 {
+  background: #ffffff;
+  @media (max-width: 640px) {
+    .flex {
+      display: block;
+    }
+  }
+}
+
+.container {
+  padding: 55px 0;
+  @media (max-width: 1024px) {
+    & {
+      padding: 36px 0;
+    }
+  }
+  @media (max-width: 768px) {
+    & {
+      padding: 24px 0;
+    }
+  }
+  @media (max-width: 640px) {
+    & {
+      padding: 16px 0;
+    }
+  }
+}
+
+.custom-image-wrapper {
+  position: relative;
+  margin-left: 330px;
+  @media (max-width: 1440px) {
+    & {
+      margin-left: 112px;
+    }
+  }
+  @media (max-width: 1366px) {
+    & {
+      margin-left: 76px;
+    }
+  }
+  @media (max-width: 1024px) {
+    & {
+      margin-left: 0px;
+    }
+  }
+  &::before {
+    content: "";
+    width: 592px;
+    height: 516px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+    background-color: #ffc41e;
+    @media (max-width: 1440px) {
+      & {
+        width: 379px;
+      }
+    }
+    @media (max-width: 1024px) {
+      & {
+        height: 362px;
+        width: 267px;
+        left: 0%;
+      }
+    }
+    @media (max-width: 768px) {
+      & {
+        height: 270px;
+        width: 204px;
+      }
+    }
+    @media (max-width: 640px) {
+      & {
+        width: 277px;
+        height: 193px;
+      }
+    }
+    @media (max-width: 360px) {
+      & {
+        height: 190px;
+        width: 140px;
+      }
+    }
+  }
+  &__main-image {
+    position: relative;
+    width: 464px;
+    @media (max-width: 1024px) {
+      & {
+        width: 330px;
+      }
+    }
+    @media (max-width: 768px) {
+      & {
+        width: 243.93px;
+      }
+    }
+    @media (max-width: 640px) {
+      & {
+        width: 172.47px;
+      }
+    }
+    &::after {
+      background: url(../image/собака-круг.png) no-repeat center center;
+      width: 100%;
+      @media (max-width: 1024px) {
+        & {
+          background-size: 330px;
+        }
+      }
+      @media (max-width: 768px) {
+        & {
+          background-size: 243.93px;
+        }
+      }
+      @media (max-width: 640px) {
+        & {
+          background-size: 172.47px;
+        }
+      }
+    }
+  }
+  &__secondary-image {
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom: 0%;
+    right: -6%;
+    width: 228px;
+    @media (max-width: 1024px) {
+      & {
+        bottom: 20%;
+        right: -6%;
+        width: 158.36px;
+      }
+    }
+    @media (max-width: 768px) {
+      & {
+        bottom: 36%;
+        right: -2%;
+        width: 119.86px;
+      }
+    }
+    @media (max-width: 640px) {
+      & {
+        bottom: -4%;
+        right: 42%;
+        width: 84.75px;
+      }
+    }
+    @media (max-width: 360px) {
+      & {
+        right: 29%;
+      }
+    }
+    &::after {
+      background: url(../image/кот-круг.png) no-repeat center center;
+      width: 100%;
+      @media (max-width: 1024px) {
+        & {
+          background-size: 158.36px;
+        }
+      }
+      @media (max-width: 768px) {
+        & {
+          background-size: 119.86px;
+        }
+      }
+      @media (max-width: 640px) {
+        & {
+          background-size: 84.75px;
+        }
+      }
+    }
+  }
+}
+
+.circle-image {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 26px solid #ffc41e;
+  @media (max-width: 1024px) {
+    & {
+      border: 16px solid #ffc41e;
+      margin-left: 75px;
+      margin-right: 0px;
+    }
+  }
+  @media (max-width: 768px) {
+    & {
+      border: 13px solid #ffc41e;
+      margin-left: 65px;
+    }
+  }
+  @media (max-width: 640px) {
+    & {
+      border: 11px solid #ffc41e;
+      margin-left: 170px;
+    }
+  }
+  @media (max-width: 360px) {
+    & {
+      border: 9px solid #ffc41e;
+      margin-left: 55px;
+    }
+  }
+  &--small {
+    border: 8px solid #eebf3a;
+    @media (max-width: 1024px) {
+      & {
+        border: 6px solid #ffc41e;
+      }
+    }
+    @media (max-width: 768px) {
+      & {
+        border: 4px solid #ffc41e;
+      }
+    }
+    @media (max-width: 640px) {
+      & {
+        border: 3px solid #ffc41e;
+      }
+    }
+  }
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    height: 0;
+  }
+}
+
+.screen-2-text {
+  margin: 73px 0px 102px 94px;
+  @media (max-width: 1024px) {
+    & {
+      margin: 34px 0px 0px 73px;
+    }
+  }
+  @media (max-width: 768px) {
+    & {
+      margin: 0px;
+      margin-left: 55px;
+    }
+  }
+  @media (max-width: 640px) {
+    & {
+      margin: 32px 0px 0px 129px;
+    }
+  }
+  @media (max-width: 360px) {
+    & {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  }
+  &__title {
+    width: 466px;
+    height: 94px;
+    @media (max-width: 1024px) {
+      & {
+        width: 323px;
+      }
+    }
+    @media (max-width: 768px) {
+      & {
+        width: 264px;
+      }
+    }
+    @media (max-width: 640px) {
+      & {
+        width: 382px;
+        height: 40px;
+      }
+    }
+    @media (max-width: 360px) {
+      & {
+        width: 300px;
+      }
+    }
+    &--yellow {
+      color: #c78100;
+    }
+  }
+  &__subtitle {
+    width: 466px;
+    @media (max-width: 1024px) {
+      & {
+        width: 323px;
+      }
+    }
+    @media (max-width: 768px) {
+      & {
+        width: 264px;
+      }
+    }
+    @media (max-width: 640px) {
+      & {
+        width: 382px;
+      }
+    }
+    @media (max-width: 360px) {
+      & {
+        width: 300px;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 140%;
+      padding-top: 20px;
+      @media (max-width: 1024px) {
+        & {
+          padding-top: 16px;
+        }
+      }
+      @media (max-width: 768px) {
+        & {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.title-h3 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 120%;
+  padding-bottom: 8px;
+  @media (max-width: 1024px) {
+    & {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+  @media (max-width: 768px) {
+    & {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 640px) {
+    & {
+      font-size: 16px;
+      padding-bottom: 0px;
+    }
+  }
+  @media (max-width: 360px) {
+    & {
+      font-size: 14px;
+    }
+  }
+}

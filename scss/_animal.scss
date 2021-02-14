@@ -1,0 +1,524 @@
+.animals-title {
+  width: 368px;
+  height: 24px;
+  margin-top: 72px;
+  margin-left: 777px;
+  text-align: center;
+  @media (max-width: 1440px) {
+    & {
+      margin-left: 537px;
+    }
+  }
+  @media (max-width: 1366px) {
+    & {
+      margin-left: 499px;
+    }
+  }
+  @media (max-width: 1024px) {
+    & {
+      width: 254px;
+      margin-left: 385px;
+    }
+  }
+  @media (max-width: 768px) {
+    & {
+      margin-left: 257px;
+    }
+  }
+  @media (max-width: 640px) {
+    & {
+      width: 382px;
+      margin-left: 129px;
+      margin-top: 67px;
+    }
+  }
+  @media (max-width: 360px) {
+    & {
+      width: 194px;
+      margin-left: 83px;
+    }
+  }
+  h3 {
+    font-family: "GilroyLight";
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 24px;
+    @media (max-width: 1024px) {
+      & {
+        font-size: 24px;
+      }
+    }
+    @media (max-width: 640px) {
+      & {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.animals-link {
+  width: 244px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 24px 0px 20px 838px;
+  @media (max-width: 1440px) {
+    & {
+      margin-left: 599px;
+    }
+  }
+  @media (max-width: 1366px) {
+    & {
+      margin-left: 562px;
+    }
+  }
+  @media (max-width: 1024px) {
+    & {
+      margin-left: 390px;
+    }
+  }
+  @media (max-width: 768px) {
+    & {
+      margin-left: 262px;
+    }
+  }
+  @media (max-width: 640px) {
+    & {
+      margin-top: 16px;
+      margin-left: 198px;
+    }
+  }
+  @media (max-width: 360px) {
+    & {
+      margin-left: 58px;
+    }
+  }
+  a {
+    padding-right: 16px;
+  }
+}
+
+/*----------------------ссылка--------------------------------*/
+
+.link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  text-decoration-line: underline;
+  color: #ad7f00;
+}
+/*----------------------продолжение 4 экран------------------------------*/
+
+.animals-cards {
+  margin: 0px 387px;
+  @media (max-width: 1440px) {
+    & {
+      margin: 0px 147px;
+    }
+  }
+  @media (max-width: 1366px) {
+    & {
+      margin: 0px 111px;
+    }
+  }
+  @media (max-width: 1024px) {
+    & {
+      margin-left: 0px;
+      margin-right: 0px;
+      overflow: hidden;
+    }
+  }
+  @media (max-width: 768px) {
+    & {
+      align-content: center;
+    }
+  }
+  &__image {
+    padding: 16px 16px 7px 17px;
+    background: #f6f6f6;
+    box-shadow: 6px 6px 16px rgba(163, 163, 163, 0.6), -8px -8px 16px #ffffff,
+      inset 4px 4px 16px rgba(203, 203, 203, 0.25);
+    border-radius: 5px;
+    width: 335px;
+    opacity: 0.5;
+    margin-bottom: 9px;
+    @media (max-width: 1024px) {
+      & {
+        margin-right: 20px;
+        scroll-snap-align: start;
+      }
+    }
+    &:hover {
+      opacity: 1;
+    }
+    img {
+      width: 335px;
+      height: 356px;
+    }
+  }
+}
+
+article {
+  justify-content: space-between;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-coordinate: 0 0;
+  scroll-snap-points-x: repeat(100%);
+  scroll-snap-type: x mandatory;
+  flex: 1;
+  -webkit-overflow-scrolling: touch;
+}
+
+.animals-card-text {
+  width: 335px;
+  &__title {
+    height: 20px;
+    padding-top: 8px;
+    h4 {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+  &__age {
+    height: 20px;
+    padding-bottom: 6px;
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #6b6b6b;
+    }
+  }
+  &__description {
+    height: 64px;
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+hr {
+  opacity: 0.5;
+  border: 1px solid #d6d6d6;
+  margin: 9px 0px;
+}
+
+.animals-buttons {
+  margin: 10px 532px 64px 534px;
+  justify-content: space-between;
+  @media (max-width: 1440px) {
+    & {
+      margin-left: 294px;
+      margin-right: 292px;
+    }
+  }
+  @media (max-width: 1366px) {
+    & {
+      margin-left: 257px;
+      margin-right: 255px;
+    }
+  }
+  @media (max-width: 1024px) {
+    & {
+      margin-left: 110px;
+      margin-right: 110px;
+    }
+  }
+  @media (max-width: 640px) {
+    & {
+      margin-left: 199px;
+      margin-right: 199px;
+    }
+  }
+  @media (max-width: 360px) {
+    & {
+      margin-left: 58px;
+      margin-right: 58px;
+      margin-bottom: 40px;
+    }
+  }
+  &__arrow {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    background: #f6f6f6;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    box-shadow: 6px 6px 16px rgba(224, 224, 224, 0.6),
+      -6px -6px 16px rgba(255, 255, 255, 0.77);
+    padding-top: 14px;
+    @media (max-width: 768px) {
+      & {
+        padding: 13px;
+      }
+    }
+    @media (max-width: 640px) {
+      & {
+        display: none;
+      }
+    }
+    &-left {
+      background: url(../image/стрелочка-лево.png) no-repeat center center;
+      @media (max-width: 768px) {
+        & {
+          transform: scale(0.6);
+        }
+      }
+    }
+    &-right {
+      background: url(../image/стрелочка-право.png) no-repeat center center;
+
+      @media (max-width: 768px) {
+        & {
+          transform: scale(0.6);
+        }
+      }
+    }
+  }
+}
+
+/*----------------------Белая кнопка--------------------------------*/
+
+.outerbutton-white {
+  width: 296px;
+  height: 42px;
+  background: #f6f6f6;
+  box-shadow: 7px 7px 16px #e3e3e3, -4px -4px 8px rgba(255, 255, 255, 0.7),
+    inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+  border-radius: 58px;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  @media (max-width: 640px) {
+    & {
+      width: 242px;
+      height: 30px;
+      padding: 4px 5px;
+    }
+  }
+}
+
+.innerbutton-white {
+  width: 286px;
+  height: 32px;
+  background: linear-gradient(180deg, #fbfbfb 0%, #f6f6f6 100%);
+  box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25);
+  border-radius: 58px;
+  box-sizing: border-box;
+  @media (max-width: 640px) {
+    & {
+      width: 232px;
+      height: 22px;
+      a {
+        line-height: 20px;
+        font-size: 16px;
+        vertical-align: middle;
+        text-align: center;
+      }
+    }
+  }
+  &:hover {
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #ffffff 53.12%,
+      #efecec 100%
+    );
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25),
+      3px 3px 13px rgba(128, 128, 128, 0.25);
+  }
+
+  &:active {
+    background: linear-gradient(180deg, #f1f1f1 1.56%, #fcfafa 100%);
+    box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25),
+      inset 0px 4px 13px rgba(0, 0, 0, 0.06);
+  }
+}
+
+/*----------------------Продолжение 4 экрана--------------------------------*/
+
+.animals-buttons__long .outerbutton-yellow {
+  margin-left: 33px;
+  margin-bottom: 17px;
+}
+@media (max-width: 640px) {
+  .animals-buttons__long .outerbutton-yellow {
+    width: 174px;
+    height: 30px;
+    padding: 4px 5px;
+  }
+  .animals-buttons__long .innerbutton-yellow {
+    width: 164px;
+    height: 22px;
+    a {
+      font-size: 16px;
+      vertical-align: middle;
+      text-align: center;
+      line-height: 20px;
+    }
+  }
+}
+
+.button-logo-animals {
+  margin: 0px 559px 62px 583px;
+  @media (max-width: 1440px) {
+    & {
+      margin-left: 342px;
+      margin-right: 319px;
+    }
+  }
+  @media (max-width: 1366px) {
+    & {
+      margin-left: 305px;
+      margin-right: 289px;
+    }
+  }
+  @media (max-width: 1024px) {
+    & {
+      margin: 48px 157px 74px 110px;
+    }
+  }
+  @media (max-width: 640px) {
+    & {
+      margin: 0px 129px 28px 129px;
+      flex-wrap: wrap;
+    }
+  }
+  @media (max-width: 360px) {
+    & {
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-bottom: 8px;
+    }
+  }
+  &__text {
+    width: 583px;
+    height: 48px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+
+    padding: 7px 28px 7px 0px;
+    @media (max-width: 1024px) {
+      & {
+        font-size: 16px;
+        padding-right: 7px;
+      }
+    }
+    @media (max-width: 768px) {
+      & {
+        font-size: 14px;
+        width: 379px;
+        height: 60px;
+        padding: 0px 10px 0px 0px;
+      }
+    }
+    @media (max-width: 640px) {
+      & {
+        width: 382px;
+        padding-bottom: 6px;
+      }
+    }
+    @media (max-width: 360px) {
+      & {
+        width: 300px;
+        height: 80px;
+      }
+    }
+  }
+}
+
+/*----------------------белые кнопки соцсетей--------------------------------*/
+
+.button-logo-outercircle-white {
+  width: 63px;
+  height: 63px;
+  background: linear-gradient(144.1deg, #ffffff 12.45%, #fbfbfb 89.31%);
+  box-shadow: 7px 7px 16px rgba(213, 213, 213, 0.6), -6px -6px 8px #ffffff,
+    inset 13px 22px 8px #f3f3f3;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 7px;
+  margin-right: 32px;
+  @media (max-width: 768px) {
+    & {
+      width: 40px;
+      height: 40px;
+      padding: 4px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .button-logo-vk .button-logo-outercircle-white {
+    margin-left: 136px;
+  }
+}
+@media (max-width: 360px) {
+  .button-logo-vk .button-logo-outercircle-white {
+    margin-left: 95px;
+    margin-right: 48px;
+  }
+}
+
+.button-logo-innercircle-white {
+  width: 49px;
+  height: 49px;
+  background: linear-gradient(145.67deg, #ffffff 15.39%, #e4e4e4 88.3%);
+  box-shadow: 3px 3px 13px #b1b1b1;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 4px;
+  @media (max-width: 768px) {
+    & {
+      width: 32px;
+      height: 32px;
+      padding: 0px;
+    }
+    & .button-logo-vk__link {
+      padding-top: 10px;
+      padding-left: 4px;
+    }
+    svg {
+      transform: scale(0.9);
+      padding: 6px;
+    }
+  }
+  &:hover {
+    background: linear-gradient(
+      145.67deg,
+      #ffffff 15.39%,
+      #fafafa 54.13%,
+      #dadada 88.3%
+    );
+    box-shadow: 3px 3px 13px #a3a3a3;
+  }
+  &:active {
+    background: linear-gradient(145.67deg, #e4e4e4 16.92%, #f6f6f6 88.3%);
+    box-shadow: 3px 3px 13px #b2b2b2,
+      inset 4px 4px 7px rgba(192, 192, 192, 0.25);
+  }
+}
+
+@media (max-width: 640px) {
+  .button-logo-innercircle-white .button-logo-vk__link {
+    padding-top: 11px;
+    padding-left: 6px;
+  }
+  .button-logo-innercircle-white .button-logo-inst__link {
+    padding: 8px;
+  }
+  .logo-flex {
+    flex-direction: row-reverse;
+  }
+}
+
+.button-logo-innercircle-white svg:hover * {
+  fill: #ffb800;
+}

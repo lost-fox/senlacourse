@@ -1,14 +1,26 @@
 * {
-   margin: 0;
-   padding: 0;
- }
- 
- body {
-   max-width: 1920px;
-   overflow-x: hidden;
-   font-family: "Gilroy", Courier, monospace;
-   margin: 0 auto;
-   background: #f6f6f6;
-   color: #242424;
- }
- 
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1920px;
+  overflow-x: hidden;
+  font-family: "Gilroy", Courier, monospace;
+  margin: 0 auto;
+  background: #f6f6f6;
+  color: #242424;
+}
+
+@import "_substrate";
+@import "_header";
+@import "_main-header";
+@import "_screen-2";
+@import "_help";
+@import "_animal";
+@import "_financial-support";
+@import "_help-screen";
+@import "_news";
+@import "_about-u";
+@import "_thanks";
+@import "_footer";

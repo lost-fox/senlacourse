@@ -1,0 +1,244 @@
+.news {
+  background: #ffffff;
+  padding-top: 54px;
+  padding-left: 604px;
+  padding-bottom: 53px;
+  @media (max-width: 1440px) {
+    & {
+      padding-left: 314px;
+    }
+  }
+  @media (max-width: 1366px) {
+    & {
+      padding-left: 304px;
+    }
+  }
+  @media (max-width: 1024px) {
+    & {
+      padding-top: 36px;
+      padding-left: 247px;
+      padding-bottom: 36px;
+    }
+  }
+  @media (max-width: 768px) {
+    & {
+      padding-top: 24px;
+      padding-left: 205px;
+      padding-bottom: 24px;
+    }
+  }
+  @media (max-width: 640px) {
+    & {
+      padding: 16px 129px;
+    }
+  }
+  @media (max-width: 360px) {
+    & {
+      padding: 16px 30px;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 24px;
+    width: 368px;
+    height: 32px;
+    text-align: center;
+    margin-left: 198px;
+    @media (max-width: 1024px) {
+      & {
+        font-size: 24px;
+        width: 254px;
+      }
+    }
+    @media (max-width: 768px) {
+      & {
+        width: 170px;
+        margin-left: 94px;
+      }
+    }
+    @media (max-width: 640px) {
+      & {
+        width: 382px;
+        font-size: 16px;
+        margin-left: 0px;
+      }
+    }
+    @media (max-width: 360px) {
+      & {
+        width: 300px;
+      }
+    }
+  }
+}
+
+.news-block {
+  margin-top: 40px;
+  @media (max-width: 1024px) {
+    & {
+      margin-top: 28px;
+    }
+  }
+  @media (max-width: 640px) {
+    & {
+      margin-top: 24px;
+    }
+  }
+  &__img {
+    display: flex;
+    align-items: center;
+    @media (max-width: 640px) {
+      & {
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      img {
+        width: 130px;
+      }
+    }
+    @media (max-width: 768px) {
+      img {
+        width: 104px;
+      }
+    }
+    @media (max-width: 640px) {
+      img {
+        width: 79px;
+      }
+    }
+  }
+  &__text p {
+    width: 603px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-left: 35px;
+    @media (max-width: 1024px) {
+      & {
+        width: 432px;
+      }
+    }
+    @media (max-width: 768px) {
+      & {
+        width: 304px;
+        padding-left: 18px;
+      }
+    }
+    @media (max-width: 640px) {
+      & {
+        width: 287px;
+        padding-left: 16px;
+        font-size: 14px;
+      }
+    }
+    @media (max-width: 640px) {
+      & {
+        width: 205px;
+      }
+    }
+  }
+}
+
+/*------------------------ скрать/ показать новости---------------------------*/
+.news {
+  position: relative;
+}
+details,
+summary {
+  display: inline;
+  margin-top: 12px;
+  outline: none;
+  height: 40px;
+  width: 249px;
+}
+@media (max-width: 768px) {
+  details,
+  summary {
+    margin-top: 16px;
+    margin-left: 44px;
+  }
+}
+@media (max-width: 768px) {
+  details,
+  summary {
+    margin-left: 22px;
+  }
+}
+
+details[open] {
+  display: contents;
+}
+
+details[open]::after {
+  /* пространство для записи "Скрыть записи" */
+  display: block;
+  content: "\00a0";
+}
+summary {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  cursor: pointer;
+  color: #ad7f00;
+  text-decoration-line: underline;
+}
+
+details[open] summary {
+  position: absolute; /* переместить запись "Скрыть записи" вниз <div> */
+  bottom: -24px;
+  left: 0;
+  width: 249px;
+  margin-left: 604px;
+  margin-bottom: 53px;
+}
+@media (max-width: 1440px) {
+  details[open] summary {
+    margin-left: 314px;
+  }
+}
+@media (max-width: 1366px) {
+  details[open] summary {
+    margin-left: 304px;
+  }
+}
+@media (max-width: 1024px) {
+  details[open] summary {
+    margin-left: 247px;
+    bottom: -30px;
+  }
+}
+@media (max-width: 768px) {
+  details[open] summary {
+    margin-left: 205px;
+    bottom: -40px;
+  }
+}
+@media (max-width: 640px) {
+  details[open] summary {
+    bottom: -50px;
+  }
+}
+@media (max-width: 360px) {
+  details[open] summary {
+    bottom: -60px;
+    margin-left: 77px;
+  }
+}
+
+summary::before {
+  content: "Показать все новости";
+}
+details[open] summary::before {
+  content: "Скрыть все новости   \21E7";
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
