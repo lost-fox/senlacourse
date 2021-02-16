@@ -106,7 +106,10 @@
   }
 }
 
-.footer-text p {
+.footer-text {
+  
+  margin-bottom: 16px;
+  p {
   font-weight: normal;
   font-size: 12px;
   line-height: 140%;
@@ -124,8 +127,9 @@
       position: static;
       text-align: center;
       margin-right: 0px;
-      margin-bottom: 16px;
       padding-top: 20px;
     }
   }
+}
+
 }

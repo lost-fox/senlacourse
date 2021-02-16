@@ -187,7 +187,26 @@
 
 .volunteer .custom-image-wrapper__main-image::after {
   background: url(../image/щенок-кость.png) no-repeat center center;
+  background-size: cover;
   width: 100%;
+}
+
+.volunteer .custom-image-wrapper::before  {
+  @media (max-width: 768px){
+    margin-top: 104px;
+  }
+  @media (max-width: 640px){
+    margin-top: 24px;
+  }
+}
+
+.volunteer .circle-image{
+  @media (max-width: 768px){
+    margin-top: 104px;
+  }
+  @media (max-width: 640px){
+    margin-top: 24px;
+  }
 }
 
 .volunteer {

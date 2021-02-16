@@ -25,6 +25,7 @@ main {
 
 .grid {
   display: grid;
+  margin: 0px auto;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 42px 21px;
   position: relative;
@@ -119,7 +120,6 @@ main {
   }
   &__title {
     height: 20px;
-    padding-top: 8px;
     @media (max-width: 640px) {
       & {
         height: 18px;
@@ -163,7 +163,7 @@ main {
   }
 }
 
-hr {
+.animals-card-text hr {
   opacity: 0.5;
   border: 1px solid #d6d6d6;
   margin: 7px 0px;
@@ -221,7 +221,7 @@ figcaption {
     & {
       width: 242px;
       height: 30px;
-      margin-left: 24px;
+      margin-left: 15px;
     }
   }
 }
@@ -274,7 +274,7 @@ figcaption {
     & {
       width: 174px;
       height: 30px;
-      margin-left: 53px;
+      margin-left: 47px;
       padding: 4px;
     }
   }
