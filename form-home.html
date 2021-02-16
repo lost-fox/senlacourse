@@ -12,63 +12,67 @@
 
 <body>
    <div class="container-form">
-      <form action="#" method="post">
-         <div class="header flex">
-            <div class="header__title">
-               <h3>
-                  Забрать домой
-               </h3>
+
+      <div class="header flex">
+         <div class="header__title">
+            <h3>
+               Забрать домой
+            </h3>
+         </div>
+         <div class="header__close">
+            <button class="button">
+               <img src="image/close.png" alt="кнопка закрыть">
+            </button>
+         </div>
+      </div>
+      <hr>
+      <div class="main">
+         <div class="inform-pets flex">
+            <div class="inform-pets__image">
+
             </div>
-            <div class="header__close">
-               <button class="button">
-                  <img src="image/close.png" alt="кнопка закрыть">
-               </button>
+            <div class="inform-pets__text">
+               <div class="inform-pets__text--block">
+                  <h4>
+                     Моник
+                  </h4>
+               </div>
+               <div class="inform-pets__text--block">
+                  <p>
+                     Мальчик, 7 месяцев
+                  </p>
+               </div>
             </div>
          </div>
-         <hr>
-         <div class="main">
-            <div class="inform-pets flex">
-               <div class="inform-pets__image">
-                  
-               </div>
-               <div class="inform-pets__text">
-                  <div class="inform-pets__text--block">
-                     <h4>
-                        Моник
-                     </h4>
-                  </div>
-                  <div class="inform-pets__text--block">
-                     <p>
-                        Мальчик, 7 месяцев
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="text-data">
-               <p>
-                  Оставьте информацию о себе. Мы позвоним вам и договоримся, когда вы сможете забрать себе питомца.
-               </p>
-            </div>
+         <div class="text-data">
+            <p>
+               Оставьте информацию о себе. Мы позвоним вам и договоримся, когда вы сможете забрать себе питомца.
+            </p>
+         </div>
+         <form action="#" method="post">
             <div class="fields">
                <div class="fields__inform">
                   <input class="form-input" type="text" name="name" placeholder="Фамилия и имя">
                </div>
                <div class="fields__inform">
-                  <input class="form-input" type="tel" name="tel" placeholder="Номер телефона" pattern=[0-9]{3}[-][0-9]{3}[-][0-9]{2}[-][0-9]{2} oninvalid="this.setCustomValidity('Введите номер в формате YYY-XXX-XX-XX')" required>
-                <div class="fields__attention ">
-                  <p class="text-normal">
-                     Обязательное поле для заполнения
-                  </p>
-                  <p class="text-attention">
-                     Вы не ввели номер телефона. Это поле обязательное.
-                  </p>
-               </div>  
+                  <input class="form-input" type="tel" name="tel" placeholder="Номер телефона"
+                     pattern=[0-9]{3}[-][0-9]{3}[-][0-9]{2}[-][0-9]{2}
+                     oninvalid="this.setCustomValidity('Введите номер в формате YYY-XXX-XX-XX')" required>
+                  <div class="fields__attention ">
+                     <p class="text-normal">
+                        Обязательное поле для заполнения
+                     </p>
+                     <p class="text-attention">
+                        Вы не ввели номер телефона. Это поле обязательное.
+                     </p>
+                  </div>
                </div>
-               
+
                <div class="fields__remarks">
                   <textarea class="form-input" placeholder="Замечания"></textarea>
                </div>
             </div>
+
             <div class="text-question">
                <p>
                   Если у вас есть вопросы, можете позвонить нам: <br>
@@ -80,7 +84,7 @@
             <div class="buttons-form flex">
                <div class="outerbutton-yellow ">
                   <div class="innerbutton-yellow animals-buttons__home">
-                     <button class="button" >
+                     <button class="button">
                         <a href="#"><b>Отправить</b></a>
                      </button>
                   </div>
@@ -93,8 +97,9 @@
                   </div>
                </div>
             </div>
-         </div>
-      </form>
+         </form>
+      </div>
+
    </div>
 </body>
 
