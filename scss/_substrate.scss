@@ -3,22 +3,11 @@
 }
 
 .substrate__image:nth-child(1) {
-  left: 815px;
+ left: calc(135px + (815 - 135) * ((100vw - 360px) / (1920 - 320))) ;
   top: 0px;
   transition: left 1s linear 0s;
-  @media (max-width: 1440px) {
-    & {
-      left: 572px;
-    }
-  }
-  @media (max-width: 1366px) {
-    & {
-      left: 538px;
-    }
-  }
   @media (max-width: 1024px) {
     & {
-      left: 410px;
       img {
         width: 504px;
         height: 564px;
@@ -27,7 +16,6 @@
   }
   @media (max-width: 768px) {
     & {
-      left: 314px;
       img {
         width: 344px;
         height: 385px;
@@ -36,7 +24,6 @@
   }
   @media (max-width: 640px) {
     & {
-      left: 328px;
       img {
         width: 312px;
         height: 357px;
@@ -45,7 +32,6 @@
   }
   @media (max-width: 360px) {
     & {
-      left: 135px;
       img {
         width: 225px;
         height: 357px;
@@ -55,23 +41,11 @@
 }
 
 .substrate__image:nth-child(2) {
-  left: 884px;
-  top: 470px;
+  left: calc(144px + (884 - 144) * ((100vw - 360px) / (1920 - 320))) ;
+   top: calc(251px + (470 - 251) * ((100vw - 360px) / (1920 - 320))) ;
   transition: top 1s linear 0s;
-  @media (max-width: 1440px) {
-    & {
-      left: 641px;
-    }
-  }
-  @media (max-width: 1366px) {
-    & {
-      left: 607px;
-    }
-  }
   @media (max-width: 1024px) {
     & {
-      left: 463px;
-      top: 374px;
       img {
         width: 344px;
         height: 326px;
@@ -80,8 +54,6 @@
   }
   @media (max-width: 768px) {
     & {
-      left: 350px;
-      top: 256px;
       img {
         width: 235px;
         height: 222px;
@@ -90,18 +62,10 @@
   }
   @media (max-width: 640px) {
     & {
-      left: 380px;
-      top: 251px;
       img {
         width: 165px;
         height: 157px;
       }
-    }
-  }
-  @media (max-width: 360px) {
-    & {
-      left: 144px;
-      top: 251px;
     }
   }
 }

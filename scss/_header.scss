@@ -204,27 +204,13 @@ li {
 
 /*----------------------------кнопки соц сетей--------------------------------*/
 .button-logo-menu {
-  margin-left: 250px;
+  margin-left:  calc(78px + (250 - 78) * ((100vw - 1024px) / (1920 - 1024))) ;
   margin-top: 33px;
-  @media (max-width: 1024px) {
-    & {
-      margin-left: 78px;
-    }
-  }
+  
   @media (max-width: 768px) {
     & {
       margin-top: 24px;
-      margin-left: 503px;
-    }
-  }
-  @media (max-width: 640px) {
-    & {
-      margin-left: 425px;
-    }
-  }
-  @media (max-width: 360px) {
-    & {
-      margin-left: 244px;
+     margin-left:  calc(244px + (503 - 244) * ((100vw - 360px) / (768 - 360))) ;;
     }
   }
 }

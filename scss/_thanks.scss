@@ -2,42 +2,9 @@
   background: url(../image/собака-человек.png) no-repeat center center;
   background-size: cover;
   height: 741px;
-  width: 1920px;
-  @media (max-width: 1440px) {
-    & {
-      width: 1440px;
-    }
-  }
-  @media (max-width: 1366px) {
-    & {
-      width: 1366px;
-    }
-  }
-  @media (max-width: 1024px) {
-    & {
-      width: 1024px;
-      height: 555px;
-    }
-  }
-  @media (max-width: 768px) {
-    & {
-      width: 768px;
-      height: 416px;
-    }
-  }
-  @media (max-width: 640px) {
-    & {
-      width: 640px;
-      height: 360px;
-    }
-  }
-  @media (max-width: 360px) {
-    & {
-      width: 360px;
-      height: 267px;
-    }
-  }
-  &__rectangle {
+  height: calc(267px + (714 - 267) * ((100vw - 360px) / (1920 - 360)));
+   width: calc(360px + (1920 - 360) * ((100vw - 360px) / (1920 - 360))) ;
+   &__rectangle {
     position: absolute;
     height: 521px;
     width: 615px;
@@ -158,4 +125,6 @@
       }
     }
   }
-}
+  }
+ 
+

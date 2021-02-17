@@ -8,40 +8,13 @@
 }
 
 .help-screen-block {
-  margin-left: 702px;
-  @media (max-width: 1440px) {
-    & {
-      margin-left: 442px;
-    }
-  }
-  @media (max-width: 1366px) {
-    & {
-      margin-left: 402px;
-    }
-  }
-  @media (max-width: 1024px) {
-    & {
-      margin-left: 316px;
-    }
-  }
-  @media (max-width: 768px) {
-    & {
-      margin-left: 185px;
-    }
-  }
-  @media (max-width: 640px) {
-    & {
-      margin-left: 129px;
-    }
-  }
-  @media (max-width: 360px) {
-    & {
-      margin-left: 30px;
-    }
+  margin-left: calc(30px + (702 - 30) * ((100vw - 360px) / (1920 - 360)));;
+  
   }
   &__title {
     font-family: "GilroyMedium";
-    width: 660px;
+    
+    width: calc(300px + (660 - 300) * ((100vw - 360px) / (1920 - 360)));;
     font-weight: 600;
     font-size: 28px;
     line-height: 24px;
@@ -49,56 +22,38 @@
     padding-top: 40px;
     @media (max-width: 1024px) {
       & {
-        width: 481px;
         font-size: 24px;
       }
     }
     @media (max-width: 768px) {
       & {
-        width: 398px;
         font-size: 20px;
       }
     }
-    @media (max-width: 640px) {
+       @media (max-width: 360px) {
       & {
-        width: 382px;
-      }
-    }
-    @media (max-width: 360px) {
-      & {
-        width: 300px;
         font-size: 16px;
       }
     }
   }
   &__text {
-    width: 680px;
+    width: calc(300px + (680 - 300) * ((100vw - 360px) / (1920 - 360)));
     font-weight: normal;
     font-size: 16px;
     line-height: 140%;
     padding-top: 24px;
-    @media (max-width: 1024px) {
-      & {
-        width: 481px;
-      }
-    }
+   
     @media (max-width: 768px) {
       & {
-        width: 398px;
         font-size: 14px;
       }
     }
     @media (max-width: 640px) {
       & {
-        width: 382px;
         padding-top: 16px;
       }
     }
-    @media (max-width: 360px) {
-      & {
-        width: 300px;
-      }
-    }
+    
   }
   &__link {
     padding-top: 16px;
@@ -240,12 +195,11 @@
 }
 
 .help-screen-block__volunteering {
-  padding-left: 77px;
+    padding-left: calc(30px + (77 - 30) * ((100vw - 360px) / (1920 - 360)));
   vertical-align: middle;
   padding-top: 63px;
  @media (max-width: 1024px) {
   & {
-    padding-left: 61px;
     padding-top: 25px;
   }
   & .help-screen-block__title {
@@ -254,35 +208,19 @@
 }
 @media (max-width: 768px) {
   & {
-    padding-left: 40px;
     padding-top: 39px;
   }
 }
 @media (max-width: 640px) {
   & {
     padding-top: 24px;
-    padding-left: 129px;
+    
   }
 }
-@media (max-width: 360px) {
-  & {
-    padding-left: 30px;
-  }
-} 
+
 .help-screen-block__text {
-  width: 466px;
+  width: calc(300px + (466 - 300) * ((100vw - 360px) / (1920 - 360)));
   padding-bottom: 24px;
-@media (max-width: 1024px) {
-  & {
-    width: 323px;
-  }
-}
-@media (max-width: 768px) {
-  & {
-    width: 217px;
-  }
-} 
- 
 }
 }
 

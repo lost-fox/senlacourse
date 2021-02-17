@@ -365,6 +365,7 @@ hr {
 
 .button-logo-animals {
   margin: 0px 559px 62px 583px;
+  margin-left: calc(305px + (583 - 305) * ((100vw - 1366px) / (1920 - 1366)));
   @media (max-width: 1440px) {
     & {
       margin-left: 342px;
@@ -386,6 +387,7 @@ hr {
     & {
       margin: 0px 129px 28px 129px;
       flex-wrap: wrap;
+     
     }
   }
   @media (max-width: 360px) {
@@ -396,7 +398,7 @@ hr {
     }
   }
   &__text {
-    width: 583px;
+    width: calc(300px + (583 - 300) * ((100vw - 360px) / (1920 - 320)));
     height: 48px;
     font-weight: normal;
     font-size: 18px;
@@ -413,20 +415,17 @@ hr {
     @media (max-width: 768px) {
       & {
         font-size: 14px;
-        width: 379px;
         height: 60px;
         padding: 0px 10px 0px 0px;
       }
     }
     @media (max-width: 640px) {
       & {
-        width: 382px;
         padding-bottom: 6px;
       }
     }
     @media (max-width: 360px) {
       & {
-        width: 300px;
         height: 80px;
       }
     }
