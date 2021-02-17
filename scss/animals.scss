@@ -42,7 +42,7 @@ body {
 
 header {
   margin-top: 40px;
-  justify-content: space-around;
+  justify-content: space-between;
   @media (max-width: 768px) {
     & {
       margin-top: 99px;
@@ -110,6 +110,7 @@ header {
     & {
       position: absolute;
       top: 46px;
+      margin-left: 142px;
     }
   }
   @media (max-width: 640px) {
@@ -119,11 +120,13 @@ header {
       font-size: 20px;
       height: 24px;
       padding-top: 0px;
+      margin-left: 158px;
     }
   }
   @media (max-width: 360px) {
     & {
       left: 67px;
+      margin-left: 0px;
     }
   }
 }

@@ -1,472 +1,541 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0">
    <link rel="stylesheet" href="fonts.css">
    <link rel="stylesheet" href="css/animals.css">
    <link rel="stylesheet" href="css/forms.css">
    <title>Наши подопечные</title>
 </head>
+
 <body>
    <div class="conteiner">
-   <header class="flex">
-      <div class="button-back flex">
-         <div class="button-back__image">
-            <a href="index.html">
-              <img src="image/button-back.png" alt="желтая кнопка назад"> 
-            </a>  
+      <header class="flex">
+         <div class="button-back flex">
+            <div class="button-back__image">
+               <a href="index.html">
+                  <img src="image/button-back.png" alt="желтая кнопка назад">
+               </a>
+            </div>
+            <div class="button-back__text">
+               <p>
+                  <a href="index.html">
+                     Вернуться назад
+                  </a>
+               </p>
+            </div>
          </div>
-         <div class="button-back__text">
+         <div class="title">
+            <h3>
+               Наши подопечные
+            </h3>
+         </div>
+         <div class="choose flex">
+            <div class="choose__text">
+               <p>Показать</p>
+            </div>
+            <select class="choose__list">
+               <option value="">Коты и собаки</option>
+               <option value="">Только коты</option>
+               <option value="">Только собаки</option>
+            </select>
+         </div>
+      </header>
+      <main>
+         <article class="grid">
+            <div class="grid-wrap">
+               <figure class="animals-cards__image">
+                  <img src="image/animals/моник-собака.png" alt="Моник">
+                  <figcaption class="animals-card-text">
+                     <div class="animals-card-text__title">
+                        <h4><b>Моник</b></h4>
+                     </div>
+                     <hr>
+                     <div class="animals-card-text__age">
+                        <p>Мальчик, 7 месяцев</p>
+                     </div>
+                     <div class="animals-card-text__description">
+                        <p>К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не
+                           конфликтует. Привит.</p>
+                     </div>
+                     <div class="animals-card-text__link">
+                        <a class="link button-modal-detail">Подробнее</a>
+                        <div class="buttons-animal">
+                           <div class="outerbutton-yellow ">
+                              <div class="innerbutton-yellow animals-buttons__home">
+                                 <button class="button button-modal-home">
+                                    <b class="link-button">Забрать домой</b>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="outerbutton-white animals-buttons__overexposure">
+                              <div class="innerbutton-white">
+                                 <button class="button button-modal-overexposure">
+                                    <b class="link-button">Забрать на передержку</b>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </figcaption>
+               </figure>
+            </div>
+            <div class="grid-wrap">
+               <figure class="animals-cards__image">
+                  <img src="image/animals/Лунатик.png" alt="Лунатик">
+                  <figcaption class="animals-card-text">
+                     <div class="animals-card-text__title">
+                        <h4><b>Лунатик</b></h4>
+                     </div>
+                     <hr>
+                     <div class="animals-card-text__age">
+                        <p>Мальчик, 7 месяцев</p>
+                     </div>
+                     <div class="animals-card-text__description">
+                        <p>Малыш хочет домой и часто плачет.</p>
+                     </div>
+                     <div class="animals-card-text__link">
+                        <a class="link button-modal-detail">Подробнее</a>
+                        <div class="buttons-animal">
+                           <div class="outerbutton-yellow ">
+                              <div class="innerbutton-yellow animals-buttons__home">
+                                 <button class="button button-modal-home">
+                                    <b class="link-button">Забрать домой</b>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="outerbutton-white animals-buttons__overexposure">
+                              <div class="innerbutton-white">
+                                 <button class="button button-modal-overexposure">
+                                    <b class="link-button">Забрать на передержку</b>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </figcaption>
+               </figure>
+            </div>
+            <div class="grid-wrap">
+               <figure class="animals-cards__image">
+                  <img src="image/animals/герда.png" alt="Герда">
+                  <figcaption class="animals-card-text">
+                     <div class="animals-card-text__title">
+                        <h4><b>Герда</b></h4>
+                     </div>
+                     <hr>
+                     <div class="animals-card-text__age">
+                        <p>Мальчик, 7 месяцев</p>
+                     </div>
+                     <div class="animals-card-text__description">
+                        <p>Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть в
+                           полосочку.</p>
+                     </div>
+                     <div class="animals-card-text__link">
+                        <a class="button-modal-detail link">Подробнее</a>
+                        <div class="buttons-animal">
+                           <div class="outerbutton-yellow ">
+                              <div class="innerbutton-yellow animals-buttons__home">
+                                 <button class="button button-modal-home">
+                                    <b class="link-button">Забрать домой</b>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="outerbutton-white animals-buttons__overexposure">
+                              <div class="innerbutton-white">
+                                 <button class="button button-modal-overexposure">
+                                    <b class="link-button">Забрать на передержку</b>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </figcaption>
+               </figure>
+            </div>
+            <div class="grid-wrap">
+               <figure class="animals-cards__image">
+                  <img src="image/animals/саки.png" alt="Саки">
+                  <figcaption class="animals-card-text">
+                     <div class="animals-card-text__title">
+                        <h4><b>Саки</b></h4>
+                     </div>
+                     <hr>
+                     <div class="animals-card-text__age">
+                        <p>Мальчик, 7 месяцев</p>
+                     </div>
+                     <div class="animals-card-text__description">
+                        <p>Серьезный кот в серьезные руки. Будет преданным только одному хозяину.</p>
+                     </div>
+                     <div class="animals-card-text__link">
+                        <a class="button-modal-detail link">Подробнее</a>
+                        <div class="buttons-animal">
+                           <div class="outerbutton-yellow ">
+                              <div class="innerbutton-yellow animals-buttons__home">
+                                 <button class="button button-modal-home">
+                                    <b class="link-button">Забрать домой</b>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="outerbutton-white animals-buttons__overexposure">
+                              <div class="innerbutton-white">
+                                 <button class="button button-modal-overexposure">
+                                    <b class="link-button">Забрать на передержку</b>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </figcaption>
+               </figure>
+            </div>
+            <div class="grid-wrap">
+               <figure class="animals-cards__image">
+                  <img src="image/animals/моник-собака.png" alt="Моник">
+                  <figcaption class="animals-card-text">
+                     <div class="animals-card-text__title">
+                        <h4><b>Моник</b></h4>
+                     </div>
+                     <hr>
+                     <div class="animals-card-text__age">
+                        <p>Мальчик, 7 месяцев</p>
+                     </div>
+                     <div class="animals-card-text__description">
+                        <p>К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не
+                           конфликтует. Привит.</p>
+                     </div>
+                     <div class="animals-card-text__link">
+                        <a class="button-modal-detail link">Подробнее</a>
+                        <div class="buttons-animal">
+                           <div class="outerbutton-yellow ">
+                              <div class="innerbutton-yellow animals-buttons__home">
+                                 <button class="button button-modal-home">
+                                    <b class="link-button">Забрать домой</b>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="outerbutton-white animals-buttons__overexposure">
+                              <div class="innerbutton-white">
+                                 <button class="button button-modal-overexposure">
+                                    <b class="link-button">Забрать на передержку</b>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </figcaption>
+               </figure>
+            </div>
+            <div class="grid-wrap">
+               <figure class="animals-cards__image">
+                  <img src="image/animals/андреантино.png" alt="Андреантино">
+                  <figcaption class="animals-card-text">
+                     <div class="animals-card-text__title">
+                        <h4><b>Андреантино</b></h4>
+                     </div>
+                     <hr>
+                     <div class="animals-card-text__age">
+                        <p>Мальчик, 7 месяцев</p>
+                     </div>
+                     <div class="animals-card-text__description">
+                        <p>Супер дружелюбный пес. Спешите, таких больше не найдете.</p>
+                     </div>
+                     <div class="animals-card-text__link">
+                        <a class="button-modal-detail link">Подробнее</a>
+                        <div class="buttons-animal">
+                           <div class="outerbutton-yellow ">
+                              <div class="innerbutton-yellow animals-buttons__home">
+                                 <button class="button button-modal-home">
+                                    <b class="link-button">Забрать домой</b>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="outerbutton-white animals-buttons__overexposure">
+                              <div class="innerbutton-white">
+                                 <button class="button button-modal-overexposure">
+                                    <b class="link-button">Забрать на передержку</b>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </figcaption>
+               </figure>
+            </div>
+            <div class="grid-wrap">
+               <figure class="animals-cards__image">
+                  <img src="image/animals/Пупсик.png" alt="Пупсик">
+                  <figcaption class="animals-card-text">
+                     <div class="animals-card-text__title">
+                        <h4><b>Пупсик</b></h4>
+                     </div>
+                     <hr>
+                     <div class="animals-card-text__age">
+                        <p>Мальчик, 3 месяцев</p>
+                     </div>
+                     <div class="animals-card-text__description">
+                        <p>Милый песик. Очень игривый. Черная шубка светится на солнце и переливается синим.</p>
+                     </div>
+                     <div class="animals-card-text__link">
+                        <a class="button-modal-detail link">Подробнее</a>
+                        <div class="buttons-animal">
+                           <div class="outerbutton-yellow ">
+                              <div class="innerbutton-yellow animals-buttons__home">
+                                 <button class="button button-modal-home">
+                                    <b class="link-button">Забрать домой</b>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="outerbutton-white animals-buttons__overexposure">
+                              <div class="innerbutton-white">
+                                 <button class="button button-modal-overexposure">
+                                    <b class="link-button">Забрать на передержку</b>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </figcaption>
+               </figure>
+            </div>
+            <div class="grid-wrap">
+               <figure class="animals-cards__image">
+                  <img src="image/animals/мишка.png" alt="Мишка">
+                  <figcaption class="animals-card-text">
+                     <div class="animals-card-text__title">
+                        <h4><b>Мишка</b></h4>
+                     </div>
+                     <hr>
+                     <div class="animals-card-text__age">
+                        <p>Мальчик, 3 месяцев</p>
+                     </div>
+                     <div class="animals-card-text__description">
+                        <p>Малыш хочет домой и часто плачет.</p>
+                     </div>
+                     <div class="animals-card-text__link">
+                        <a class="button-modal-detail link">Подробнее</a>
+                        <div class="buttons-animal">
+                           <div class="outerbutton-yellow ">
+                              <div class="innerbutton-yellow animals-buttons__home">
+                                 <button class="button button-modal-home">
+                                    <b class="link-button">Забрать домой</b>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="outerbutton-white animals-buttons__overexposure">
+                              <div class="innerbutton-white">
+                                 <button class="button button-modal-overexposure">
+                                    <b class="link-button">Забрать на передержку</b>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </figcaption>
+               </figure>
+            </div>
+            <div class="grid-wrap">
+               <figure class="animals-cards__image">
+                  <img src="image/animals/красавчик.png" alt="Красавчик">
+                  <figcaption class="animals-card-text">
+                     <div class="animals-card-text__title">
+                        <h4><b>Красавчик</b></h4>
+                     </div>
+                     <hr>
+                     <div class="animals-card-text__age">
+                        <p>Мальчик, 7 месяцев</p>
+                     </div>
+                     <div class="animals-card-text__description">
+                        <p>Мудрый кот. Аккуратный и нежный. Не царапает вещи и мебель. Кушает все!</p>
+                     </div>
+                     <div class="animals-card-text__link">
+                        <a class="button-modal-detail link">Подробнее</a>
+                        <div class="buttons-animal">
+                           <div class="outerbutton-yellow ">
+                              <div class="innerbutton-yellow animals-buttons__home">
+                                 <button class="button button-modal-home">
+                                    <b class="link-button">Забрать домой</b>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="outerbutton-white animals-buttons__overexposure">
+                              <div class="innerbutton-white">
+                                 <button class="button button-modal-overexposure">
+                                    <b class="link-button">Забрать на передержку</b>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </figcaption>
+               </figure>
+            </div>
+            <div class="grid-wrap">
+               <figure class="animals-cards__image">
+                  <img src="image/animals/Бобик.png" alt="Бобик">
+                  <figcaption class="animals-card-text">
+                     <div class="animals-card-text__title">
+                        <h4><b>Бобик</b></h4>
+                     </div>
+                     <hr>
+                     <div class="animals-card-text__age">
+                        <p>Девочка, 2 года</p>
+                     </div>
+                     <div class="animals-card-text__description">
+                        <p>Девочка-красотка будет надежным защитником и другом хорошему человеку.</p>
+                     </div>
+                     <div class="animals-card-text__link">
+                        <a class="button-modal-detail link">Подробнее</a>
+                        <div class="buttons-animal">
+                           <div class="outerbutton-yellow ">
+                              <div class="innerbutton-yellow animals-buttons__home">
+                                 <button class="button button-modal-home">
+                                    <b class="link-button">Забрать домой</b>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="outerbutton-white animals-buttons__overexposure">
+                              <div class="innerbutton-white">
+                                 <button class="button button-modal-overexposure">
+                                    <b class="link-button">Забрать на передержку</b>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </figcaption>
+               </figure>
+            </div>
+            <div class="grid-wrap">
+               <figure class="animals-cards__image">
+                  <img src="image/animals/милаха.png" alt="Милаха">
+                  <figcaption class="animals-card-text">
+                     <div class="animals-card-text__title">
+                        <h4><b>Милаха</b></h4>
+                     </div>
+                     <hr>
+                     <div class="animals-card-text__age">
+                        <p>Мальчик, 7 месяцев</p>
+                     </div>
+                     <div class="animals-card-text__description">
+                        <p>Мальчиш-крепыш. Здоров, привит и кастрирован.</p>
+                     </div>
+                     <div class="animals-card-text__link">
+                        <a class="button-modal-detail link">Подробнее</a>
+                        <div class="buttons-animal">
+                           <div class="outerbutton-yellow ">
+                              <div class="innerbutton-yellow animals-buttons__home">
+                                 <button class="button button-modal-home">
+                                    <b class="link-button">Забрать домой</b>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="outerbutton-white animals-buttons__overexposure">
+                              <div class="innerbutton-white">
+                                 <button class="button button-modal-overexposure">
+                                    <b class="link-button">Забрать на передержку</b>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </figcaption>
+               </figure>
+            </div>
+         </article>
+      </main>
+      <footer>
+         <div class="link-footer flex">
+            <div class="link-footer__first flex">
+               <a href="index.html#overexposure">Дом или передержка</a>
+               <a href="index.html#financial-support">Финансовая поддержка</a>
+               <a href="index.html#help-screen">Корма, лекарства и другие вещи</a>
+               <a href="index.html#carassistance">Автопомощь</a>
+               <a href="index.html#volunteer">Волонтерство</a>
+            </div>
+            <div class="link-footer__second flex">
+               <a href="index.html#about-u">О нас</a>
+               <a href="index.html#contact">Контакты</a>
+            </div>
+         </div>
+         <div class="footer-text">
             <p>
-              <a href="index.html">
-                 Вернуться назад
-              </a> 
+               © 2020 БООЗЖ "СПАСИ ЖИЗНЬ"
             </p>
          </div>
-      </div>
-      <div class="title">
-         <h3>
-            Наши подопечные
-         </h3>
-      </div>
-      <div class="choose flex">
-         <div class="choose__text">
-            <p>Показать</p>
-         </div>
-         <select name="" id="" class="choose__list">
-            <option value="">Коты и собаки</option>
-            <option value="">Только коты</option>
-            <option value="">Только собаки</option>
-         </select>
-      </div>
-   </header>
-   <main>
-      <article class="grid">
-         <div class="grid-wrap">
-            <figure class="animals-cards__image">
-               <img src="image/animals/моник-собака.png" alt="Моник">
-               <figcaption class="animals-card-text">
-                  <div class="animals-card-text__title">
-                     <h4><b>Моник</b></h4>
-                  </div>
-                  <hr>
-                  <div class="animals-card-text__age">
-                     <p>Мальчик, 7 месяцев</p>
-                  </div>
-                  <div class="animals-card-text__description">
-                     <p>К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не конфликтует. Привит.</p>
-                  </div>
-                  <div class="animals-card-text__link">
-                     <a href="#" class="link">Подробнее</a>
-                     <div class="buttons-animal">
-                        <div class="outerbutton-yellow ">
-                           <div class="innerbutton-yellow animals-buttons__home">
-                              <button class="button button-modal-home">
-                                 <a><b>Забрать домой</b></a>
-                              </button>
-                           </div>
-                        </div>
-                        <div class="outerbutton-white animals-buttons__overexposure">
-                           <div class="innerbutton-white">
-                              <button class="button button-modal-overexposure">
-                                 <a><b>Забрать на передержку</b></a>
-                              </button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </figcaption>
-            </figure>
-         </div>
-         <div class="grid-wrap">
-            <figure class="animals-cards__image">
-               <img src="image/animals/Лунатик.png" alt="Лунатик">
-               <figcaption class="animals-card-text">
-                  <div class="animals-card-text__title">
-                     <h4><b>Лунатик</b></h4>
-                  </div>
-                  <hr>
-                  <div class="animals-card-text__age">
-                     <p>Мальчик, 7 месяцев</p>
-                  </div>
-                  <div class="animals-card-text__description">
-                     <p>Малыш хочет домой и часто плачет.</p>
-                  </div>
-                  <div class="animals-card-text__link">
-                     <a href="#" class="link">Подробнее</a>
-                     <div class="buttons-animal">
-                        <div class="outerbutton-yellow ">
-                           <div class="innerbutton-yellow animals-buttons__home">
-                              <button class="button button-modal-home">
-                                 <a><b>Забрать домой</b></a>
-                              </button>
-                           </div>
-                        </div>
-                        <div class="outerbutton-white animals-buttons__overexposure">
-                           <div class="innerbutton-white">
-                              <button class="button button-modal-overexposure">
-                                 <a><b>Забрать на передержку</b></a>
-                              </button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </figcaption>
-            </figure>
-         </div>   
-         <div class="grid-wrap">
-            <figure class="animals-cards__image">
-               <img src="image/animals/герда.png" alt="Герда">
-               <figcaption class="animals-card-text">
-                  <div class="animals-card-text__title">
-                     <h4><b>Герда</b></h4>
-                  </div>
-                  <hr>
-                  <div class="animals-card-text__age">
-                     <p>Мальчик, 7 месяцев</p>
-                  </div>
-                  <div class="animals-card-text__description">
-                     <p>Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть в полосочку.</p>
-                  </div>
-                  <div class="animals-card-text__link">
-                     <a href="#" class="link">Подробнее</a>
-                     <div class="buttons-animal">
-                        <div class="outerbutton-yellow ">
-                           <div class="innerbutton-yellow animals-buttons__home">
-                              <button class="button button-modal-home">
-                                 <a><b>Забрать домой</b></a>
-                              </button>
-                           </div>
-                        </div>
-                        <div class="outerbutton-white animals-buttons__overexposure">
-                           <div class="innerbutton-white">
-                              <button class="button button-modal-overexposure">
-                                 <a><b>Забрать на передержку</b></a>
-                              </button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </figcaption>
-            </figure>
-          </div>  
-         <div class="grid-wrap">
-            <figure class="animals-cards__image">
-               <img src="image/animals/саки.png" alt="Саки">
-               <figcaption class="animals-card-text">
-                  <div class="animals-card-text__title">
-                     <h4><b>Саки</b></h4>
-                  </div>
-                  <hr>
-                  <div class="animals-card-text__age">
-                     <p>Мальчик, 7 месяцев</p>
-                  </div>
-                  <div class="animals-card-text__description">
-                     <p>Серьезный кот в серьезные руки. Будет преданным только одному хозяину.</p>
-                  </div>
-                  <div class="animals-card-text__link">
-                     <a href="#" class="link">Подробнее</a>
-                     <div class="buttons-animal">
-                        <div class="outerbutton-yellow ">
-                           <div class="innerbutton-yellow animals-buttons__home">
-                              <button class="button button-modal-home">
-                                 <a><b>Забрать домой</b></a>
-                              </button>
-                           </div>
-                        </div>
-                        <div class="outerbutton-white animals-buttons__overexposure">
-                           <div class="innerbutton-white">
-                              <button class="button button-modal-overexposure">
-                                 <a><b>Забрать на передержку</b></a>
-                              </button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </figcaption>
-            </figure>
-         </div>   
-         <div class="grid-wrap">
-            <figure class="animals-cards__image">
-               <img src="image/animals/моник-собака.png" alt="Моник">
-               <figcaption class="animals-card-text">
-                  <div class="animals-card-text__title">
-                     <h4><b>Моник</b></h4>
-                  </div>
-                  <hr>
-                  <div class="animals-card-text__age">
-                     <p>Мальчик, 7 месяцев</p>
-                  </div>
-                  <div class="animals-card-text__description">
-                     <p>К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не конфликтует. Привит.</p>
-                  </div>
-                  <div class="animals-card-text__link">
-                     <a href="#" class="link">Подробнее</a>
-                     <div class="buttons-animal">
-                        <div class="outerbutton-yellow ">
-                           <div class="innerbutton-yellow animals-buttons__home">
-                              <button class="button button-modal-home">
-                                 <a><b>Забрать домой</b></a>
-                              </button>
-                           </div>
-                        </div>
-                        <div class="outerbutton-white animals-buttons__overexposure">
-                           <div class="innerbutton-white">
-                              <button class="button button-modal-overexposure">
-                                 <a><b>Забрать на передержку</b></a>
-                              </button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </figcaption>
-            </figure>
-         </div>   
-         <div class="grid-wrap">
-            <figure class="animals-cards__image">
-               <img src="image/animals/андреантино.png" alt="Андреантино">
-               <figcaption class="animals-card-text">
-                  <div class="animals-card-text__title">
-                     <h4><b>Андреантино</b></h4>
-                  </div>
-                  <hr>
-                  <div class="animals-card-text__age">
-                     <p>Мальчик, 7 месяцев</p>
-                  </div>
-                  <div class="animals-card-text__description">
-                     <p>Супер дружелюбный пес. Спешите, таких больше не найдете.</p>
-                  </div>
-                  <div class="animals-card-text__link">
-                     <a href="#" class="link">Подробнее</a>
-                     <div class="buttons-animal">
-                        <div class="outerbutton-yellow ">
-                           <div class="innerbutton-yellow animals-buttons__home">
-                              <button class="button button-modal-home">
-                                 <a><b>Забрать домой</b></a>
-                              </button>
-                           </div>
-                        </div>
-                        <div class="outerbutton-white animals-buttons__overexposure">
-                           <div class="innerbutton-white">
-                              <button class="button button-modal-overexposure">
-                                 <a><b>Забрать на передержку</b></a>
-                              </button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </figcaption>
-            </figure>
-         </div>   
-         <div class="grid-wrap">
-            <figure class="animals-cards__image">
-               <img src="image/animals/Пупсик.png" alt="Пупсик">
-               <figcaption class="animals-card-text">
-                  <div class="animals-card-text__title">
-                     <h4><b>Пупсик</b></h4>
-                  </div>
-                  <hr>
-                  <div class="animals-card-text__age">
-                     <p>Мальчик, 3 месяцев</p>
-                  </div>
-                  <div class="animals-card-text__description">
-                     <p>Милый песик. Очень игривый. Черная шубка светится на солнце и переливается синим.</p>
-                  </div>
-                  <div class="animals-card-text__link">
-                     <a href="#" class="link">Подробнее</a>
-                     <div class="buttons-animal">
-                        <div class="outerbutton-yellow ">
-                           <div class="innerbutton-yellow animals-buttons__home">
-                              <button class="button button-modal-home">
-                                 <a href><b>Забрать домой</b></a>
-                              </button>
-                           </div>
-                        </div>
-                        <div class="outerbutton-white animals-buttons__overexposure">
-                           <div class="innerbutton-white">
-                              <button class="button button-modal-overexposure">
-                                 <a><b>Забрать на передержку</b></a>
-                              </button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </figcaption>
-            </figure>
-         </div>   
-         <div class="grid-wrap">
-            <figure class="animals-cards__image">
-               <img src="image/animals/мишка.png" alt="Мишка">
-               <figcaption class="animals-card-text">
-                  <div class="animals-card-text__title">
-                     <h4><b>Мишка</b></h4>
-                  </div>
-                  <hr>
-                  <div class="animals-card-text__age">
-                     <p>Мальчик, 3 месяцев</p>
-                  </div>
-                  <div class="animals-card-text__description">
-                     <p>Малыш хочет домой и часто плачет.</p>
-                  </div>
-                  <div class="animals-card-text__link">
-                     <a href="#" class="link">Подробнее</a>
-                     <div class="buttons-animal">
-                        <div class="outerbutton-yellow ">
-                           <div class="innerbutton-yellow animals-buttons__home">
-                              <button class="button button-modal-home">
-                                 <a><b>Забрать домой</b></a>
-                              </button>
-                           </div>
-                        </div>
-                        <div class="outerbutton-white animals-buttons__overexposure">
-                           <div class="innerbutton-white">
-                              <button class="button button-modal-overexposure">
-                                 <a><b>Забрать на передержку</b></a>
-                              </button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </figcaption>
-            </figure>
-          </div>  
-         <div class="grid-wrap">
-            <figure class="animals-cards__image">
-               <img src="image/animals/красавчик.png" alt="Красавчик">
-               <figcaption class="animals-card-text">
-                  <div class="animals-card-text__title">
-                     <h4><b>Красавчик</b></h4>
-                  </div>
-                  <hr>
-                  <div class="animals-card-text__age">
-                     <p>Мальчик, 7 месяцев</p>
-                  </div>
-                  <div class="animals-card-text__description">
-                     <p>Мудрый кот. Аккуратный и нежный. Не царапает вещи и мебель. Кушает все!</p>
-                  </div>
-                  <div class="animals-card-text__link">
-                     <a href="#" class="link">Подробнее</a>
-                     <div class="buttons-animal">
-                        <div class="outerbutton-yellow ">
-                           <div class="innerbutton-yellow animals-buttons__home">
-                              <button class="button button-modal-home">
-                                 <a><b>Забрать домой</b></a>
-                              </button>
-                           </div>
-                        </div>
-                        <div class="outerbutton-white animals-buttons__overexposure">
-                           <div class="innerbutton-white">
-                              <button class="button button-modal-overexposure">
-                                 <a><b>Забрать на передержку</b></a>
-                              </button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </figcaption>
-            </figure>
-         </div>   
-         <div class="grid-wrap">
-            <figure class="animals-cards__image">
-               <img src="image/animals/Бобик.png" alt="Бобик">
-               <figcaption class="animals-card-text">
-                  <div class="animals-card-text__title">
-                     <h4><b>Бобик</b></h4>
-                  </div>
-                  <hr>
-                  <div class="animals-card-text__age">
-                     <p>Девочка, 2 года</p>
-                  </div>
-                  <div class="animals-card-text__description">
-                     <p>Девочка-красотка будет надежным защитником и другом хорошему человеку.</p>
-                  </div>
-                  <div class="animals-card-text__link">
-                     <a href="#" class="link">Подробнее</a>
-                     <div class="buttons-animal">
-                        <div class="outerbutton-yellow ">
-                           <div class="innerbutton-yellow animals-buttons__home">
-                              <button class="button button-modal-home">
-                                 <a><b>Забрать домой</b></a>
-                              </button>
-                           </div>
-                        </div>
-                        <div class="outerbutton-white animals-buttons__overexposure">
-                           <div class="innerbutton-white">
-                              <button class="button button-modal-overexposure">
-                                 <a><b>Забрать на передержку</b></a>
-                              </button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </figcaption>
-            </figure>
-         </div>   
-         <div class="grid-wrap">   
-            <figure class="animals-cards__image">
-               <img src="image/animals/милаха.png" alt="Милаха">
-               <figcaption class="animals-card-text">
-                  <div class="animals-card-text__title">
-                     <h4><b>Милаха</b></h4>
-                  </div>
-                  <hr>
-                  <div class="animals-card-text__age">
-                     <p>Мальчик, 7 месяцев</p>
-                  </div>
-                  <div class="animals-card-text__description">
-                     <p>Мальчиш-крепыш. Здоров, привит и кастрирован.</p>
-                  </div>
-                  <div class="animals-card-text__link">
-                     <a href="#" class="link">Подробнее</a>
-                     <div class="buttons-animal">
-                        <div class="outerbutton-yellow ">
-                           <div class="innerbutton-yellow animals-buttons__home">
-                              <button class="button button-modal-home">
-                                 <a><b>Забрать домой</b></a>
-                              </button>
-                           </div>
-                        </div>
-                        <div class="outerbutton-white animals-buttons__overexposure">
-                           <div class="innerbutton-white">
-                              <button class="button button-modal-overexposure">
-                                 <a><b>Забрать на передержку</b></a>
-                              </button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </figcaption>
-            </figure>
-         </div>
-      </article>
-   </main>
-   <footer>
-      <div class="link-footer flex">
-         <div class="link-footer__first flex">
-            <a href="index.html#overexposure">Дом или передержка</a>
-            <a href="index.html#financial-support">Финансовая поддержка</a>
-            <a href="index.html#help-screen">Корма, лекарства и другие вещи</a>
-            <a href="index.html#carassistance">Автопомощь</a>
-            <a href="index.html#volunteer">Волонтерство</a>
-         </div>
-         <div class="link-footer__second flex">
-            <a href="index.html#about-u">О нас</a>
-            <a href="index.html#contact">Контакты</a>
-         </div>
-       </div>  
-       <div class="footer-text">
-          <p>
-            © 2020 БООЗЖ "СПАСИ ЖИЗНЬ"
-          </p>
-       </div>
-   </footer>
+      </footer>
    </div>
-
+<div class="modal-detail modal" id="modal-detail">
+      <div class="container-form">
+         <div class="header flex">
+            <div class="header__title">
+               <h3>
+                  Альф
+               </h3>
+            </div>
+            <div class="header__close">
+               <button class="button" id="close-6">
+                  <img src="image/close.png" alt="кнопка закрыть">
+               </button>
+            </div>
+         </div>
+         <hr>
+            <div class="inform-pets">
+               <div class="inform-pets__age">
+                  <p>
+                     Мальчик, 7 месяцев
+                  </p>
+               </div>
+               <div class="inform-pets__description">
+                  <p>
+                     Создавая Альфа, Природа долго думала, что же нужно сделать для того, чтобы получился абсолютно
+                     простой кот с необыкновенной изюминкой! <br> <br>
+                     И она прекрасно реализовала свой план! Ведь Альф - это истинный баланс классических цветов - белого
+                     и черного, с большими и запоминающимися лимонными глазами! <br><br>
+                     Он веселый и игривый котик, с повадками настоящего охотника! Очень умный и деликатный, чуточку
+                     боязлив, никогда не будет навязывать свое общество, но всегда с благодарностью примет вашу любовь и
+                     внимание. Отлично уживается на одной территории с другими представителями кошачьих. <br><br>
+                     Звоните, приезжайте на смотрины. Альф– станет вашим солнечным лучиком! <br><br>
+                     Альф находится в Пункте содержания безнадзорных животных г.Гродно. Актуальна ПЕРЕДЕРЖКА! Не ждите,
+                     спасайте!<br><br>
+                     +375 29 7877791 Ольга
+                  </p>
+               </div>
+               
+                
+            </div>
+            <div class="inform-pets-gallery">
+               <img src="image/animals/gallery/alph1.png" alt="Альф сидит">
+               <img src="image/animals/gallery/alph2.png" alt="Альф смотрит в окно">
+               <img src="image/animals/gallery/alph3.png" alt="Альф лежит">
+               <img src="image/animals/gallery/alph1.png" alt="Альы сидит">
+               <img src="image/animals/gallery/alph2.png" alt="Альм смотрит в окно">
+            </div>
+            <div class="buttons-animal flex">
+               <div class="outerbutton-yellow ">
+                  <div class="innerbutton-yellow animals-buttons__home">
+                     <button class="button button-modal-home">
+                        <b class="link-button">Забрать домой</b>
+                     </button>
+                  </div>
+               </div>
+               <div class="outerbutton-white animals-buttons__overexposure">
+                  <div class="innerbutton-white">
+                     <button class="button button-modal-overexposure">
+                        <b class="link-button">Забрать на передержку</b>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         
+      </div>
+   </div>
    <div class="modal-home modal" id="modal-home">
       <div class="container-form">
-   
+
          <div class="header flex">
             <div class="header__title">
                <h3>
@@ -483,7 +552,7 @@
          <div class="main">
             <div class="inform-pets flex">
                <div class="inform-pets__image">
-   
+
                </div>
                <div class="inform-pets__text">
                   <div class="inform-pets__text--block">
@@ -521,12 +590,12 @@
                         </p>
                      </div>
                   </div>
-   
+
                   <div class="fields__remarks">
                      <textarea class="form-input" placeholder="Замечания"></textarea>
                   </div>
                </div>
-   
+
                <div class="text-question">
                   <p>
                      Если у вас есть вопросы, можете позвонить нам: <br>
@@ -539,23 +608,24 @@
                   <div class="outerbutton-yellow ">
                      <div class="innerbutton-yellow animals-buttons__home">
                         <button class="button">
-                           <a href="#"><b>Отправить</b></a>
+                           <b class="link-button">Отправить</b>
                         </button>
                      </div>
                   </div>
                   <div class="outerbutton-white animals-buttons__overexposure">
                      <div class="innerbutton-white">
                         <button class="button" disabled>
-                           <a href="#"><b>Отмена</b></a>
+                           <b class="link-button">Отмена</b>
                         </button>
                      </div>
                   </div>
                </div>
             </form>
          </div>
-   
+
       </div>
-    </div> 
+   </div>
+
    <div class="modal-overexposure modal" id="modal-overexposure">
       <div class="container-form">
 
@@ -575,7 +645,7 @@
          <div class="main">
             <div class="inform-pets flex">
                <div class="inform-pets__image">
-   
+
                </div>
                <div class="inform-pets__text">
                   <div class="inform-pets__text--block">
@@ -598,7 +668,8 @@
             <form action="#" method="post">
                <div class="fields">
                   <div class="fields__inform">
-                     <input class="form-input" type="text" name="name" placeholder="Фамилия и имя">
+                     <input class="form-input" type="text" name="name" placeholder="Фамилия и имя" maxlength="56"
+                        minlength="2">
                   </div>
                   <div class="fields__inform">
                      <input class="form-input" type="tel" name="tel" placeholder="Номер телефона"
@@ -613,12 +684,12 @@
                         </p>
                      </div>
                   </div>
-   
+
                   <div class="fields__remarks">
                      <textarea class="form-input" placeholder="Замечания"></textarea>
                   </div>
                </div>
-   
+
                <div class="text-question">
                   <p>
                      Если у вас есть вопросы, можете позвонить нам: <br>
@@ -637,23 +708,230 @@
                   <div class="outerbutton-yellow ">
                      <div class="innerbutton-yellow animals-buttons__home">
                         <button class="button">
-                           <a href="#"><b>Отправить</b></a>
+                           <b class="link-button">Отправить</b>
                         </button>
                      </div>
                   </div>
                   <div class="outerbutton-white animals-buttons__overexposure">
                      <div class="innerbutton-white">
                         <button class="button" disabled>
-                           <a href="#"><b>Отмена</b></a>
+                           <b class="link-button">Отмена</b>
                         </button>
                      </div>
                   </div>
                </div>
             </form>
          </div>
-   
+
       </div>
-   </div> 
-  <script src="modal-window.js"></script>
+   </div>
+   <div class="modal-transfer modal">
+      <div class="container-form">
+         <div class="header flex">
+            <div class="header__title">
+               <h3>
+                  Кому и куда передать?
+               </h3>
+            </div>
+            <div class="header__close">
+               <button class="button" id="close-3">
+                  <img src="image/close.png" alt="кнопка закрыть">
+               </button>
+            </div>
+         </div>
+         <hr>
+         <div class="main">
+            <div class="text-question">
+               <p>
+                  Чтобы передать купленные вещи, свяжитесь с нашими волонтерами. Вы сможете договориться о времени и
+                  месте встречи.
+                  Если доставить сами не сможете - волонтеры вам помогут в доставке.
+               </p>
+            </div>
+            <div class="text-question">
+               <p>
+                  <b>+375 (33) 6237879 </b>Лена <br><br>
+                  <b>+375 (29) 7877791</b> Ольга <br><br>
+                  <b>+375 (29) 5837015</b> Рита <br>
+               </p>
+            </div>
+
+         </div>
+      </div>
+   </div>
+   <div class="modal-carhelp modal">
+      <div class="container-form">
+
+         <div class="header flex">
+            <div class="header__title">
+               <h3>
+                  Автопомощь
+               </h3>
+            </div>
+            <div class="header__close">
+               <button class="button" id="close-4">
+                  <img src="image/close.png" alt="кнопка закрыть">
+               </button>
+            </div>
+         </div>
+         <hr>
+         <div class="main">
+            <div class="text-data">
+               <div class="text-data__title">
+                  <h4>
+                     Заявка
+                  </h4>
+               </div>
+               <p>
+                  Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима помощь в транспортировке, мы
+                  позвоним вам.
+               </p>
+            </div>
+            <form action="#" method="post">
+               <div class="fields">
+                  <div class="fields__inform">
+                     <input class="form-input" type="text" name="name" placeholder="Фамилия и имя">
+                  </div>
+                  <div class="fields__inform">
+                     <input class="form-input" type="tel" name="tel" placeholder="Номер телефона"
+                        pattern=[0-9]{3}[-][0-9]{3}[-][0-9]{2}[-][0-9]{2}
+                        oninvalid="this.setCustomValidity('Введите номер в формате YYY-XXX-XX-XX')" required>
+                     <div class="fields__attention ">
+                        <p class="text-normal">
+                           Обязательное поле для заполнения
+                        </p>
+                        <p class="text-attention">
+                           Вы не ввели номер телефона. Это поле обязательное.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="form-help">
+                     <div class="form-help__title">
+                        <p>
+                           <b>Выберите вид автопомощи</b>
+                        </p>
+                     </div>
+                     <div class="form-help__check">
+                        <input type="checkbox" name="view" id="checkbox" class="checkbox"><label for="checkbox">
+                           Доставка еды, медикаментов и других небольших вещей
+                        </label><br>
+                        <input type="checkbox" name="view" id="checkbox1" class="checkbox">
+                        <label for="checkbox1"> Доставка сена или соломы, строительных материлов для будок и других
+                           крупногабаритных вещей</label><br>
+                        <input type="checkbox" name="view" id="checkbox2" class="checkbox"> <label
+                           for="checkbox2">Транспортировка небольших собак и котов</label><br>
+                        <input type="checkbox" name="view" id="checkbox3" class="checkbox"><label
+                           for="checkbox3">Транспортировка больших собак</label>
+                     </div>
+                  </div>
+                  <div class="fields__remarks">
+                     <textarea class="form-input" placeholder="Замечания"></textarea>
+                  </div>
+               </div>
+
+               <div class="buttons-form flex">
+                  <div class="outerbutton-yellow ">
+                     <div class="innerbutton-yellow animals-buttons__home">
+                        <button class="button">
+                           <b class="link-button">Отправить</b>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="outerbutton-white animals-buttons__overexposure">
+                     <div class="innerbutton-white">
+                        <button class="button" disabled>
+                           <b class="link-button">Отмена</b>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+
+      </div>
+   </div>
+   <div class="modal-volunteering modal">
+      <div class="container-form">
+
+         <div class="header flex">
+            <div class="header__title">
+               <h3>
+                  Волонтерство
+               </h3>
+            </div>
+            <div class="header__close">
+               <button class="button" id="close-5">
+                  <img src="image/close.png" alt="кнопка закрыть">
+               </button>
+            </div>
+         </div>
+         <hr>
+         <div class="main">
+            <div class="text-data">
+               <div class="text-data__title">
+                  <h4>
+                     Заявка
+                  </h4>
+               </div>
+               <p>
+                  Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима помощь, мы позвоним вам.
+               </p>
+            </div>
+            <form action="#" method="post">
+               <div class="fields">
+                  <div class="fields__inform">
+                     <input class="form-input" type="text" name="name" placeholder="Фамилия и имя">
+                  </div>
+                  <div class="fields__inform">
+                     <input class="form-input" type="tel" name="tel" placeholder="Номер телефона"
+                        pattern=[0-9]{3}[-][0-9]{3}[-][0-9]{2}[-][0-9]{2}
+                        oninvalid="this.setCustomValidity('Введите номер в формате YYY-XXX-XX-XX')" required>
+                     <div class="fields__attention ">
+                        <p class="text-normal">
+                           Обязательное поле для заполнения
+                        </p>
+                        <p class="text-attention">
+                           Вы не ввели номер телефона. Это поле обязательное.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="form-help">
+                     <div class="form-help__check">
+                        <input type="radio" name="radio" id="value1" checked class="radio"> <label for="value1">Хочу
+                           помогать на постоянной основе (расписание можно подобрать так, как будет вам
+                           удобно)</label><br>
+                        <input type="radio" name="radio" id="value2" class="radio"> <label for="value2">Готов помогать
+                           иногда. Хочу выбрать удобное для меня время</label>
+                     </div>
+                  </div>
+                  <div class="fields__remarks">
+                     <textarea class="form-input" placeholder="Замечания"></textarea>
+                  </div>
+               </div>
+
+               <div class="buttons-form flex">
+                  <div class="outerbutton-yellow ">
+                     <div class="innerbutton-yellow animals-buttons__home">
+                        <button class="button">
+                           <b class="link-button">Отправить</b>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="outerbutton-white animals-buttons__overexposure">
+                     <div class="innerbutton-white">
+                        <button class="button" disabled>
+                           <b class="link-button">Отмена</b>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+
+      </div>
+   </div>
+   
+   <script src="modal-window.js"></script>
 </body>
+
 </html>

@@ -334,10 +334,10 @@ figcaption {
   border: none;
   outline: none;
   background: rgba(255, 255, 255, 0);
-  a {
+  a, .link-button {
     font-family: Gilroy;
-    font-style: normal;
-    font-weight: 500;
+    font-style: bold;
+    font-weight: 800;
     font-size: 20px;
     text-align: center;
     line-height: 30px;

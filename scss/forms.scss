@@ -255,10 +255,10 @@ hr {
       background-size: cover;
       border-radius: 50%;
     }
+    
     &__text {
       padding-left: 13px;
       margin: auto 0px;
-
       &--block {
         width: 341px;
         height: 20px;
@@ -529,4 +529,151 @@ border: 2px solid #6B6B6B;
  background: linear-gradient(168.69deg, #FFD96F -1.56%, #FFC82B 52.74%, #F4B500 93.23%);
  box-shadow: 2px 2px 4px rgba(206, 206, 206, 0.25);   
  color:#FFFFFF;
+}
+
+
+/*--------------------------- модальное окно - подробнее ---------------------*/
+
+.modal-detail{
+  .container-form{
+     width: 850px;
+     @media(max-width:768px){
+       &{
+         width: 664px;
+       }
+     }
+     @media(max-width:640px){
+      &{
+    
+        width: 536px;
+      }
+    }
+    @media(max-width:640px){
+      &{
+  
+        width: 276px;
+      }
+    }
+     .header{
+       &__title{
+      width: 746px;
+      @media(max-width:768px){
+        &{
+          width: 664px;
+        }
+      }
+      @media(max-width:640px){
+        &{
+          width: 536px;
+        }
+      }
+      @media(max-width:360px){
+        &{
+          width: 276px;
+        }
+      }
+      h3{
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 24px;
+        text-align: center;
+        color:#242424;
+      }
+     }
+     }
+    hr{
+      opacity: 0.5;
+      border: 1px solid #D6D6D6;
+    } 
+    .inform-pets{
+      margin: 0px 178px;
+      @media(max-width:768px){
+        &{
+          margin: 0px 122px;
+        }
+      }
+      @media(max-width:360px){
+        &{
+          margin: 0px;
+        }
+      }
+      &__age{
+        margin-bottom: 8px;
+        p{
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: #6B6B6B;
+        }
+      }
+      &__description{
+        margin-bottom: 25px;
+        p{
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+      &-gallery{
+        @media(max-width:768px){
+          &{
+            margin: 0px 64px;
+          }
+        }
+        @media(max-width:640px){
+          &{
+            margin: 0px auto;
+          }
+        }
+        img{
+          padding: 15px;
+        }
+      }
+    } 
+    .buttons-animal{
+      display: flex;
+      @media(max-width:768px){
+        &{
+         display: block;
+        }
+      }
+      .outerbutton-yellow{
+        margin-left: 148px;
+        margin-right: 20px;
+        @media(max-width:768px){
+          &{
+           margin-left: 240px;
+          }
+        }
+        @media(max-width:640px){
+          &{
+           margin-left: 193px;
+          }
+        }
+        @media(max-width:360px){
+          &{
+           margin-left: 46px;
+          }
+        }
+      }
+      .outerbutton-white {
+       margin-left: 0px;
+       @media(max-width:768px){
+        &{
+         margin-left: 195px;
+        }
+      }
+      @media(max-width:640px){
+        &{
+         margin-left: 159px;
+        }
+      }
+      @media(max-width:360px){
+        &{
+         margin-left: 18px;
+        }
+      }
+      }
+    }
+   }
 }

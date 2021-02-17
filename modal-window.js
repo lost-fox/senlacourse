@@ -58,7 +58,7 @@ window.onclick = function(event) {
 var modal3 = document.getElementsByClassName('modal-transfer')[0];
 
 var btr3 = document.querySelectorAll(".button-modal-transfer");
-for (var i = 0; i < btr2.length; i++) {
+for (var i = 0; i < btr3.length; i++) {
   btr3[i].onclick = function(){
    modal3.style.display = "block";
   };
@@ -67,10 +67,9 @@ for (var i = 0; i < btr2.length; i++) {
 // Get the <span> element that closes the modal
 var btn32 = document.getElementById("close-3");
 
-
 btn32.onclick = function() {
-   modal3.style.display = "none";
- }
+  modal3.style.display = "none";
+}
  
 
 // When the user clicks anywhere outside of the modal, close it
@@ -85,7 +84,7 @@ window.onclick = function(event) {
 var modal4 = document.getElementsByClassName('modal-carhelp')[0];
 
 var btr4 = document.querySelectorAll(".button-modal-carhelp");
-for (var i = 0; i < btr2.length; i++) {
+for (var i = 0; i < btr4.length; i++) {
   btr4[i].onclick = function(){
    modal4.style.display = "block";
   };
@@ -112,7 +111,7 @@ window.onclick = function(event) {
 var modal5 = document.getElementsByClassName('modal-volunteering')[0];
 
 var btr5 = document.querySelectorAll(".button-modal-volunteering");
-for (var i = 0; i < btr2.length; i++) {
+for (var i = 0; i < btr5.length; i++) {
   btr5[i].onclick = function(){
    modal5.style.display = "block";
   };
@@ -131,5 +130,33 @@ btn52.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal5) {
     modal5.style.display = "none";
+  }
+}
+
+//------------------------------------------------------------------------------
+// Get the modal
+var modal6 = document.getElementsByClassName('modal-detail')[0];
+
+var btr6 = document.querySelectorAll(".button-modal-detail");
+for (var i = 0; i < btr6.length; i++) {
+  btr6[i].onclick = function(){
+   modal6.style.display = "block";
+  };
+}
+
+
+// Get the <span> element that closes the modal
+var btn62 = document.getElementById("close-6");
+
+
+btn62.onclick = function() {
+   modal6.style.display = "none";
+ }
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal6) {
+    modal6.style.display = "none";
   }
 }
