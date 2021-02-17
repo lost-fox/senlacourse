@@ -19,13 +19,6 @@ btn12.onclick = function() {
   modal1.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal1) {
-    modal1.style.display = "none";
-  }
-}
-
 //------------------------------------------------------------------------------
 // Get the modal
 var modal2 = document.getElementsByClassName('modal-overexposure')[0];
@@ -44,14 +37,7 @@ var btn22 = document.getElementById("close-2");
 btn22.onclick = function() {
    modal2.style.display = "none";
  }
- 
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal2) {
-    modal2.style.display = "none";
-  }
-}
 
 //------------------------------------------------------------------------------
 // Get the modal
@@ -69,14 +55,6 @@ var btn32 = document.getElementById("close-3");
 
 btn32.onclick = function() {
   modal3.style.display = "none";
-}
- 
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal3) {
-    modal3.style.display = "none";
-  }
 }
 
 //------------------------------------------------------------------------------
@@ -97,14 +75,6 @@ var btn42 = document.getElementById("close-4");
 btn42.onclick = function() {
    modal4.style.display = "none";
  }
- 
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal4) {
-    modal4.style.display = "none";
-  }
-}
 
 //------------------------------------------------------------------------------
 // Get the modal
@@ -120,18 +90,16 @@ for (var i = 0; i < btr5.length; i++) {
 // Get the <span> element that closes the modal
 var btn52 = document.getElementById("close-5");
 
+var cancel = document.getElementById("button-cancel");
 
 btn52.onclick = function() {
    modal5.style.display = "none";
  }
- 
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal5) {
-    modal5.style.display = "none";
-  }
+ cancel.onclick = function() {
+  modal5.style.display = "none";
 }
+
 
 //------------------------------------------------------------------------------
 // Get the modal
@@ -154,9 +122,52 @@ btn62.onclick = function() {
  }
 
 
+//------------------------------------------------------------------------------
+// Get the modal
+var modal7 = document.getElementsByClassName('modal-maps')[0];
+
+var btr7 = document.querySelectorAll(".button-modal-maps");
+for (var i = 0; i < btr7.length; i++) {
+  btr7[i].onclick = function(){
+   modal7.style.display = "block";
+  };
+}
+
+
+// Get the <span> element that closes the modal
+var btn72 = document.getElementById("close-7");
+
+
+btn72.onclick = function() {
+   modal7.style.display = "none";
+ }
+
+
+ //------------------------------------------------------------------------------
+
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+  if (event.target == modal3) {
+    modal3.style.display = "none";
+  }
+  if (event.target == modal4) {
+    modal4.style.display = "none";
+  }
+  if (event.target == modal5) {
+    modal5.style.display = "none";
+  }
   if (event.target == modal6) {
     modal6.style.display = "none";
   }
+  if (event.target == modal7) {
+    modal7.style.display = "none";
+  }
 }
+

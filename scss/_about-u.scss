@@ -108,6 +108,7 @@
     font-weight: normal;
     font-size: 22px;
     line-height: 26px;
+    margin-top: 24px;
     @media (max-width: 1024px) {
       & {
         width: 481px;
@@ -124,6 +125,7 @@
       & {
         width: 382px;
         font-size: 18px;
+        margin-top: 32px;
       }
     }
     @media (max-width: 360px) {

@@ -53,6 +53,9 @@
   text-align: center;
   margin-left: 134px;
     margin-top: 0px;
+    &:focus:not(:active){
+      border: 3px solid #6B6B6B;
+    }
   @media (max-width: 640px) {
     & {
       height: 30px;
@@ -324,6 +327,10 @@ hr {
     input {
       width: 413px;
       height: 20px;
+      &:focus{
+        outline: none;
+        border: 2px solid #FFC41E;
+      }
       @media (max-width: 640px) {
         & {
           width: 267px;
@@ -349,6 +356,10 @@ hr {
     textarea {
       width: 413px;
       height: 56px;
+      &:focus{
+        outline: none;
+        border: 2px solid #FFC41E;
+      }
       @media (max-width: 640px) {
         & {
           width: 267px;
