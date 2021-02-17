@@ -651,6 +651,7 @@ border: 2px solid #6B6B6B;
       .outerbutton-yellow{
         margin-left: 148px;
         margin-right: 20px;
+        margin-bottom: 20px;
         @media(max-width:768px){
           &{
            margin-left: 240px;
@@ -658,7 +659,14 @@ border: 2px solid #6B6B6B;
         }
         @media(max-width:640px){
           &{
+           width: 174px;
+          height: 30px;
+          padding: 4px 5px; 
            margin-left: 193px;
+           .innerbutton-yellow {
+          width: 164px;
+          height: 22px;
+        }
           }
         }
         @media(max-width:360px){
