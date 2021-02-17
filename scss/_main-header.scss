@@ -1,3 +1,34 @@
+.button {
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0);
+  a {
+    font-family: 'Gilroy';
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+    
+  }
+}
+
+.link-button{
+  font-family: 'Gilroy';
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+    @media (max-width: 640px) {
+      & {
+         font-size: 18px;
+         line-height: 20px;
+       }
+     }
+}
+
+
 .main-header {
   margin: 68px 0px 272px 387px;
   position: relative;
@@ -122,12 +153,6 @@
           line-height: 19px;
         }
       }
-    }
-  }
-  @media (max-width: 640px) {
-    &__button a {
-      font-size: 18px;
-      line-height: 20px;
     }
   }
 }
@@ -259,20 +284,7 @@ h1 {
   }
 }
 
-.button {
-  border: none;
-  outline: none;
-  background: rgba(255, 255, 255, 0);
-  a, .link-button {
-    font-family: Gilroy;
-    font-style: bold;
-    font-weight: 800;
-    font-size: 20px;
-    text-align: center;
-    line-height: 30px;
-    color: #000;
-  }
-}
+
 /*----------------------Продолжение 1го экрана--------------------------------*/
 
 .main-header .outerbutton-yellow {
@@ -303,4 +315,5 @@ h1 {
       height: 20px;
     }
   }
+  
 }
